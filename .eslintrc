@@ -1,59 +1,35 @@
-  {
-    "root": true,
-    "extends": ["airbnb-base", "prettier"],
-    "plugins": ["prettier", "react"],
+    
+{
     "env": {
-      "node": true,
-      "es6": true,
-      "mocha": true
+        "node": true,
+        "jest": true
     },
-    "parser": "babel-eslint",
-    "parserOptions": {
-      "sourceType": "module",
-      "allowImportExportEverywhere": false
-    },
-    "rules": {
-     "no-unused-vars": 0,
-      "max-len": [1, 120, 2, {"ignoreComments": true}],
-      "prop-types": [2],
-      "one-var": 0,
-      "one-var-declaration-per-line": 0,
-      "new-cap": 0,
-      "consistent-return": 0,
-      "no-param-reassign": 0,
-      "comma-dangle": 0,
-      "curly": ["error", "multi-line"],
-      "import/no-unresolved": [2, { "commonjs": true }],
-      "no-shadow": ["error", { "allow": ["req", "res", "err"] }],
-      "valid-jsdoc": [
-        "error",
-        {
-          "requireReturn": true,
-          "requireReturnType": true,
-          "requireParamDescription": false,
-          "requireReturnDescription": true
-        }
-      ],
-      "require-jsdoc": [
-        "error",
-        {
-          "require": {
-            "FunctionDeclaration": true,
-            "MethodDefinition": true,
-            "ClassDeclaration": true
-          }
-        }
-      ],
+  "parser": "babel-eslint",
+  "plugins": [
+      "react",
+      "prettier"
+  ],
+  "rules": {
+      "no-unused-vars": 0,
       "prettier/prettier": [
-        "error",
-        {
-          "trailingComma": "es5",
-          "tabWidth": 2,
-          "semi": true,
-          "singleQuote": true,
-          "endOfLine": "lf"
-        }
-      ]
-    }
-  }
-  
+          "error",
+          {
+            "trailingComma": "es5",
+            "tabWidth": 2,
+            "semi": true,
+            "singleQuote": true,
+            "endOfLine": "lf"
+          }
+        ]
+  },
+  "globals": {
+      "window": true,
+      "document": true,
+      "localStorage": true,
+      "FormData": true,
+      "FileReader": true,
+      "Blob": true,
+      "navigator": true
+    },
+  "extends": ["airbnb", "prettier"]
+}
