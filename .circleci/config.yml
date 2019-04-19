@@ -37,6 +37,6 @@ jobs:
       - run: npm test
       - run:
           name: "Run Jest and Collect Coverage Reports"
-          command: npm run coveralls
+          command: jest --collectCoverage=true
       - store_artifacts:
           path: coverage
