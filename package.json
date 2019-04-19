@@ -14,7 +14,7 @@
     "pretest": "npm run check:lint-prettier",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors",
-    "coveralls": "jest --coverage && cat coverage/lcon.info | coveralls"
+    "coveralls": "jest --collectCoverage=true"
   },
   "engines": {
     "node": "10.15.3",
