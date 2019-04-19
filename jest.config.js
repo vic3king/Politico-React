@@ -36,6 +36,6 @@ module.exports = {
   verbose: false,
 
   moduleNameMapper: {
-    '^.+\\.(css|less|scss)$': 'babel-jest',
+    '^.+\\.(css|less|scss|png|jpg)$': 'babel-jest',
   },
 };
