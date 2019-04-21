@@ -1,0 +1,419 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Footer />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <footer
+        className="main-footer"
+      >
+        <nav>
+          <ul
+            className="main-footer__links"
+          >
+            <li
+              className="main-footer__link"
+            >
+              <a
+                href="/"
+              >
+                Support
+              </a>
+            </li>
+            <li
+              className="main-footer__link"
+            >
+              <a
+                href="/"
+              >
+                Terms of Use
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <nav>
+          <ul
+            className="main-footer__links"
+          >
+            <li
+              className="main-footer__link"
+            >
+              <a
+                href="/"
+              >
+                Support
+              </a>
+            </li>
+            <li
+              className="main-footer__link"
+            >
+              <a
+                href="/"
+              >
+                Terms of Use
+              </a>
+            </li>
+          </ul>
+        </nav>,
+        "className": "main-footer",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ul
+            className="main-footer__links"
+          >
+            <li
+              className="main-footer__link"
+            >
+              <a
+                href="/"
+              >
+                Support
+              </a>
+            </li>
+            <li
+              className="main-footer__link"
+            >
+              <a
+                href="/"
+              >
+                Terms of Use
+              </a>
+            </li>
+          </ul>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                className="main-footer__link"
+              >
+                <a
+                  href="/"
+                >
+                  Support
+                </a>
+              </li>,
+              <li
+                className="main-footer__link"
+              >
+                <a
+                  href="/"
+                >
+                  Terms of Use
+                </a>
+              </li>,
+            ],
+            "className": "main-footer__links",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="/"
+                >
+                  Support
+                </a>,
+                "className": "main-footer__link",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Support",
+                  "href": "/",
+                },
+                "ref": null,
+                "rendered": "Support",
+                "type": "a",
+              },
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="/"
+                >
+                  Terms of Use
+                </a>,
+                "className": "main-footer__link",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Terms of Use",
+                  "href": "/",
+                },
+                "ref": null,
+                "rendered": "Terms of Use",
+                "type": "a",
+              },
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+        "type": "nav",
+      },
+      "type": "footer",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <footer
+          className="main-footer"
+        >
+          <nav>
+            <ul
+              className="main-footer__links"
+            >
+              <li
+                className="main-footer__link"
+              >
+                <a
+                  href="/"
+                >
+                  Support
+                </a>
+              </li>
+              <li
+                className="main-footer__link"
+              >
+                <a
+                  href="/"
+                >
+                  Terms of Use
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </footer>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <nav>
+            <ul
+              className="main-footer__links"
+            >
+              <li
+                className="main-footer__link"
+              >
+                <a
+                  href="/"
+                >
+                  Support
+                </a>
+              </li>
+              <li
+                className="main-footer__link"
+              >
+                <a
+                  href="/"
+                >
+                  Terms of Use
+                </a>
+              </li>
+            </ul>
+          </nav>,
+          "className": "main-footer",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ul
+              className="main-footer__links"
+            >
+              <li
+                className="main-footer__link"
+              >
+                <a
+                  href="/"
+                >
+                  Support
+                </a>
+              </li>
+              <li
+                className="main-footer__link"
+              >
+                <a
+                  href="/"
+                >
+                  Terms of Use
+                </a>
+              </li>
+            </ul>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="main-footer__link"
+                >
+                  <a
+                    href="/"
+                  >
+                    Support
+                  </a>
+                </li>,
+                <li
+                  className="main-footer__link"
+                >
+                  <a
+                    href="/"
+                  >
+                    Terms of Use
+                  </a>
+                </li>,
+              ],
+              "className": "main-footer__links",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="/"
+                  >
+                    Support
+                  </a>,
+                  "className": "main-footer__link",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Support",
+                    "href": "/",
+                  },
+                  "ref": null,
+                  "rendered": "Support",
+                  "type": "a",
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="/"
+                  >
+                    Terms of Use
+                  </a>,
+                  "className": "main-footer__link",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Terms of Use",
+                    "href": "/",
+                  },
+                  "ref": null,
+                  "rendered": "Terms of Use",
+                  "type": "a",
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+          "type": "nav",
+        },
+        "type": "footer",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

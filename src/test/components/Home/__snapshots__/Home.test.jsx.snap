@@ -1,0 +1,545 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage component should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <HomePage />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <NavBar
+          LiTagOne={
+            <LiTag
+              to="/signup"
+              value="Sign Up"
+            />
+          }
+          LiTagTwo={
+            <LiTag
+              to="/login"
+              value="Login"
+            />
+          }
+        />,
+        <section
+          id="showcase"
+        >
+          <img
+            alt=""
+            src=""
+          />
+          <div
+            className="overlay"
+          />
+        </section>,
+        <div
+          className="centered"
+        >
+          <h1>
+             Get Nigeria working Again 
+          </h1>
+          <p
+            className="text"
+          >
+            Be the change you want to see
+          </p>
+          <Link
+            to="/login"
+          >
+            <Button
+              id="button1"
+              value="Vote Now"
+            />
+          </Link>
+          <Link
+            to="/signup"
+          >
+            <Button
+              id="button2"
+              value="Run for Office"
+            />
+          </Link>
+        </div>,
+        <Footer />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "LiTagOne": <LiTag
+            to="/signup"
+            value="Sign Up"
+          />,
+          "LiTagTwo": <LiTag
+            to="/login"
+            value="Login"
+          />,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt=""
+              src=""
+            />,
+            <div
+              className="overlay"
+            />,
+          ],
+          "id": "showcase",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "",
+              "src": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "overlay",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+               Get Nigeria working Again 
+            </h1>,
+            <p
+              className="text"
+            >
+              Be the change you want to see
+            </p>,
+            <Link
+              to="/login"
+            >
+              <Button
+                id="button1"
+                value="Vote Now"
+              />
+            </Link>,
+            <Link
+              to="/signup"
+            >
+              <Button
+                id="button2"
+                value="Run for Office"
+              />
+            </Link>,
+          ],
+          "className": "centered",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " Get Nigeria working Again ",
+            },
+            "ref": null,
+            "rendered": " Get Nigeria working Again ",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Be the change you want to see",
+              "className": "text",
+            },
+            "ref": null,
+            "rendered": "Be the change you want to see",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Button
+                id="button1"
+                value="Vote Now"
+              />,
+              "to": "/login",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "id": "button1",
+                "value": "Vote Now",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Button
+                id="button2"
+                value="Run for Office"
+              />,
+              "to": "/signup",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "id": "button2",
+                "value": "Run for Office",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <NavBar
+            LiTagOne={
+              <LiTag
+                to="/signup"
+                value="Sign Up"
+              />
+            }
+            LiTagTwo={
+              <LiTag
+                to="/login"
+                value="Login"
+              />
+            }
+          />,
+          <section
+            id="showcase"
+          >
+            <img
+              alt=""
+              src=""
+            />
+            <div
+              className="overlay"
+            />
+          </section>,
+          <div
+            className="centered"
+          >
+            <h1>
+               Get Nigeria working Again 
+            </h1>
+            <p
+              className="text"
+            >
+              Be the change you want to see
+            </p>
+            <Link
+              to="/login"
+            >
+              <Button
+                id="button1"
+                value="Vote Now"
+              />
+            </Link>
+            <Link
+              to="/signup"
+            >
+              <Button
+                id="button2"
+                value="Run for Office"
+              />
+            </Link>
+          </div>,
+          <Footer />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "LiTagOne": <LiTag
+              to="/signup"
+              value="Sign Up"
+            />,
+            "LiTagTwo": <LiTag
+              to="/login"
+              value="Login"
+            />,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt=""
+                src=""
+              />,
+              <div
+                className="overlay"
+              />,
+            ],
+            "id": "showcase",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "",
+                "src": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "overlay",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "section",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                 Get Nigeria working Again 
+              </h1>,
+              <p
+                className="text"
+              >
+                Be the change you want to see
+              </p>,
+              <Link
+                to="/login"
+              >
+                <Button
+                  id="button1"
+                  value="Vote Now"
+                />
+              </Link>,
+              <Link
+                to="/signup"
+              >
+                <Button
+                  id="button2"
+                  value="Run for Office"
+                />
+              </Link>,
+            ],
+            "className": "centered",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": " Get Nigeria working Again ",
+              },
+              "ref": null,
+              "rendered": " Get Nigeria working Again ",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Be the change you want to see",
+                "className": "text",
+              },
+              "ref": null,
+              "rendered": "Be the change you want to see",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Button
+                  id="button1"
+                  value="Vote Now"
+                />,
+                "to": "/login",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "id": "button1",
+                  "value": "Vote Now",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Button
+                  id="button2"
+                  value="Run for Office"
+                />,
+                "to": "/signup",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "id": "button2",
+                  "value": "Run for Office",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

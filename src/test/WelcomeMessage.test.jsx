@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
+import { BrowserRouter } from 'react-router-dom';
 import App from '../components/App';
 
 describe('Home component', () => {
   it('should match snapshot', () => {
     const wrapper = shallow(<App />);
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders correctly', () => {
+    const wrapper = renderer.create(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    ).toJSON;
+    expect(wrapper).toMatchInlineSnapshot(`[Function]`);
   });
 });
 
