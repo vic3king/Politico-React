@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ value, className }) => {
+const Button = ({ value, id }) => {
   return (
-    <button type="button" className={className}>
+    <button type="button" id={id}>
       {value}
     </button>
   );
@@ -11,7 +11,7 @@ const Button = ({ value, className }) => {
 
 Button.propTypes = {
   value: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Button;

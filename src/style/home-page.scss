@@ -16,14 +16,14 @@ body {
   margin-top: 80px;
 }
 
-.showcase {
+#showcase {
     position: relative;
     top: 42px;
     z-index: -10;
     margin-top: -18px;
   }
 
-.showcase {
+#showcase {
   img {
     width: 100%;
     height: 85vh;
@@ -60,7 +60,7 @@ body {
     text-shadow: 0 0 12px #123;
   }
 
-  .button1 {
+  #button1 {
     background: #424242;
     color: white;
     font: inherit;
@@ -71,7 +71,7 @@ body {
     margin-left: 78px;
     animation: shadow-pulse 1s infinite;
   }
-  .button2 {
+  #button2 {
     background: #424242;
     color: white;
     font: inherit;

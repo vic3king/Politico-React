@@ -1,29 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../../style/navbar.scss';
+import PropTypes from 'prop-types';
 
-const NavBar = () => {
+const NavBar = ({ LiTagOne, LiTagTwo }) => {
   return (
     <React.Fragment>
       <header className="main-header">
         <div>
           <i className="fa fa-balance-scale fa-lg" />
-          <a href="index.html" className="main-header__brand">
+          <Link to="/" className="main-header__brand">
             Politico
-          </a>
+          </Link>
         </div>
         <nav className="main-nav">
           <ul className="main-nav__items">
-            <li className="main-nav__item">
-              <a href="signup.html">Sign Up</a>
-            </li>
-            <li className="main-nav__item">
-              <a href="login.html">Login</a>
-            </li>
+            {LiTagOne}
+            {LiTagTwo}
           </ul>
         </nav>
       </header>
     </React.Fragment>
   );
+};
+NavBar.defaultProps = {
+  LiTagOne: (PropTypes.defaultProps = ''),
+  LiTagTwo: (PropTypes.defaultProps = ''),
+};
+NavBar.propTypes = {
+  LiTagOne: PropTypes.object,
+  LiTagTwo: PropTypes.object,
 };
 
 export default NavBar;
