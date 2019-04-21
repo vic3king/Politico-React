@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import ErrorPage from './NotFound-404/pagenotfound';
 import HomePage from './Home/Home';
 import Signup from './Registration/Signup';
@@ -11,14 +11,16 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/signup" component={Signup} />
-          <Route path="/login" component={Login} />
-          <Route path="/error" component={ErrorPage} />
-          <Route path="*" component={ErrorPage} />
-          <Redirect to="/error" />
-        </Switch>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" exact component={HomePage} />
+            <Route path="/signup" component={Signup} />
+            <Route path="/login" component={Login} />
+            <Route path="/error" component={ErrorPage} />
+            <Route path="*" component={ErrorPage} />
+            <Redirect to="/error" />
+          </Switch>
+        </BrowserRouter>
       </React.Fragment>
     );
   }

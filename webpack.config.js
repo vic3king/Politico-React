@@ -14,6 +14,8 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, 'src'),
+    hot: true,
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -37,8 +39,15 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(jpg|jpeg|png|gif|mp3|svg|woff)$/,
-        loaders: ['file-loader'],
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[hash]-[name].[ext]',
+            },
+          },
+        ],
       },
     ],
   },

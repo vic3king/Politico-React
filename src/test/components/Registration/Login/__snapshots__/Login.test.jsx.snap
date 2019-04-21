@@ -1,0 +1,664 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login component should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Login />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <NavBar
+          LiTagOne={
+            <LiTag
+              to="/signup"
+              value="Sign Up"
+            />
+          }
+          LiTagTwo=""
+        />,
+        <div
+          className="center"
+        />,
+        <form
+          className="signbox2"
+          id="login-form"
+        >
+          <span
+            id="spanuser"
+          />
+          <Input
+            id="email"
+            onChange={[Function]}
+            placeholder="Email"
+            required={true}
+            type="text"
+            value=""
+          />
+          <span
+            id="spanemail"
+          />
+          <Input
+            id="password"
+            onChange={[Function]}
+            placeholder="Password"
+            required={true}
+            type="password"
+            value=""
+          />
+          <span
+            id="spanpassword"
+          />
+          <Input
+            id="submit"
+            name=""
+            onChange={[Function]}
+            placeholder=""
+            type="submit"
+            value="Login"
+          />
+          <Link
+            className="link"
+            to="/reset"
+          >
+            Forgotten your password?
+          </Link>
+          <p
+            style={
+              Object {
+                "textAlign": "center",
+              }
+            }
+          >
+            Need an account?
+            <Link
+              className="link"
+              to="/signup"
+            >
+              Sign Up
+            </Link>
+          </p>
+        </form>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "LiTagOne": <LiTag
+            to="/signup"
+            value="Sign Up"
+          />,
+          "LiTagTwo": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "center",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              id="spanuser"
+            />,
+            <Input
+              id="email"
+              onChange={[Function]}
+              placeholder="Email"
+              required={true}
+              type="text"
+              value=""
+            />,
+            <span
+              id="spanemail"
+            />,
+            <Input
+              id="password"
+              onChange={[Function]}
+              placeholder="Password"
+              required={true}
+              type="password"
+              value=""
+            />,
+            <span
+              id="spanpassword"
+            />,
+            <Input
+              id="submit"
+              name=""
+              onChange={[Function]}
+              placeholder=""
+              type="submit"
+              value="Login"
+            />,
+            <Link
+              className="link"
+              to="/reset"
+            >
+              Forgotten your password?
+            </Link>,
+            <p
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
+              Need an account?
+              <Link
+                className="link"
+                to="/signup"
+              >
+                Sign Up
+              </Link>
+            </p>,
+          ],
+          "className": "signbox2",
+          "id": "login-form",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "id": "spanuser",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "id": "email",
+              "onChange": [Function],
+              "placeholder": "Email",
+              "required": true,
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "id": "spanemail",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "id": "password",
+              "onChange": [Function],
+              "placeholder": "Password",
+              "required": true,
+              "type": "password",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "id": "spanpassword",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "id": "submit",
+              "name": "",
+              "onChange": [Function],
+              "placeholder": "",
+              "type": "submit",
+              "value": "Login",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Forgotten your password?",
+              "className": "link",
+              "to": "/reset",
+            },
+            "ref": null,
+            "rendered": "Forgotten your password?",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Need an account?",
+                <Link
+                  className="link"
+                  to="/signup"
+                >
+                  Sign Up
+                </Link>,
+              ],
+              "style": Object {
+                "textAlign": "center",
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              "Need an account?",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Sign Up",
+                  "className": "link",
+                  "to": "/signup",
+                },
+                "ref": null,
+                "rendered": "Sign Up",
+                "type": [Function],
+              },
+            ],
+            "type": "p",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <NavBar
+            LiTagOne={
+              <LiTag
+                to="/signup"
+                value="Sign Up"
+              />
+            }
+            LiTagTwo=""
+          />,
+          <div
+            className="center"
+          />,
+          <form
+            className="signbox2"
+            id="login-form"
+          >
+            <span
+              id="spanuser"
+            />
+            <Input
+              id="email"
+              onChange={[Function]}
+              placeholder="Email"
+              required={true}
+              type="text"
+              value=""
+            />
+            <span
+              id="spanemail"
+            />
+            <Input
+              id="password"
+              onChange={[Function]}
+              placeholder="Password"
+              required={true}
+              type="password"
+              value=""
+            />
+            <span
+              id="spanpassword"
+            />
+            <Input
+              id="submit"
+              name=""
+              onChange={[Function]}
+              placeholder=""
+              type="submit"
+              value="Login"
+            />
+            <Link
+              className="link"
+              to="/reset"
+            >
+              Forgotten your password?
+            </Link>
+            <p
+              style={
+                Object {
+                  "textAlign": "center",
+                }
+              }
+            >
+              Need an account?
+              <Link
+                className="link"
+                to="/signup"
+              >
+                Sign Up
+              </Link>
+            </p>
+          </form>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "LiTagOne": <LiTag
+              to="/signup"
+              value="Sign Up"
+            />,
+            "LiTagTwo": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "center",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                id="spanuser"
+              />,
+              <Input
+                id="email"
+                onChange={[Function]}
+                placeholder="Email"
+                required={true}
+                type="text"
+                value=""
+              />,
+              <span
+                id="spanemail"
+              />,
+              <Input
+                id="password"
+                onChange={[Function]}
+                placeholder="Password"
+                required={true}
+                type="password"
+                value=""
+              />,
+              <span
+                id="spanpassword"
+              />,
+              <Input
+                id="submit"
+                name=""
+                onChange={[Function]}
+                placeholder=""
+                type="submit"
+                value="Login"
+              />,
+              <Link
+                className="link"
+                to="/reset"
+              >
+                Forgotten your password?
+              </Link>,
+              <p
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Need an account?
+                <Link
+                  className="link"
+                  to="/signup"
+                >
+                  Sign Up
+                </Link>
+              </p>,
+            ],
+            "className": "signbox2",
+            "id": "login-form",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "id": "spanuser",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "id": "email",
+                "onChange": [Function],
+                "placeholder": "Email",
+                "required": true,
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "id": "spanemail",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "id": "password",
+                "onChange": [Function],
+                "placeholder": "Password",
+                "required": true,
+                "type": "password",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "id": "spanpassword",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "id": "submit",
+                "name": "",
+                "onChange": [Function],
+                "placeholder": "",
+                "type": "submit",
+                "value": "Login",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Forgotten your password?",
+                "className": "link",
+                "to": "/reset",
+              },
+              "ref": null,
+              "rendered": "Forgotten your password?",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Need an account?",
+                  <Link
+                    className="link"
+                    to="/signup"
+                  >
+                    Sign Up
+                  </Link>,
+                ],
+                "style": Object {
+                  "textAlign": "center",
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                "Need an account?",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Sign Up",
+                    "className": "link",
+                    "to": "/signup",
+                  },
+                  "ref": null,
+                  "rendered": "Sign Up",
+                  "type": [Function],
+                },
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
