@@ -19,6 +19,10 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
+        false,
+        <_class
+          options={Object {}}
+        />,
         <NavBar
           LiTagOne={
             <LiTag
@@ -34,6 +38,7 @@ ShallowWrapper {
         <form
           className="signbox2"
           id="login-form"
+          onSubmit={[Function]}
         >
           <span
             id="spanuser"
@@ -63,7 +68,6 @@ ShallowWrapper {
           <Input
             id="submit"
             name=""
-            onChange={[Function]}
             placeholder=""
             type="submit"
             value="Login"
@@ -90,10 +94,25 @@ ShallowWrapper {
             </Link>
           </p>
         </form>,
+        false,
+        false,
+        false,
       ],
     },
     "ref": null,
     "rendered": Array [
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "options": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -154,7 +173,6 @@ ShallowWrapper {
             <Input
               id="submit"
               name=""
-              onChange={[Function]}
               placeholder=""
               type="submit"
               value="Login"
@@ -183,6 +201,7 @@ ShallowWrapper {
           ],
           "className": "signbox2",
           "id": "login-form",
+          "onSubmit": [Function],
         },
         "ref": null,
         "rendered": Array [
@@ -258,7 +277,6 @@ ShallowWrapper {
             "props": Object {
               "id": "submit",
               "name": "",
-              "onChange": [Function],
               "placeholder": "",
               "type": "submit",
               "value": "Login",
@@ -320,6 +338,9 @@ ShallowWrapper {
         ],
         "type": "form",
       },
+      false,
+      false,
+      false,
     ],
     "type": Symbol(react.fragment),
   },
@@ -330,6 +351,10 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
+          false,
+          <_class
+            options={Object {}}
+          />,
           <NavBar
             LiTagOne={
               <LiTag
@@ -345,6 +370,7 @@ ShallowWrapper {
           <form
             className="signbox2"
             id="login-form"
+            onSubmit={[Function]}
           >
             <span
               id="spanuser"
@@ -374,7 +400,6 @@ ShallowWrapper {
             <Input
               id="submit"
               name=""
-              onChange={[Function]}
               placeholder=""
               type="submit"
               value="Login"
@@ -401,10 +426,25 @@ ShallowWrapper {
               </Link>
             </p>
           </form>,
+          false,
+          false,
+          false,
         ],
       },
       "ref": null,
       "rendered": Array [
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "options": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -465,7 +505,6 @@ ShallowWrapper {
               <Input
                 id="submit"
                 name=""
-                onChange={[Function]}
                 placeholder=""
                 type="submit"
                 value="Login"
@@ -494,6 +533,7 @@ ShallowWrapper {
             ],
             "className": "signbox2",
             "id": "login-form",
+            "onSubmit": [Function],
           },
           "ref": null,
           "rendered": Array [
@@ -569,7 +609,6 @@ ShallowWrapper {
               "props": Object {
                 "id": "submit",
                 "name": "",
-                "onChange": [Function],
                 "placeholder": "",
                 "type": "submit",
                 "value": "Login",
@@ -631,6 +670,9 @@ ShallowWrapper {
           ],
           "type": "form",
         },
+        false,
+        false,
+        false,
       ],
       "type": Symbol(react.fragment),
     },

@@ -1,42 +1,81 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import Notifications, { notify } from 'react-notify-toast';
+import { Link, Redirect } from 'react-router-dom';
 import NavBar from '../shared/NavBar/Navbar';
 import Input from '../shared/InputFields/Input';
 import '../../style/registration.scss';
 import LiTag from '../shared/Buttons/LI-tag';
+import Loader from '../shared/Loader/Loader';
+import authServices from '../../services/authentication.services';
+import errorHandler from '../../helpers/errorHandler';
 
 class Signup extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+      signUpDetatils: { type: 'citizen' },
+      loading: false,
+      canRedirect: false,
+    };
+  }
+
+  onInputChange = event => {
+    const { signUpDetatils } = this.state;
+    signUpDetatils[event.target.id] = event.target.value;
+    this.setState({ signUpDetatils });
+  };
+
+  onButtonSubmit = async event => {
+    event.preventDefault();
+    this.setState({ loading: true });
+    const { signUpDetatils } = this.state;
+    const user = await authServices.auth('signup', signUpDetatils);
+
+    if (user.status >= 400) {
+      this.setState({ loading: false });
+      notify.show(errorHandler(user.error), 'error');
+    }
+
+    if (user.status === 201) {
+      this.setState({ loading: true });
+      localStorage.setItem('token', user.data[0].token);
+      localStorage.setItem('user', JSON.stringify(user.data[0].user));
+      this.setState({ canRedirect: true });
+    }
+  };
 
   render() {
+    const { signUpDetatils, loading, canRedirect, type } = this.state;
     return (
       <React.Fragment>
+        <Notifications />
+        {loading && <Loader />}
         <NavBar LiTagTwo={<LiTag to="/login" value="Login" />} />
         <div className="center" />
         <form
           className="signbox"
           id="signup-form"
           style={{ marginTop: '56px' }}
+          onSubmit={this.onButtonSubmit}
         >
-          <span id="usergen" />
           <div className="wholeform">
             <div className="formgroup">
               <Input
                 id="firstname"
                 type="text"
                 placeholder="First name"
-                required="required"
+                value={signUpDetatils.firstname}
+                onChange={this.onInputChange}
               />
-              <span id="spanfirstname" />
             </div>
             <div className="formgroup">
               <Input
                 id="lastname"
                 type="text"
                 placeholder="Last name"
-                required="required"
+                value={signUpDetatils.lastname}
+                onChange={this.onInputChange}
               />
-              <span id="spanlastname" />
             </div>
           </div>
 
@@ -46,18 +85,18 @@ class Signup extends Component {
                 id="othernames"
                 type="text"
                 placeholder="Othernames"
-                required="required"
+                value={signUpDetatils.othernames}
+                onChange={this.onInputChange}
               />
-              <span id="spanothernames" />
             </div>
             <div className="formgroup">
               <Input
                 id="phonenumber"
                 type="text"
                 placeholder="PhoneNumber"
-                required="required"
+                value={signUpDetatils.phonenumber}
+                onChange={this.onInputChange}
               />
-              <span id="phone" />
             </div>
           </div>
           <div className="wholeform">
@@ -66,25 +105,25 @@ class Signup extends Component {
                 id="email"
                 type="email"
                 placeholder="Please enter email"
-                required="required"
+                value={signUpDetatils.email}
+                onChange={this.onInputChange}
               />
-              <span id="vemail" />
             </div>
             <div className="formgroup">
               <Input
                 id="password"
                 type="password"
                 placeholder="Password"
-                required="required"
+                value={signUpDetatils.password}
+                onChange={this.onInputChange}
               />
-              <span id="spanpass" />
             </div>
           </div>
-          <select id="selecttype">
-            <option value="citizen" id="citizen">
+          <select id="type" onChange={this.onInputChange}>
+            <option name="type" value="citizen">
               Citizen
             </option>
-            <option value="politician" id="politician">
+            <option name="type" value="politician">
               Poitician
             </option>
           </select>
@@ -98,6 +137,7 @@ class Signup extends Component {
             </Link>
           </p>
         </form>
+        {canRedirect && <Redirect to="/login" />}
       </React.Fragment>
     );
   }

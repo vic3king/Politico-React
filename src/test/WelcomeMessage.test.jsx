@@ -4,11 +4,13 @@ import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import App from '../components/App';
+import HomePage from '../components/Home/Home';
 
 describe('Home component', () => {
   it('should match snapshot', () => {
     const wrapper = shallow(<App />);
     expect(wrapper).toMatchSnapshot();
+    expect(wrapper.find(<HomePage />));
   });
 
   it('renders correctly', () => {
