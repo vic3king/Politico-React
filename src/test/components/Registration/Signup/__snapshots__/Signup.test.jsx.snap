@@ -19,6 +19,10 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
+        <_class
+          options={Object {}}
+        />,
+        false,
         <NavBar
           LiTagOne=""
           LiTagTwo={
@@ -34,15 +38,13 @@ ShallowWrapper {
         <form
           className="signbox"
           id="signup-form"
+          onSubmit={[Function]}
           style={
             Object {
               "marginTop": "56px",
             }
           }
         >
-          <span
-            id="usergen"
-          />
           <div
             className="wholeform"
           >
@@ -53,12 +55,8 @@ ShallowWrapper {
                 id="firstname"
                 onChange={[Function]}
                 placeholder="First name"
-                required="required"
                 type="text"
                 value=""
-              />
-              <span
-                id="spanfirstname"
               />
             </div>
             <div
@@ -68,12 +66,8 @@ ShallowWrapper {
                 id="lastname"
                 onChange={[Function]}
                 placeholder="Last name"
-                required="required"
                 type="text"
                 value=""
-              />
-              <span
-                id="spanlastname"
               />
             </div>
           </div>
@@ -87,12 +81,8 @@ ShallowWrapper {
                 id="othernames"
                 onChange={[Function]}
                 placeholder="Othernames"
-                required="required"
                 type="text"
                 value=""
-              />
-              <span
-                id="spanothernames"
               />
             </div>
             <div
@@ -102,12 +92,8 @@ ShallowWrapper {
                 id="phonenumber"
                 onChange={[Function]}
                 placeholder="PhoneNumber"
-                required="required"
                 type="text"
                 value=""
-              />
-              <span
-                id="phone"
               />
             </div>
           </div>
@@ -121,12 +107,8 @@ ShallowWrapper {
                 id="email"
                 onChange={[Function]}
                 placeholder="Please enter email"
-                required="required"
                 type="email"
                 value=""
-              />
-              <span
-                id="vemail"
               />
             </div>
             <div
@@ -136,26 +118,23 @@ ShallowWrapper {
                 id="password"
                 onChange={[Function]}
                 placeholder="Password"
-                required="required"
                 type="password"
                 value=""
-              />
-              <span
-                id="spanpass"
               />
             </div>
           </div>
           <select
-            id="selecttype"
+            id="type"
+            onChange={[Function]}
           >
             <option
-              id="citizen"
+              name="type"
               value="citizen"
             >
               Citizen
             </option>
             <option
-              id="politician"
+              name="type"
               value="politician"
             >
               Poitician
@@ -166,7 +145,6 @@ ShallowWrapper {
           >
             <Input
               id="submit-btn"
-              onChange={[Function]}
               placeholder=""
               type="submit"
               value="Sign Up"
@@ -188,10 +166,23 @@ ShallowWrapper {
             </Link>
           </p>
         </form>,
+        false,
       ],
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "options": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -224,9 +215,6 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <span
-              id="usergen"
-            />,
             <div
               className="wholeform"
             >
@@ -237,12 +225,8 @@ ShallowWrapper {
                   id="firstname"
                   onChange={[Function]}
                   placeholder="First name"
-                  required="required"
                   type="text"
                   value=""
-                />
-                <span
-                  id="spanfirstname"
                 />
               </div>
               <div
@@ -252,12 +236,8 @@ ShallowWrapper {
                   id="lastname"
                   onChange={[Function]}
                   placeholder="Last name"
-                  required="required"
                   type="text"
                   value=""
-                />
-                <span
-                  id="spanlastname"
                 />
               </div>
             </div>,
@@ -271,12 +251,8 @@ ShallowWrapper {
                   id="othernames"
                   onChange={[Function]}
                   placeholder="Othernames"
-                  required="required"
                   type="text"
                   value=""
-                />
-                <span
-                  id="spanothernames"
                 />
               </div>
               <div
@@ -286,12 +262,8 @@ ShallowWrapper {
                   id="phonenumber"
                   onChange={[Function]}
                   placeholder="PhoneNumber"
-                  required="required"
                   type="text"
                   value=""
-                />
-                <span
-                  id="phone"
                 />
               </div>
             </div>,
@@ -305,12 +277,8 @@ ShallowWrapper {
                   id="email"
                   onChange={[Function]}
                   placeholder="Please enter email"
-                  required="required"
                   type="email"
                   value=""
-                />
-                <span
-                  id="vemail"
                 />
               </div>
               <div
@@ -320,26 +288,23 @@ ShallowWrapper {
                   id="password"
                   onChange={[Function]}
                   placeholder="Password"
-                  required="required"
                   type="password"
                   value=""
-                />
-                <span
-                  id="spanpass"
                 />
               </div>
             </div>,
             <select
-              id="selecttype"
+              id="type"
+              onChange={[Function]}
             >
               <option
-                id="citizen"
+                name="type"
                 value="citizen"
               >
                 Citizen
               </option>
               <option
-                id="politician"
+                name="type"
                 value="politician"
               >
                 Poitician
@@ -350,7 +315,6 @@ ShallowWrapper {
             >
               <Input
                 id="submit-btn"
-                onChange={[Function]}
                 placeholder=""
                 type="submit"
                 value="Sign Up"
@@ -374,23 +338,13 @@ ShallowWrapper {
           ],
           "className": "signbox",
           "id": "signup-form",
+          "onSubmit": [Function],
           "style": Object {
             "marginTop": "56px",
           },
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "id": "usergen",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "span",
-          },
           Object {
             "instance": null,
             "key": undefined,
@@ -404,12 +358,8 @@ ShallowWrapper {
                     id="firstname"
                     onChange={[Function]}
                     placeholder="First name"
-                    required="required"
                     type="text"
                     value=""
-                  />
-                  <span
-                    id="spanfirstname"
                   />
                 </div>,
                 <div
@@ -419,12 +369,8 @@ ShallowWrapper {
                     id="lastname"
                     onChange={[Function]}
                     placeholder="Last name"
-                    required="required"
                     type="text"
                     value=""
-                  />
-                  <span
-                    id="spanlastname"
                   />
                 </div>,
               ],
@@ -437,51 +383,31 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <Input
-                      id="firstname"
-                      onChange={[Function]}
-                      placeholder="First name"
-                      required="required"
-                      type="text"
-                      value=""
-                    />,
-                    <span
-                      id="spanfirstname"
-                    />,
-                  ],
+                  "children": <Input
+                    id="firstname"
+                    onChange={[Function]}
+                    placeholder="First name"
+                    type="text"
+                    value=""
+                  />,
                   "className": "formgroup",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "id": "firstname",
-                      "onChange": [Function],
-                      "placeholder": "First name",
-                      "required": "required",
-                      "type": "text",
-                      "value": "",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "id": "firstname",
+                    "onChange": [Function],
+                    "placeholder": "First name",
+                    "type": "text",
+                    "value": "",
                   },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "id": "spanfirstname",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                ],
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": "div",
               },
               Object {
@@ -489,51 +415,31 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <Input
-                      id="lastname"
-                      onChange={[Function]}
-                      placeholder="Last name"
-                      required="required"
-                      type="text"
-                      value=""
-                    />,
-                    <span
-                      id="spanlastname"
-                    />,
-                  ],
+                  "children": <Input
+                    id="lastname"
+                    onChange={[Function]}
+                    placeholder="Last name"
+                    type="text"
+                    value=""
+                  />,
                   "className": "formgroup",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "id": "lastname",
-                      "onChange": [Function],
-                      "placeholder": "Last name",
-                      "required": "required",
-                      "type": "text",
-                      "value": "",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "id": "lastname",
+                    "onChange": [Function],
+                    "placeholder": "Last name",
+                    "type": "text",
+                    "value": "",
                   },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "id": "spanlastname",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                ],
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": "div",
               },
             ],
@@ -552,12 +458,8 @@ ShallowWrapper {
                     id="othernames"
                     onChange={[Function]}
                     placeholder="Othernames"
-                    required="required"
                     type="text"
                     value=""
-                  />
-                  <span
-                    id="spanothernames"
                   />
                 </div>,
                 <div
@@ -567,12 +469,8 @@ ShallowWrapper {
                     id="phonenumber"
                     onChange={[Function]}
                     placeholder="PhoneNumber"
-                    required="required"
                     type="text"
                     value=""
-                  />
-                  <span
-                    id="phone"
                   />
                 </div>,
               ],
@@ -585,51 +483,31 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <Input
-                      id="othernames"
-                      onChange={[Function]}
-                      placeholder="Othernames"
-                      required="required"
-                      type="text"
-                      value=""
-                    />,
-                    <span
-                      id="spanothernames"
-                    />,
-                  ],
+                  "children": <Input
+                    id="othernames"
+                    onChange={[Function]}
+                    placeholder="Othernames"
+                    type="text"
+                    value=""
+                  />,
                   "className": "formgroup",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "id": "othernames",
-                      "onChange": [Function],
-                      "placeholder": "Othernames",
-                      "required": "required",
-                      "type": "text",
-                      "value": "",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "id": "othernames",
+                    "onChange": [Function],
+                    "placeholder": "Othernames",
+                    "type": "text",
+                    "value": "",
                   },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "id": "spanothernames",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                ],
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": "div",
               },
               Object {
@@ -637,51 +515,31 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <Input
-                      id="phonenumber"
-                      onChange={[Function]}
-                      placeholder="PhoneNumber"
-                      required="required"
-                      type="text"
-                      value=""
-                    />,
-                    <span
-                      id="phone"
-                    />,
-                  ],
+                  "children": <Input
+                    id="phonenumber"
+                    onChange={[Function]}
+                    placeholder="PhoneNumber"
+                    type="text"
+                    value=""
+                  />,
                   "className": "formgroup",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "id": "phonenumber",
-                      "onChange": [Function],
-                      "placeholder": "PhoneNumber",
-                      "required": "required",
-                      "type": "text",
-                      "value": "",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "id": "phonenumber",
+                    "onChange": [Function],
+                    "placeholder": "PhoneNumber",
+                    "type": "text",
+                    "value": "",
                   },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "id": "phone",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                ],
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": "div",
               },
             ],
@@ -700,12 +558,8 @@ ShallowWrapper {
                     id="email"
                     onChange={[Function]}
                     placeholder="Please enter email"
-                    required="required"
                     type="email"
                     value=""
-                  />
-                  <span
-                    id="vemail"
                   />
                 </div>,
                 <div
@@ -715,12 +569,8 @@ ShallowWrapper {
                     id="password"
                     onChange={[Function]}
                     placeholder="Password"
-                    required="required"
                     type="password"
                     value=""
-                  />
-                  <span
-                    id="spanpass"
                   />
                 </div>,
               ],
@@ -733,51 +583,31 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <Input
-                      id="email"
-                      onChange={[Function]}
-                      placeholder="Please enter email"
-                      required="required"
-                      type="email"
-                      value=""
-                    />,
-                    <span
-                      id="vemail"
-                    />,
-                  ],
+                  "children": <Input
+                    id="email"
+                    onChange={[Function]}
+                    placeholder="Please enter email"
+                    type="email"
+                    value=""
+                  />,
                   "className": "formgroup",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "id": "email",
-                      "onChange": [Function],
-                      "placeholder": "Please enter email",
-                      "required": "required",
-                      "type": "email",
-                      "value": "",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "id": "email",
+                    "onChange": [Function],
+                    "placeholder": "Please enter email",
+                    "type": "email",
+                    "value": "",
                   },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "id": "vemail",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                ],
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": "div",
               },
               Object {
@@ -785,51 +615,31 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <Input
-                      id="password"
-                      onChange={[Function]}
-                      placeholder="Password"
-                      required="required"
-                      type="password"
-                      value=""
-                    />,
-                    <span
-                      id="spanpass"
-                    />,
-                  ],
+                  "children": <Input
+                    id="password"
+                    onChange={[Function]}
+                    placeholder="Password"
+                    type="password"
+                    value=""
+                  />,
                   "className": "formgroup",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "id": "password",
-                      "onChange": [Function],
-                      "placeholder": "Password",
-                      "required": "required",
-                      "type": "password",
-                      "value": "",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "id": "password",
+                    "onChange": [Function],
+                    "placeholder": "Password",
+                    "type": "password",
+                    "value": "",
                   },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "id": "spanpass",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "span",
-                  },
-                ],
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
                 "type": "div",
               },
             ],
@@ -842,19 +652,20 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <option
-                  id="citizen"
+                  name="type"
                   value="citizen"
                 >
                   Citizen
                 </option>,
                 <option
-                  id="politician"
+                  name="type"
                   value="politician"
                 >
                   Poitician
                 </option>,
               ],
-              "id": "selecttype",
+              "id": "type",
+              "onChange": [Function],
             },
             "ref": null,
             "rendered": Array [
@@ -864,7 +675,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Citizen",
-                  "id": "citizen",
+                  "name": "type",
                   "value": "citizen",
                 },
                 "ref": null,
@@ -877,7 +688,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Poitician",
-                  "id": "politician",
+                  "name": "type",
                   "value": "politician",
                 },
                 "ref": null,
@@ -894,7 +705,6 @@ ShallowWrapper {
             "props": Object {
               "children": <Input
                 id="submit-btn"
-                onChange={[Function]}
                 placeholder=""
                 type="submit"
                 value="Sign Up"
@@ -908,7 +718,6 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "id": "submit-btn",
-                "onChange": [Function],
                 "placeholder": "",
                 "type": "submit",
                 "value": "Sign Up",
@@ -959,6 +768,7 @@ ShallowWrapper {
         ],
         "type": "form",
       },
+      false,
     ],
     "type": Symbol(react.fragment),
   },
@@ -969,6 +779,10 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
+          <_class
+            options={Object {}}
+          />,
+          false,
           <NavBar
             LiTagOne=""
             LiTagTwo={
@@ -984,15 +798,13 @@ ShallowWrapper {
           <form
             className="signbox"
             id="signup-form"
+            onSubmit={[Function]}
             style={
               Object {
                 "marginTop": "56px",
               }
             }
           >
-            <span
-              id="usergen"
-            />
             <div
               className="wholeform"
             >
@@ -1003,12 +815,8 @@ ShallowWrapper {
                   id="firstname"
                   onChange={[Function]}
                   placeholder="First name"
-                  required="required"
                   type="text"
                   value=""
-                />
-                <span
-                  id="spanfirstname"
                 />
               </div>
               <div
@@ -1018,12 +826,8 @@ ShallowWrapper {
                   id="lastname"
                   onChange={[Function]}
                   placeholder="Last name"
-                  required="required"
                   type="text"
                   value=""
-                />
-                <span
-                  id="spanlastname"
                 />
               </div>
             </div>
@@ -1037,12 +841,8 @@ ShallowWrapper {
                   id="othernames"
                   onChange={[Function]}
                   placeholder="Othernames"
-                  required="required"
                   type="text"
                   value=""
-                />
-                <span
-                  id="spanothernames"
                 />
               </div>
               <div
@@ -1052,12 +852,8 @@ ShallowWrapper {
                   id="phonenumber"
                   onChange={[Function]}
                   placeholder="PhoneNumber"
-                  required="required"
                   type="text"
                   value=""
-                />
-                <span
-                  id="phone"
                 />
               </div>
             </div>
@@ -1071,12 +867,8 @@ ShallowWrapper {
                   id="email"
                   onChange={[Function]}
                   placeholder="Please enter email"
-                  required="required"
                   type="email"
                   value=""
-                />
-                <span
-                  id="vemail"
                 />
               </div>
               <div
@@ -1086,26 +878,23 @@ ShallowWrapper {
                   id="password"
                   onChange={[Function]}
                   placeholder="Password"
-                  required="required"
                   type="password"
                   value=""
-                />
-                <span
-                  id="spanpass"
                 />
               </div>
             </div>
             <select
-              id="selecttype"
+              id="type"
+              onChange={[Function]}
             >
               <option
-                id="citizen"
+                name="type"
                 value="citizen"
               >
                 Citizen
               </option>
               <option
-                id="politician"
+                name="type"
                 value="politician"
               >
                 Poitician
@@ -1116,7 +905,6 @@ ShallowWrapper {
             >
               <Input
                 id="submit-btn"
-                onChange={[Function]}
                 placeholder=""
                 type="submit"
                 value="Sign Up"
@@ -1138,10 +926,23 @@ ShallowWrapper {
               </Link>
             </p>
           </form>,
+          false,
         ],
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "options": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -1174,9 +975,6 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <span
-                id="usergen"
-              />,
               <div
                 className="wholeform"
               >
@@ -1187,12 +985,8 @@ ShallowWrapper {
                     id="firstname"
                     onChange={[Function]}
                     placeholder="First name"
-                    required="required"
                     type="text"
                     value=""
-                  />
-                  <span
-                    id="spanfirstname"
                   />
                 </div>
                 <div
@@ -1202,12 +996,8 @@ ShallowWrapper {
                     id="lastname"
                     onChange={[Function]}
                     placeholder="Last name"
-                    required="required"
                     type="text"
                     value=""
-                  />
-                  <span
-                    id="spanlastname"
                   />
                 </div>
               </div>,
@@ -1221,12 +1011,8 @@ ShallowWrapper {
                     id="othernames"
                     onChange={[Function]}
                     placeholder="Othernames"
-                    required="required"
                     type="text"
                     value=""
-                  />
-                  <span
-                    id="spanothernames"
                   />
                 </div>
                 <div
@@ -1236,12 +1022,8 @@ ShallowWrapper {
                     id="phonenumber"
                     onChange={[Function]}
                     placeholder="PhoneNumber"
-                    required="required"
                     type="text"
                     value=""
-                  />
-                  <span
-                    id="phone"
                   />
                 </div>
               </div>,
@@ -1255,12 +1037,8 @@ ShallowWrapper {
                     id="email"
                     onChange={[Function]}
                     placeholder="Please enter email"
-                    required="required"
                     type="email"
                     value=""
-                  />
-                  <span
-                    id="vemail"
                   />
                 </div>
                 <div
@@ -1270,26 +1048,23 @@ ShallowWrapper {
                     id="password"
                     onChange={[Function]}
                     placeholder="Password"
-                    required="required"
                     type="password"
                     value=""
-                  />
-                  <span
-                    id="spanpass"
                   />
                 </div>
               </div>,
               <select
-                id="selecttype"
+                id="type"
+                onChange={[Function]}
               >
                 <option
-                  id="citizen"
+                  name="type"
                   value="citizen"
                 >
                   Citizen
                 </option>
                 <option
-                  id="politician"
+                  name="type"
                   value="politician"
                 >
                   Poitician
@@ -1300,7 +1075,6 @@ ShallowWrapper {
               >
                 <Input
                   id="submit-btn"
-                  onChange={[Function]}
                   placeholder=""
                   type="submit"
                   value="Sign Up"
@@ -1324,23 +1098,13 @@ ShallowWrapper {
             ],
             "className": "signbox",
             "id": "signup-form",
+            "onSubmit": [Function],
             "style": Object {
               "marginTop": "56px",
             },
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "id": "usergen",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "span",
-            },
             Object {
               "instance": null,
               "key": undefined,
@@ -1354,12 +1118,8 @@ ShallowWrapper {
                       id="firstname"
                       onChange={[Function]}
                       placeholder="First name"
-                      required="required"
                       type="text"
                       value=""
-                    />
-                    <span
-                      id="spanfirstname"
                     />
                   </div>,
                   <div
@@ -1369,12 +1129,8 @@ ShallowWrapper {
                       id="lastname"
                       onChange={[Function]}
                       placeholder="Last name"
-                      required="required"
                       type="text"
                       value=""
-                    />
-                    <span
-                      id="spanlastname"
                     />
                   </div>,
                 ],
@@ -1387,51 +1143,31 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <Input
-                        id="firstname"
-                        onChange={[Function]}
-                        placeholder="First name"
-                        required="required"
-                        type="text"
-                        value=""
-                      />,
-                      <span
-                        id="spanfirstname"
-                      />,
-                    ],
+                    "children": <Input
+                      id="firstname"
+                      onChange={[Function]}
+                      placeholder="First name"
+                      type="text"
+                      value=""
+                    />,
                     "className": "formgroup",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "id": "firstname",
-                        "onChange": [Function],
-                        "placeholder": "First name",
-                        "required": "required",
-                        "type": "text",
-                        "value": "",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "id": "firstname",
+                      "onChange": [Function],
+                      "placeholder": "First name",
+                      "type": "text",
+                      "value": "",
                     },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "id": "spanfirstname",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "span",
-                    },
-                  ],
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
                   "type": "div",
                 },
                 Object {
@@ -1439,51 +1175,31 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <Input
-                        id="lastname"
-                        onChange={[Function]}
-                        placeholder="Last name"
-                        required="required"
-                        type="text"
-                        value=""
-                      />,
-                      <span
-                        id="spanlastname"
-                      />,
-                    ],
+                    "children": <Input
+                      id="lastname"
+                      onChange={[Function]}
+                      placeholder="Last name"
+                      type="text"
+                      value=""
+                    />,
                     "className": "formgroup",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "id": "lastname",
-                        "onChange": [Function],
-                        "placeholder": "Last name",
-                        "required": "required",
-                        "type": "text",
-                        "value": "",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "id": "lastname",
+                      "onChange": [Function],
+                      "placeholder": "Last name",
+                      "type": "text",
+                      "value": "",
                     },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "id": "spanlastname",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "span",
-                    },
-                  ],
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
                   "type": "div",
                 },
               ],
@@ -1502,12 +1218,8 @@ ShallowWrapper {
                       id="othernames"
                       onChange={[Function]}
                       placeholder="Othernames"
-                      required="required"
                       type="text"
                       value=""
-                    />
-                    <span
-                      id="spanothernames"
                     />
                   </div>,
                   <div
@@ -1517,12 +1229,8 @@ ShallowWrapper {
                       id="phonenumber"
                       onChange={[Function]}
                       placeholder="PhoneNumber"
-                      required="required"
                       type="text"
                       value=""
-                    />
-                    <span
-                      id="phone"
                     />
                   </div>,
                 ],
@@ -1535,51 +1243,31 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <Input
-                        id="othernames"
-                        onChange={[Function]}
-                        placeholder="Othernames"
-                        required="required"
-                        type="text"
-                        value=""
-                      />,
-                      <span
-                        id="spanothernames"
-                      />,
-                    ],
+                    "children": <Input
+                      id="othernames"
+                      onChange={[Function]}
+                      placeholder="Othernames"
+                      type="text"
+                      value=""
+                    />,
                     "className": "formgroup",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "id": "othernames",
-                        "onChange": [Function],
-                        "placeholder": "Othernames",
-                        "required": "required",
-                        "type": "text",
-                        "value": "",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "id": "othernames",
+                      "onChange": [Function],
+                      "placeholder": "Othernames",
+                      "type": "text",
+                      "value": "",
                     },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "id": "spanothernames",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "span",
-                    },
-                  ],
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
                   "type": "div",
                 },
                 Object {
@@ -1587,51 +1275,31 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <Input
-                        id="phonenumber"
-                        onChange={[Function]}
-                        placeholder="PhoneNumber"
-                        required="required"
-                        type="text"
-                        value=""
-                      />,
-                      <span
-                        id="phone"
-                      />,
-                    ],
+                    "children": <Input
+                      id="phonenumber"
+                      onChange={[Function]}
+                      placeholder="PhoneNumber"
+                      type="text"
+                      value=""
+                    />,
                     "className": "formgroup",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "id": "phonenumber",
-                        "onChange": [Function],
-                        "placeholder": "PhoneNumber",
-                        "required": "required",
-                        "type": "text",
-                        "value": "",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "id": "phonenumber",
+                      "onChange": [Function],
+                      "placeholder": "PhoneNumber",
+                      "type": "text",
+                      "value": "",
                     },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "id": "phone",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "span",
-                    },
-                  ],
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
                   "type": "div",
                 },
               ],
@@ -1650,12 +1318,8 @@ ShallowWrapper {
                       id="email"
                       onChange={[Function]}
                       placeholder="Please enter email"
-                      required="required"
                       type="email"
                       value=""
-                    />
-                    <span
-                      id="vemail"
                     />
                   </div>,
                   <div
@@ -1665,12 +1329,8 @@ ShallowWrapper {
                       id="password"
                       onChange={[Function]}
                       placeholder="Password"
-                      required="required"
                       type="password"
                       value=""
-                    />
-                    <span
-                      id="spanpass"
                     />
                   </div>,
                 ],
@@ -1683,51 +1343,31 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <Input
-                        id="email"
-                        onChange={[Function]}
-                        placeholder="Please enter email"
-                        required="required"
-                        type="email"
-                        value=""
-                      />,
-                      <span
-                        id="vemail"
-                      />,
-                    ],
+                    "children": <Input
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Please enter email"
+                      type="email"
+                      value=""
+                    />,
                     "className": "formgroup",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "id": "email",
-                        "onChange": [Function],
-                        "placeholder": "Please enter email",
-                        "required": "required",
-                        "type": "email",
-                        "value": "",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "id": "email",
+                      "onChange": [Function],
+                      "placeholder": "Please enter email",
+                      "type": "email",
+                      "value": "",
                     },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "id": "vemail",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "span",
-                    },
-                  ],
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
                   "type": "div",
                 },
                 Object {
@@ -1735,51 +1375,31 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": Array [
-                      <Input
-                        id="password"
-                        onChange={[Function]}
-                        placeholder="Password"
-                        required="required"
-                        type="password"
-                        value=""
-                      />,
-                      <span
-                        id="spanpass"
-                      />,
-                    ],
+                    "children": <Input
+                      id="password"
+                      onChange={[Function]}
+                      placeholder="Password"
+                      type="password"
+                      value=""
+                    />,
                     "className": "formgroup",
                   },
                   "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "function",
-                      "props": Object {
-                        "id": "password",
-                        "onChange": [Function],
-                        "placeholder": "Password",
-                        "required": "required",
-                        "type": "password",
-                        "value": "",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": [Function],
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "id": "password",
+                      "onChange": [Function],
+                      "placeholder": "Password",
+                      "type": "password",
+                      "value": "",
                     },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "id": "spanpass",
-                      },
-                      "ref": null,
-                      "rendered": null,
-                      "type": "span",
-                    },
-                  ],
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
                   "type": "div",
                 },
               ],
@@ -1792,19 +1412,20 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <option
-                    id="citizen"
+                    name="type"
                     value="citizen"
                   >
                     Citizen
                   </option>,
                   <option
-                    id="politician"
+                    name="type"
                     value="politician"
                   >
                     Poitician
                   </option>,
                 ],
-                "id": "selecttype",
+                "id": "type",
+                "onChange": [Function],
               },
               "ref": null,
               "rendered": Array [
@@ -1814,7 +1435,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Citizen",
-                    "id": "citizen",
+                    "name": "type",
                     "value": "citizen",
                   },
                   "ref": null,
@@ -1827,7 +1448,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Poitician",
-                    "id": "politician",
+                    "name": "type",
                     "value": "politician",
                   },
                   "ref": null,
@@ -1844,7 +1465,6 @@ ShallowWrapper {
               "props": Object {
                 "children": <Input
                   id="submit-btn"
-                  onChange={[Function]}
                   placeholder=""
                   type="submit"
                   value="Sign Up"
@@ -1858,7 +1478,6 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "id": "submit-btn",
-                  "onChange": [Function],
                   "placeholder": "",
                   "type": "submit",
                   "value": "Sign Up",
@@ -1909,6 +1528,7 @@ ShallowWrapper {
           ],
           "type": "form",
         },
+        false,
       ],
       "type": Symbol(react.fragment),
     },

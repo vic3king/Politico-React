@@ -29,8 +29,8 @@ NavBar.defaultProps = {
   LiTagTwo: (PropTypes.defaultProps = ''),
 };
 NavBar.propTypes = {
-  LiTagOne: PropTypes.object,
-  LiTagTwo: PropTypes.object,
+  LiTagOne: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  LiTagTwo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
 
 export default NavBar;
