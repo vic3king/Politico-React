@@ -1,0 +1,115 @@
+.modal-main {
+  background: #943939;
+  color: black;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.select-box {
+  border: 0.08rem solid #00000033;
+  block-size: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  color: black;
+}
+
+.input {
+  border: 0.08rem solid #00000033;
+  block-size: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.office-btn {
+  border: 2px solid #f5f6fa;
+  padding: 7px 38px;
+  color: #f5f6fa;
+  margin-left: 39%;
+  cursor: pointer;
+  background: #005f6b;
+  letter-spacing: 1px;
+  animation: shadow-pulse 1s infinite;
+}
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+// new changes
+section.modal-main {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: fit-content;
+  z-index: 9999;
+  background: #e6e6e6;
+}
+.page-modal-title {
+  margin: 0;
+  text-align: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#selecttype {
+  margin: 0;
+  border: 0.08rem solid #00000033;
+  block-size: 5px;
+  background-color: #fff;
+  font-size: 12px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  color: #000;
+}
+
+input#officename,
+input#age {
+  border: 0.08rem solid #00000033;
+  block-size: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.cte-off {
+  border: 2px solid #f5f6fa;
+  padding: 10px 0;
+  color: #f5f6fa;
+  cursor: pointer;
+  background: #005f6b;
+  letter-spacing: 1px;
+  animation: shadow-pulse 1s infinite;
+  width: 25%;
+  margin: 10px auto;
+}
+
+button#btn {
+  top: 0;
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+}
+
+.fix {
+  margin: 10px 0;
+}

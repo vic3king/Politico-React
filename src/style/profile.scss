@@ -1,0 +1,70 @@
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 19px;
+}
+
+#grid__two {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 19px;
+}
+
+.card {
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 0 12px black;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.num {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 60px;
+  margin-top: -17px;
+}
+
+.card__two {
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 0 12px black;
+  background-color: whitesmoke;
+  color: black;
+  width: 250px;
+}
+
+.party__image2 {
+  background-image: url(https://res.cloudinary.com/dnch08bzc/image/upload/v1549601270/downloadx.png);
+  background-size: cover;
+  height: 162px;
+  background-repeat: no-repeat;
+}
+
+.card__details {
+  text-align: left;
+  width: 85%;
+}
+
+.edit-btn {
+  font-size: 19px;
+  float: left;
+  background-color: #1a3c1a;
+  width: 45%;
+  border: 0px solid #f5f6fa;
+  color: #f5f6fa;
+  cursor: pointer;
+}
+
+.delete-record {
+  font-size: 19px;
+  float: right;
+  background-color: #b82020;
+  width: 45%;
+  outline: none;
+  border: 0px solid #f5f6fa;
+  color: #f5f6fa;
+  cursor: pointer;
+}
