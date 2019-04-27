@@ -5,25 +5,38 @@ import LiTag from '../../shared/Buttons/LI-tag';
 import SideBar from '../../shared/SideBar/SideBar';
 import TopCard from '../../shared/Cards/Profile-card-1';
 import BottomCard from '../../shared/Cards/Profile-card-2';
-import OfficeModal from '../../Modals/Office-modal';
+import OfficeModal from '../../Modals/OfficeModal';
+import PartyModal from '../../Modals/PartyModal';
 import '../../../style/admin.scss';
 
 class AdminPage extends Component {
-  state = { showModal: false };
-
-  showModal = () => {
-    this.setState({ showModal: true });
+  state = {
+    showPartyModal: false,
+    showOfficeModal: false,
   };
 
-  hideModal = () => {
-    this.setState({ showModal: false });
+  showOfficeModal = () => {
+    this.setState({ showOfficeModal: true, showPartyModal: false });
+  };
+
+  hideOfficeModal = () => {
+    this.setState({ showOfficeModal: false });
+  };
+
+  showPartyModal = () => {
+    this.setState({ showPartyModal: true, showOfficeModal: false });
+  };
+
+  hidePartyModal = () => {
+    this.setState({ showPartyModal: false });
   };
 
   render() {
-    const { showModal } = this.state;
+    const { showOfficeModal, showPartyModal } = this.state;
     return (
       <React.Fragment>
-        {showModal && <OfficeModal hide={this.hideModal} />}
+        {showOfficeModal && <OfficeModal hide={this.hideOfficeModal} />}
+        {showPartyModal && <PartyModal hide={this.hidePartyModal} />}
         <NavBar
           LiTagOne={<LiTag to="/home" value="Home" />}
           LiTagTwo={<LiTag to="/logout" value="Logout" />}
@@ -35,11 +48,16 @@ class AdminPage extends Component {
                 id="offic"
                 value="Add Office"
                 className="profile-btn"
-                onClick={this.showModal}
+                onClick={this.showOfficeModal}
               />
             }
             ButtonTwo={
-              <Button id="party" value="Add Party" className="profile-btn" />
+              <Button
+                id="party"
+                value="Add Party"
+                className="profile-btn"
+                onClick={this.showPartyModal}
+              />
             }
             ButtonThree={
               <Button id="results" value="Results" className="profile-btn" />

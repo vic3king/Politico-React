@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ErrorPage from '../../../components/NotFound-404/pagenotfound';
+import ErrorPage from '../../../components/NotFound-404/Pagenotfound';
 
 describe('HomePage component', () => {
   it('should match snapshot', () => {

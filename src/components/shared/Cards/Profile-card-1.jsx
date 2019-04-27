@@ -11,31 +11,6 @@ const ProfileTopSectionCard = ({ Button }) => {
           <p className="num">0</p>
           {Button}
         </div>
-        <div className="card">
-          <h6>Local Government Chairman</h6>
-          <p className="num">0</p>
-          {Button}
-        </div>
-        <div className="card">
-          <h6>Local Government Chairman</h6>
-          <p className="num">0</p>
-          {Button}
-        </div>
-        <div className="card">
-          <h6>Local Government Chairman</h6>
-          <p className="num">0</p>
-          {Button}
-        </div>
-        <div className="card">
-          <h6>Local Government Chairman</h6>
-          <p className="num">0</p>
-          {Button}
-        </div>
-        <div className="card">
-          <h6>Local Government Chairman</h6>
-          <p className="num">0</p>
-          {Button}
-        </div>
       </div>
     </React.Fragment>
   );

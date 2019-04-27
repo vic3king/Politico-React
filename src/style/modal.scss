@@ -1,8 +1,14 @@
 .modal-main {
-  background: #943939;
-  color: black;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 50%;
-  margin: 0 auto;
+  height: fit-content;
+  z-index: 9999;
+  background: #e6e6e6;
 }
 
 .select-box {
@@ -44,19 +50,6 @@
   display: none;
 }
 
-// new changes
-section.modal-main {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: fit-content;
-  z-index: 9999;
-  background: #e6e6e6;
-}
 .page-modal-title {
   margin: 0;
   text-align: center;
@@ -81,7 +74,10 @@ section.modal-main {
 }
 
 input#officename,
-input#age {
+input#age,
+input#name,
+input#address,
+input#logo {
   border: 0.08rem solid #00000033;
   block-size: 5px;
   background-color: #fff;
@@ -112,4 +108,57 @@ button#btn {
 
 .fix {
   margin: 10px 0;
+}
+.modalDelete {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: fit-content;
+  background-color: #005f6b;
+  padding: 20px;
+  width: 50%;
+  color: white;
+  text-align: center;
+}
+.modalyes {
+  font-size: 15px;
+  background-color: rgb(184, 32, 32);
+  outline: none;
+  border: 2px solid #f5f6fa;
+  padding: 2px 30px;
+  cursor: pointer;
+}
+
+.modalno {
+  font-size: 15px;
+  background-color: rgb(26, 60, 26);
+  outline: none;
+  border: 2px solid #f5f6fa;
+  padding: 2px 30px;
+  cursor: pointer;
+}
+
+.modalno:hover {
+  background-color: rgb(62, 245, 62);
+  color: #f5f6fa;
+}
+
+.modalyes:hover {
+  background-color: rgb(228, 13, 13);
+  color: #f5f6fa;
+}
+
+.modal-close {
+  background-color: #005f6b;
+  color: white;
+  margin-right: 2px;
+  outline: none;
+  border: 0;
+  top: 0;
+  position: absolute;
+  right: 0;
+  font-size: 30px;
 }
