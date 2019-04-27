@@ -1,8 +1,7 @@
-/* eslint-disable react/forbid-prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import '../../../style/navbar.scss';
-import PropTypes from 'prop-types';
 
 const NavBar = ({ LiTagOne, LiTagTwo }) => {
   return (

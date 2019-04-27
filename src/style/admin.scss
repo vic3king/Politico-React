@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.boxed {
+  width: 78%;
+  position: relative;
+  left: 20%;
+}
+
+.page-title {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  margin-top: 100px;
+}
+
+hr {
+  width: 8%;
+  background-color: #005f6b;
+  margin: 0 auto;
+  font-weight: 208px;
+  border-bottom: 3px solid;
+}
+
+#admin-office-card {
+  border: 2px solid #f5f6fa;
+  padding: 7px 40px;
+  color: #f5f6fa;
+  cursor: pointer;
+  margin-top: -31px;
+  background: #005f6b;
+  margin-bottom: 11px;
+}

@@ -45,7 +45,7 @@ class Signup extends Component {
   };
 
   render() {
-    const { signUpDetatils, loading, canRedirect, type } = this.state;
+    const { signUpDetatils, loading, canRedirect } = this.state;
     return (
       <React.Fragment>
         <Notifications />
