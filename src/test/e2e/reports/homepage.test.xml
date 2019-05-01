@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="homepage.test"
+    errors="1" failures="0" hostname="" id="" package="homepage.test" skipped="1"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+
+  
+    
+    <testcase
+      name="Title is Politico" classname="homepage.test">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

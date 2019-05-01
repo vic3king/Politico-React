@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="homepage.test"
+    errors="0" failures="1" hostname="" id="" package="homepage.test" skipped="0"
+    tests="1" time="5.074" timestamp="">
+  
+    <testcase name="Title is Politico" classname="homepage.test" time="5.074" assertions="1">  <failure message="Timed out while waiting for element &lt;body&gt; to be present for 5000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not found&#34;[0m">    at Object.Title is Politico (/Users/akanniruvictory/Documents/Politico-React/src/test/e2e/homepage.test.js:6:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+
+    <failure message="    at Object.Title is Politico (/Users/akanniruvictory/Documents/Politico-React/src/test/e2e/homepage.test.js:6:10)">    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
