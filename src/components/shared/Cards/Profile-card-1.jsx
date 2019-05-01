@@ -1,27 +1,43 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import Button from '../Buttons/Button';
 import '../../../style/profile.scss';
+import Offices from '../../../services/offices';
+import Loader from '../Loader/Loader';
+import capitalizer from '../../../helpers/capitalizer';
 
-const ProfileTopSectionCard = ({ Button }) => {
-  return (
-    <React.Fragment>
-      <div id="grid">
-        <div className="card">
-          <h6>Local Government Chairman</h6>
-          <p className="num">0</p>
-          {Button}
-        </div>
+class ProfileTopSectionCard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      offices: [],
+      loading: true,
+    };
+  }
+
+  componentDidMount = async () => {
+    const allOffices = await Offices.getAllOffices();
+    this.setState({ offices: allOffices.data, loading: false });
+  };
+
+  render() {
+    const { offices, loading } = this.state;
+    const listOfOffices = offices.map(office => (
+      <div key={office.id} className="card">
+        <h6>
+          {capitalizer(office.name)}({capitalizer(office.type)})
+        </h6>
+        <p className="num">0</p>
+        <Button id="admin-office-card" value="View" />
       </div>
-    </React.Fragment>
-  );
-};
+    ));
 
-ProfileTopSectionCard.defaultProps = {
-  Button: (PropTypes.defaultProps = ''),
-};
-
-ProfileTopSectionCard.propTypes = {
-  Button: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-};
+    return (
+      <React.Fragment>
+        {loading && <Loader />}
+        <div id="grid">{listOfOffices}</div>
+      </React.Fragment>
+    );
+  }
+}
 
 export default ProfileTopSectionCard;

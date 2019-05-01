@@ -61,7 +61,7 @@
   padding: 20px;
 }
 
-#selecttype {
+#type {
   margin: 0;
   border: 0.08rem solid #00000033;
   block-size: 5px;
@@ -73,11 +73,11 @@
   color: #000;
 }
 
-input#officename,
-input#age,
+input#officeName,
+input#ageLimit,
 input#name,
-input#address,
-input#logo {
+input#hqAddress,
+input#logoUrl {
   border: 0.08rem solid #00000033;
   block-size: 5px;
   background-color: #fff;

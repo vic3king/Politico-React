@@ -1,26 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Select = () => {
+const Select = props => {
+  const { onChange } = props;
+
   return (
-    <select id="selecttype">
-      <option value="federal" id="citizen">
+    <select id="type" onChange={onChange}>
+      <option name="type" value="federal">
         federal
       </option>
-      <option value="legislative" id="politician">
+      <option name="type" value="legislative">
         legislative
       </option>
-      <option value="state" id="state">
+      <option name="type" value="state">
         state
       </option>
-      <option value="local-government" id="politician">
+      <option name="type" value="local-government">
         local-government
       </option>
     </select>
   );
 };
 
-Select.prototypec = {
-  text: PropTypes.string.isRequired,
+Select.propTypes = {
+  onChange: PropTypes.func.isRequired,
 };
+
 export default Select;

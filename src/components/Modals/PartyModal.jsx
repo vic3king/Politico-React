@@ -1,33 +1,44 @@
 import React, { Component } from 'react';
+import Notifications, { notify } from 'react-notify-toast';
 import Modal from '../shared/Modal/Modal';
 import Input from '../shared/InputFields/Input';
 import Button from '../shared/Buttons/Button';
 import Span from '../shared/Span/Span';
 import Header from '../shared/Header/Header';
+import Party from '../../services/parties';
+import Loader from '../shared/Loader/Loader';
+import errorHandler from '../../helpers/errorHandler';
 
 class PartyModal extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      formDetails: {
-        name: '',
-        address: '',
-        logo: '',
-      },
-      //   loading: false,
-      //   canRedirect: false,
-      //   isAdmin: false,
+      PartyformDetails: {},
+      loading: false,
     };
   }
 
   onInputChange = event => {
-    const { formDetails } = this.state;
-    formDetails[event.target.id] = event.target.value;
-    this.setState({ formDetails });
+    const { PartyformDetails } = this.state;
+    PartyformDetails[event.target.id] = event.target.value;
+    this.setState({ PartyformDetails });
   };
 
   onButtonSubmit = async event => {
     event.preventDefault();
+    this.setState({ loading: true });
+    const { PartyformDetails } = this.state;
+    const party = await Party.postParty(PartyformDetails);
+
+    if (party.status >= 400) {
+      this.setState({ loading: false });
+      notify.show(errorHandler(party.error), 'error');
+    }
+
+    if (party.status === 201) {
+      this.setState({ loading: false });
+      notify.show('success');
+    }
   };
 
   hide = e => {
@@ -37,58 +48,62 @@ class PartyModal extends Component {
   };
 
   render() {
-    const { formDetails } = this.state;
+    const { PartyformDetails, loading } = this.state;
     return (
-      <Modal
-        Header={<Header text="Create Party" />}
-        SpanOne={<Span text="Name: " />}
-        Select={
-          <Input
-            type="text"
-            id="name"
-            placeholder="what will this party be called"
-            value={formDetails.name}
-            onChange={this.onInputChange}
-            required
-          />
-        }
-        SpanTwo={<Span text="HQ Address: " />}
-        InputOne={
-          <Input
-            type="email"
-            id="address"
-            placeholder="enter your address"
-            value={formDetails.address}
-            onChange={this.onInputChange}
-            required
-          />
-        }
-        SpanThree={<Span text="Upload Logo Url" />}
-        InputTwo={
-          <Input
-            type="text"
-            id="logo"
-            value={formDetails.logo}
-            placeholder="enter a link to your logo"
-            onChange={this.onInputChange}
-            required
-          />
-        }
-        ButtonOne={
-          <Button
-            id="party-btn"
-            type="submit"
-            className="cte-off"
-            value="Create office"
-            onClick={this.onButtonSubmit}
-          />
-        }
-        CloseModal={
-          <button type="button" id="btn" onClick={this.hide}>
-            X
-          </button>
-        }
-      />
+      <React.Fragment>
+        <Notifications />
+        {loading && <Loader />}
+        <Modal
+          Header={<Header text="Create Party" />}
+          SpanOne={<Span text="Name: " />}
+          Select={
+            <Input
+              type="text"
+              id="name"
+              placeholder="what will this party be called"
+              value={PartyformDetails.name}
+              onChange={this.onInputChange}
+              required
+            />
+          }
+          SpanTwo={<Span text="HQ Address: " />}
+          InputOne={
+            <Input
+              type="text"
+              id="hqAddress"
+              placeholder="enter your address"
+              value={PartyformDetails.hqAddress}
+              onChange={this.onInputChange}
+              required
+            />
+          }
+          SpanThree={<Span text="Upload Logo Url" />}
+          InputTwo={
+            <Input
+              type="text"
+              id="logoUrl"
+              value={PartyformDetails.logoUrl}
+              placeholder="enter a link to your logo"
+              onChange={this.onInputChange}
+              required
+            />
+          }
+          ButtonOne={
+            <Button
+              id="party-btn"
+              type="submit"
+              className="cte-off"
+              value="Create office"
+              onClick={this.onButtonSubmit}
+            />
+          }
+          CloseModal={
+            <button type="button" id="btn" onClick={this.hide}>
+              X
+            </button>
+          }
+        />
+      </React.Fragment>
     );
   }
 }
