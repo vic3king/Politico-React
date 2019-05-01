@@ -1,4 +1,4 @@
-const currApiEndpoint = 'https://radiant-retreat-64120.herokuapp.com/api/v1';
+import { apiUrlHeroku } from '../config/config.json';
 
 const auth = (type = 'login', formData) => {
   const fetchConfig = {
@@ -11,7 +11,7 @@ const auth = (type = 'login', formData) => {
   };
 
   return window
-    .fetch(`${currApiEndpoint}/auth/${type}`, fetchConfig)
+    .fetch(`${apiUrlHeroku}/auth/${type}`, fetchConfig)
     .then(resp => resp.json())
     .then(resp => resp)
     .catch(err => err);

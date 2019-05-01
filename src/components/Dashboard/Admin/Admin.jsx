@@ -72,9 +72,7 @@ class AdminPage extends Component {
                   <hr />
                 </h4>
               </div>
-              <TopCard
-                Button={<Button id="admin-office-card" value="View" />}
-              />
+              <TopCard />
             </section>
             <section className="maim-section">
               <div>

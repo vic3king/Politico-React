@@ -7,7 +7,7 @@ const ProfileDetails = ({ className }) => {
       <p id="fullname">Fullname: akaniru victory</p>
       <p id="email">Email: victory@yahoo.com</p>
       <p id="phonenumber">Phonenumber: +234-445754784</p>
-      <p id="type">Status: admin</p>
+      <p id="typ">Status: admin</p>
     </div>
   );
 };
