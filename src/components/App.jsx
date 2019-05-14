@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import ErrorPage from './NotFound-404/pagenotfound';
+import ErrorPage from './NotFound-404/Pagenotfound';
 import HomePage from './Home/Home';
 import Signup from './Registration/Signup';
 import Login from './Registration/Login';

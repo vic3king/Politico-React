@@ -21,31 +21,10 @@ class ResultsModal extends Component {
     hide();
   };
 
-  // results = async () => {
-  //   this.setState({ loading: true });
-
-  //   const { officeId } = this.props;
-  //   const results = await Results.getResults(officeId);
-
-  //   this.setState({ results: results.data })
-
-  //   if (results.status >= 400) {
-  //     this.setState({ loading: false });
-  //     notify.show(errorHandler(results.error), 'error');
-  //   }
-
-  //   if (results.status === 200) {
-  //     this.setState({ loading: false });
-  //     notify.show('success');
-  //   }
-  // };
-
   componentDidMount = async () => {
     this.setState({ loading: true });
     const { officeId } = this.props;
     const results = await Results.getResults(officeId);
-
-    console.log(results.data.length);
 
     if (results.data.length < 1) {
       this.setState({ loading: false });
