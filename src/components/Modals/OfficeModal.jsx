@@ -14,7 +14,7 @@ class OffficeModal extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      OfficeformDetails: {},
+      OfficeformDetails: { type: 'federal' },
       loading: false,
     };
   }

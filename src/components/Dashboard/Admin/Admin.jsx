@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import NavBar from '../../shared/NavBar/Navbar';
 import Button from '../../shared/Buttons/Button';
 import LiTag from '../../shared/Buttons/LI-tag';
@@ -60,7 +61,9 @@ class AdminPage extends Component {
               />
             }
             ButtonThree={
-              <Button id="results" value="Results" className="profile-btn" />
+              <Link to="/results">
+                <Button id="results" value="Results" className="profile-btn" />
+              </Link>
             }
             to="results"
           />
