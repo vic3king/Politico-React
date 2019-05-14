@@ -39,6 +39,10 @@ ShallowWrapper {
           />
           <Route
             component={[Function]}
+            path="/results"
+          />
+          <Route
+            component={[Function]}
             path="/error"
           />
           <Route
@@ -77,6 +81,10 @@ ShallowWrapper {
           />
           <Route
             component={[Function]}
+            path="/results"
+          />
+          <Route
+            component={[Function]}
             path="/error"
           />
           <Route
@@ -111,6 +119,10 @@ ShallowWrapper {
             <Route
               component={[Function]}
               path="/admin-dashboard"
+            />,
+            <Route
+              component={[Function]}
+              path="/results"
             />,
             <Route
               component={[Function]}
@@ -171,6 +183,18 @@ ShallowWrapper {
             "props": Object {
               "component": [Function],
               "path": "/admin-dashboard",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/results",
             },
             "ref": null,
             "rendered": null,
@@ -245,6 +269,10 @@ ShallowWrapper {
             />
             <Route
               component={[Function]}
+              path="/results"
+            />
+            <Route
+              component={[Function]}
               path="/error"
             />
             <Route
@@ -283,6 +311,10 @@ ShallowWrapper {
             />
             <Route
               component={[Function]}
+              path="/results"
+            />
+            <Route
+              component={[Function]}
               path="/error"
             />
             <Route
@@ -317,6 +349,10 @@ ShallowWrapper {
               <Route
                 component={[Function]}
                 path="/admin-dashboard"
+              />,
+              <Route
+                component={[Function]}
+                path="/results"
               />,
               <Route
                 component={[Function]}
@@ -377,6 +413,18 @@ ShallowWrapper {
               "props": Object {
                 "component": [Function],
                 "path": "/admin-dashboard",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/results",
               },
               "ref": null,
               "rendered": null,
