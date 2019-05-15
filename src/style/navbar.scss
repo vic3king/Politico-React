@@ -3,13 +3,13 @@
   width: 100%;
   padding: 8px 16px;
   height: 62px;
-  position: fixed;
+  position: sticky;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   top: 0;
-  // z-index: 9999;
+  z-index: 1;
 }
 
 .main-header {

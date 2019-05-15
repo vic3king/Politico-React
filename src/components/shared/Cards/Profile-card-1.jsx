@@ -27,7 +27,7 @@ class ProfileTopSectionCard extends Component {
           {capitalizer(office.name)}({capitalizer(office.type)})
         </h6>
         <p className="num">0</p>
-        <Button id="admin-office-card" value="View" />
+        <Button className="admin-office-card" value="View" />
       </div>
     ));
 
