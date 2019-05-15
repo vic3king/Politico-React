@@ -32,6 +32,8 @@ class AdminPage extends Component {
   };
 
   render() {
+    const user = JSON.parse(localStorage.user);
+
     const { showOfficeModal, showPartyModal } = this.state;
     return (
       <React.Fragment>
@@ -43,6 +45,7 @@ class AdminPage extends Component {
         />
         <div className="main">
           <SideBar
+            user={user}
             ButtonOne={
               <Button
                 id="offic"
