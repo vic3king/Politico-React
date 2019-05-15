@@ -11,9 +11,6 @@ class UpdatePartyModal extends Component {
       formDetails: {
         name: '',
       },
-      //   loading: false,
-      //   canRedirect: false,
-      //   isAdmin: false,
     };
   }
 

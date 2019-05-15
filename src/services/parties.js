@@ -32,7 +32,25 @@ const postParty = formData => {
     .catch(err => err);
 };
 
+const deleteParty = partyId => {
+  const fetchConfig = {
+    method: 'DELETE',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+      'x-access-token': localStorage.token,
+    },
+  };
+
+  return window
+    .fetch(`${apiUrlHeroku}/parties/${partyId}`, fetchConfig)
+    .then(resp => resp.json())
+    .then(resp => resp)
+    .catch(err => err);
+};
+
 export default {
   getAllParties,
   postParty,
+  deleteParty,
 };

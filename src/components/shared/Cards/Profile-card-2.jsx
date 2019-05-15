@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import '../../../style/profile.scss';
+import Notifications, { notify } from 'react-notify-toast';
 import Button from '../Buttons/Button';
 import UpdatePartyModal from '../../Modals/UpdatePartyModal';
 import DeleteModal from '../../Modals/DeletePartyModal';
 import Parties from '../../../services/parties';
+import Loader from '../Loader/Loader';
+import errorHandler from '../../../helpers/errorHandler';
+import '../../../style/profile.scss';
 
 class ProfileBottomSectionCard extends Component {
   constructor(props) {
@@ -12,6 +15,8 @@ class ProfileBottomSectionCard extends Component {
       parties: [],
       showUpdateModal: false,
       showDeleteModal: false,
+      loading: false,
+      partyId: null,
     };
   }
 
@@ -28,16 +33,47 @@ class ProfileBottomSectionCard extends Component {
     this.setState({ showUpdateModal: false });
   };
 
-  showDeleteModal = () => {
-    this.setState({ showDeleteModal: true, showUpdateModal: false });
+  showDeleteModal = e => {
+    this.setState({
+      showDeleteModal: true,
+      showUpdateModal: false,
+      partyId: e.target.id,
+    });
   };
 
   hideDeleteModal = () => {
     this.setState({ showDeleteModal: false });
   };
 
+  handleDelete = async () => {
+    this.setState({ loading: true });
+    const { partyId } = this.state;
+    const party = await Parties.deleteParty(partyId);
+
+    if (party.status >= 400) {
+      this.setState({ loading: false });
+      notify.show(errorHandler(party.error), 'error');
+    }
+
+    if (party.status === 200) {
+      this.setState({ loading: false });
+      const { parties } = this.state;
+      notify.show(party.message);
+      const newParties = parties.filter(
+        singleParty => singleParty.id !== parseInt(partyId, 10)
+      );
+      this.setState({ parties: newParties, showDeleteModal: false });
+    }
+  };
+
   render() {
-    const { showUpdateModal, showDeleteModal, parties } = this.state;
+    const {
+      showUpdateModal,
+      showDeleteModal,
+      parties,
+      partyId,
+      loading,
+    } = this.state;
 
     const listOfParties = parties.map(party => (
       <div key={party.id} className="card__two">
@@ -57,13 +93,13 @@ class ProfileBottomSectionCard extends Component {
         </div>
         <div>
           <Button
-            id="edit-name"
+            id={party.id}
             className="edit-btn"
             value="Edit"
             onClick={this.showUpdateModal}
           />
           <Button
-            id="edit-name"
+            id={party.id}
             className="delete-record"
             value="Delete"
             onClick={this.showDeleteModal}
@@ -73,8 +109,16 @@ class ProfileBottomSectionCard extends Component {
     ));
     return (
       <React.Fragment>
+        <Notifications />
+        {loading && <Loader />}
         {showUpdateModal && <UpdatePartyModal hide={this.hideUpdateModal} />}
-        {showDeleteModal && <DeleteModal hide={this.hideDeleteModal} />}
+        {showDeleteModal && (
+          <DeleteModal
+            hide={this.hideDeleteModal}
+            handleDelete={this.handleDelete}
+            partyId={partyId}
+          />
+        )}
         <div id="grid__two">{listOfParties}</div>
       </React.Fragment>
     );
