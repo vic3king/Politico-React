@@ -37,6 +37,9 @@ class PartyModal extends Component {
 
     if (party.status === 201) {
       this.setState({ loading: false });
+      const { updatePartiesState, hide } = this.props;
+      updatePartiesState(party.data);
+      hide();
       notify.show('success');
     }
   };

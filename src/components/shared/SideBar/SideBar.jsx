@@ -5,12 +5,12 @@ import '../../../style/sidebar.scss';
 import ProfileImage from '../Profile/ProfileImage';
 import ProfileDetails from '../Profile/ProfileDetails';
 
-const SideBar = ({ ButtonOne, ButtonTwo, ButtonThree, to }) => {
+const SideBar = ({ ButtonOne, ButtonTwo, ButtonThree, to, user }) => {
   return (
     <React.Fragment>
       <div className="profile sidenav">
         <ProfileImage className="profile__image" />
-        <ProfileDetails className="profile__details" />
+        <ProfileDetails className="profile__details" user={user} />
         <br />
         <br />
         {ButtonOne}

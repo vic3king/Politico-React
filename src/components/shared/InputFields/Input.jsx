@@ -21,7 +21,7 @@ Input.propTypes = {
   id: Proptypes.string.isRequired,
   type: Proptypes.string.isRequired,
   placeholder: Proptypes.string,
-  value: Proptypes.string,
+  value: Proptypes.oneOfType([Proptypes.string, Proptypes.number]),
 };
 
 export default Input;
