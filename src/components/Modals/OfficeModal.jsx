@@ -39,6 +39,9 @@ class OffficeModal extends Component {
 
     if (office.status === 201) {
       this.setState({ loading: false });
+      const { updateOfficesState, hide } = this.props;
+      updateOfficesState(office.data);
+      hide();
       notify.show('success');
     }
   };
@@ -51,6 +54,7 @@ class OffficeModal extends Component {
 
   render() {
     const { OfficeformDetails, loading } = this.state;
+
     return (
       <React.Fragment>
         <Notifications />

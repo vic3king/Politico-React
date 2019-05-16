@@ -12,18 +12,12 @@ class ProfileBottomSectionCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      parties: [],
       showUpdateModal: false,
       showDeleteModal: false,
       loading: false,
       partyId: null,
     };
   }
-
-  componentDidMount = async () => {
-    const allParties = await Parties.getAllParties();
-    this.setState({ parties: allParties.data });
-  };
 
   showUpdateModal = () => {
     this.setState({ showUpdateModal: true, showDeleteModal: false });
@@ -48,6 +42,7 @@ class ProfileBottomSectionCard extends Component {
   handleDelete = async () => {
     this.setState({ loading: true });
     const { partyId } = this.state;
+
     const party = await Parties.deleteParty(partyId);
 
     if (party.status >= 400) {
@@ -57,23 +52,18 @@ class ProfileBottomSectionCard extends Component {
 
     if (party.status === 200) {
       this.setState({ loading: false });
-      const { parties } = this.state;
       notify.show(party.message);
-      const newParties = parties.filter(
-        singleParty => singleParty.id !== parseInt(partyId, 10)
-      );
-      this.setState({ parties: newParties, showDeleteModal: false });
+
+      const { updateDelete } = this.props;
+      updateDelete(partyId);
+      this.setState({ showDeleteModal: false });
     }
   };
 
   render() {
-    const {
-      showUpdateModal,
-      showDeleteModal,
-      parties,
-      partyId,
-      loading,
-    } = this.state;
+    const { showUpdateModal, showDeleteModal, partyId, loading } = this.state;
+
+    const { parties } = this.props;
 
     const listOfParties = parties.map(party => (
       <div key={party.id} className="card__two">

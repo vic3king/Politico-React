@@ -11,12 +11,12 @@ const Button = ({ value, id, className, onClick }) => {
 
 Button.defaultProps = {
   className: (PropTypes.defaultProps = ''),
-  onClick: PropTypes.func,
+  onClick: () => '',
 };
 
 Button.propTypes = {
   value: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   className: PropTypes.string,
   onClick: PropTypes.func,
 };
