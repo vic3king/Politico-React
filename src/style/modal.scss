@@ -125,6 +125,7 @@ button#btn {
 }
 .modalyes {
   font-size: 15px;
+  color: #f5f6fa;
   background-color: rgb(184, 32, 32);
   outline: none;
   border: 2px solid #f5f6fa;
@@ -134,6 +135,7 @@ button#btn {
 
 .modalno {
   font-size: 15px;
+  color: #f5f6fa;
   background-color: rgb(26, 60, 26);
   outline: none;
   border: 2px solid #f5f6fa;
@@ -141,13 +143,15 @@ button#btn {
   cursor: pointer;
 }
 
-.modalno:hover {
+.modalno:hover,
+.edit-btn:hover {
   background-color: rgb(62, 245, 62);
   color: #f5f6fa;
 }
 
-.modalyes:hover {
-  background-color: rgb(228, 13, 13);
+.modalyes:hover,
+.delete-record:hover {
+  background-color: rgb(236, 67, 67);
   color: #f5f6fa;
 }
 

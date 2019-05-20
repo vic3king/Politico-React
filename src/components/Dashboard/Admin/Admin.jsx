@@ -44,6 +44,24 @@ class AdminPage extends Component {
     this.setState({ parties: newState });
   };
 
+  updatePartiesName = (partyId, newPartyName) => {
+    const { parties } = this.state;
+    let i;
+    parties.filter((partyToUpdate, index) => {
+      if (partyToUpdate.id === Number(partyId)) {
+        i = index;
+      }
+      return i;
+    });
+
+    const newState = JSON.parse(JSON.stringify(parties));
+    newState[i].name = newPartyName;
+
+    this.setState({
+      parties: newState,
+    });
+  };
+
   updateDeletePartyState = partyId => {
     const { parties } = this.state;
     const newParties = parties.filter(
@@ -142,7 +160,10 @@ class AdminPage extends Component {
               </div>
               <BottomCard
                 parties={parties}
+                hidePartyModal={this.hidePartyModal}
+                hideOfficeModal={this.hideOfficeModal}
                 updateDelete={this.updateDeletePartyState}
+                updatePartiesName={this.updatePartiesName}
               />
             </section>
           </div>

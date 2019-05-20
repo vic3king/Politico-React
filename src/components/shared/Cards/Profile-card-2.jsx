@@ -19,8 +19,19 @@ class ProfileBottomSectionCard extends Component {
     };
   }
 
-  showUpdateModal = () => {
-    this.setState({ showUpdateModal: true, showDeleteModal: false });
+  hide = () => {
+    const { hidePartyModal, hideOfficeModal } = this.props;
+    hideOfficeModal();
+    hidePartyModal();
+  };
+
+  showUpdateModal = e => {
+    this.hide();
+    this.setState({
+      showUpdateModal: true,
+      showDeleteModal: false,
+      partyId: e.target.id,
+    });
   };
 
   hideUpdateModal = () => {
@@ -28,6 +39,7 @@ class ProfileBottomSectionCard extends Component {
   };
 
   showDeleteModal = e => {
+    this.hide();
     this.setState({
       showDeleteModal: true,
       showUpdateModal: false,
@@ -63,7 +75,7 @@ class ProfileBottomSectionCard extends Component {
   render() {
     const { showUpdateModal, showDeleteModal, partyId, loading } = this.state;
 
-    const { parties } = this.props;
+    const { parties, updatePartiesName } = this.props;
 
     const listOfParties = parties.map(party => (
       <div key={party.id} className="card__two">
@@ -101,7 +113,14 @@ class ProfileBottomSectionCard extends Component {
       <React.Fragment>
         <Notifications />
         {loading && <Loader />}
-        {showUpdateModal && <UpdatePartyModal hide={this.hideUpdateModal} />}
+        {showUpdateModal && (
+          <UpdatePartyModal
+            parties={parties}
+            hide={this.hideUpdateModal}
+            partyId={partyId}
+            updatePartiesName={updatePartiesName}
+          />
+        )}
         {showDeleteModal && (
           <DeleteModal
             hide={this.hideDeleteModal}
