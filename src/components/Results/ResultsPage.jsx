@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Notifications from 'react-notify-toast';
+import NavBar from '../shared/NavBar/Navbar';
+import LiTag from '../shared/Buttons/LI-tag';
 import Offices from '../../services/offices';
 import ResultsModal from '../Modals/ResultModal';
 import caputalizeString from '../../helpers/capitalizer';
@@ -52,6 +54,7 @@ class ResultsPage extends Component {
       <React.Fragment>
         <Notifications />
         {loading && <Loader />}
+        <NavBar LiTagOne={<LiTag to="/logout" value="Logout" />} />
         <h4 className="page-title-results">Election Results</h4>
         {showResultsModal && (
           <ResultsModal hide={this.hideResultsModal} officeId={officeId} />

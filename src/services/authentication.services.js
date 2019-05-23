@@ -17,6 +17,13 @@ const auth = (type = 'login', formData) => {
     .catch(err => err);
 };
 
+const logout = () => {
+  localStorage.removeItem('token');
+  localStorage.removeItem('user');
+  window.location = '/';
+};
+
 export default {
   auth,
+  logout,
 };
