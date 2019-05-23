@@ -12,8 +12,9 @@
     "check:lint-prettier": "npm run eslint:check && npm run prettier:check",
     "pretest": "npm run check:lint-prettier",
     "test": "jest",
+    "update-snapshot": "jest --coverage -u",
     "test:watch": "jest --watch",
-    "nightwatch": "nightwatch -e chrome ",
+    "nightwatch": "nightwatch -e chrome",
     "coveralls": "jest --coverage && cat coverage/lcov.info | coveralls"
   },
   "engines": {
