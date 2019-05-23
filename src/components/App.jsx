@@ -6,6 +6,7 @@ import Signup from './Registration/Signup';
 import Login from './Registration/Login';
 import AdminPage from './Dashboard/Admin/Admin';
 import ResultsPage from './Results/ResultsPage';
+import Logout from './Logout/Logout';
 
 class App extends Component {
   state = {};
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path="/login" component={Login} />
             <Route path="/admin-dashboard" component={AdminPage} />
             <Route path="/results" component={ResultsPage} />
+            <Route path="/logout" component={Logout} />
             <Route path="/error" component={ErrorPage} />
             <Route path="*" component={ErrorPage} />
             <Redirect to="/error" />

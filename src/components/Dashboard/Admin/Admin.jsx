@@ -112,7 +112,7 @@ class AdminPage extends Component {
           />
         )}
         <NavBar
-          LiTagOne={<LiTag to="/home" value="Home" />}
+          LiTagOne={<LiTag to="/" value="Home" />}
           LiTagTwo={<LiTag to="/logout" value="Logout" />}
         />
         <div className="main">
