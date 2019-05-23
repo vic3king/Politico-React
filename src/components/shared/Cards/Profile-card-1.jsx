@@ -10,7 +10,7 @@ class ProfileTopSectionCard extends Component {
   }
 
   render() {
-    const { offices } = this.props;
+    const { offices, value } = this.props;
     const listOfOffices = offices.map(office => (
       <div key={office.id} className="card">
         <h6>
@@ -19,7 +19,7 @@ class ProfileTopSectionCard extends Component {
         <p className="num">0</p>
         <Button
           className="admin-office-card"
-          value="View"
+          value={value}
           id="admin-office-card"
         />
       </div>

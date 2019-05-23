@@ -149,7 +149,7 @@ class AdminPage extends Component {
                   <hr />
                 </h4>
               </div>
-              <TopCard offices={offices} />
+              <TopCard value="View" offices={offices} />
             </section>
             <section className="maim-section">
               <div>
