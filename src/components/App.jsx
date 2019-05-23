@@ -5,6 +5,7 @@ import HomePage from './Home/Home';
 import Signup from './Registration/Signup';
 import Login from './Registration/Login';
 import AdminPage from './Dashboard/Admin/Admin';
+import PoliticiansPage from './Dashboard/Politicians/Politicians';
 import ResultsPage from './Results/ResultsPage';
 import Logout from './Logout/Logout';
 
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
             <Route path="/admin-dashboard" component={AdminPage} />
+            <Route path="/politicians" component={PoliticiansPage} />
             <Route path="/results" component={ResultsPage} />
             <Route path="/logout" component={Logout} />
             <Route path="/error" component={ErrorPage} />
