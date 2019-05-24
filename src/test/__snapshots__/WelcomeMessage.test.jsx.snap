@@ -39,7 +39,11 @@ ShallowWrapper {
           />
           <Route
             component={[Function]}
-            path="/politicians"
+            path="/politicians-dashboard"
+          />
+          <Route
+            component={[Function]}
+            path="/citizens-dashboard"
           />
           <Route
             component={[Function]}
@@ -89,7 +93,11 @@ ShallowWrapper {
           />
           <Route
             component={[Function]}
-            path="/politicians"
+            path="/politicians-dashboard"
+          />
+          <Route
+            component={[Function]}
+            path="/citizens-dashboard"
           />
           <Route
             component={[Function]}
@@ -138,7 +146,11 @@ ShallowWrapper {
             />,
             <Route
               component={[Function]}
-              path="/politicians"
+              path="/politicians-dashboard"
+            />,
+            <Route
+              component={[Function]}
+              path="/citizens-dashboard"
             />,
             <Route
               component={[Function]}
@@ -218,7 +230,19 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "component": [Function],
-              "path": "/politicians",
+              "path": "/politicians-dashboard",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/citizens-dashboard",
             },
             "ref": null,
             "rendered": null,
@@ -317,7 +341,11 @@ ShallowWrapper {
             />
             <Route
               component={[Function]}
-              path="/politicians"
+              path="/politicians-dashboard"
+            />
+            <Route
+              component={[Function]}
+              path="/citizens-dashboard"
             />
             <Route
               component={[Function]}
@@ -367,7 +395,11 @@ ShallowWrapper {
             />
             <Route
               component={[Function]}
-              path="/politicians"
+              path="/politicians-dashboard"
+            />
+            <Route
+              component={[Function]}
+              path="/citizens-dashboard"
             />
             <Route
               component={[Function]}
@@ -416,7 +448,11 @@ ShallowWrapper {
               />,
               <Route
                 component={[Function]}
-                path="/politicians"
+                path="/politicians-dashboard"
+              />,
+              <Route
+                component={[Function]}
+                path="/citizens-dashboard"
               />,
               <Route
                 component={[Function]}
@@ -496,7 +532,19 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "component": [Function],
-                "path": "/politicians",
+                "path": "/politicians-dashboard",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/citizens-dashboard",
               },
               "ref": null,
               "rendered": null,
