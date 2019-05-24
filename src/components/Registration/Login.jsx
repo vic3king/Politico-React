@@ -108,8 +108,10 @@ class Login extends Component {
           </p>
         </form>
         {isAdmin && canRedirect && <Redirect to="/admin-dashboard" />}
-        {isPolitician && canRedirect && <Redirect to="/politician-dashboard" />}
-        {isCitizen && canRedirect && <Redirect to="/citizen-dashboard" />}
+        {isPolitician && canRedirect && (
+          <Redirect to="/politicians-dashboard" />
+        )}
+        {isCitizen && canRedirect && <Redirect to="/citizens-dashboard" />}
       </React.Fragment>
     );
   }

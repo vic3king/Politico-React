@@ -8,6 +8,7 @@ import AdminPage from './Dashboard/Admin/Admin';
 import PoliticiansPage from './Dashboard/Politicians/Politicians';
 import ResultsPage from './Results/ResultsPage';
 import Logout from './Logout/Logout';
+import CitizensPage from './Dashboard/Citizens/Citizens';
 
 class App extends Component {
   state = {};
@@ -21,7 +22,8 @@ class App extends Component {
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
             <Route path="/admin-dashboard" component={AdminPage} />
-            <Route path="/politicians" component={PoliticiansPage} />
+            <Route path="/politicians-dashboard" component={PoliticiansPage} />
+            <Route path="/citizens-dashboard" component={CitizensPage} />
             <Route path="/results" component={ResultsPage} />
             <Route path="/logout" component={Logout} />
             <Route path="/error" component={ErrorPage} />
