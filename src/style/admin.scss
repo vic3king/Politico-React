@@ -37,3 +37,24 @@ hr {
 .admin-office-card:hover {
   background: black;
 }
+
+textarea {
+  border: 0.08rem solid #00000033;
+  block-size: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+input#evidence {
+  border: 0.08rem solid #00000033;
+  block-size: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
