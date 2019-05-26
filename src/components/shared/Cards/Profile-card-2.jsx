@@ -16,8 +16,16 @@ class ProfileBottomSectionCard extends Component {
       showDeleteModal: false,
       loading: false,
       partyId: null,
+      currentPage: 1,
+      partiesPerPage: 4,
     };
   }
+
+  handlePageClick = event => {
+    this.setState({
+      currentPage: Number(event.target.id),
+    });
+  };
 
   hide = () => {
     const { hidePartyModal, hideOfficeModal } = this.props;
@@ -73,11 +81,42 @@ class ProfileBottomSectionCard extends Component {
   };
 
   render() {
-    const { showUpdateModal, showDeleteModal, partyId, loading } = this.state;
+    const {
+      showUpdateModal,
+      showDeleteModal,
+      partyId,
+      loading,
+      currentPage,
+      partiesPerPage,
+    } = this.state;
 
     const { parties, updatePartiesName } = this.props;
 
-    const listOfParties = parties.map(party => (
+    // Logic for displaying todos
+    const indexOfLastOffice = currentPage * partiesPerPage;
+    const indexOfFirstOffice = indexOfLastOffice - partiesPerPage;
+    const currentParties = parties.slice(indexOfFirstOffice, indexOfLastOffice);
+
+    // Logic for displaying page numbers
+    const pageNumbers = [];
+    // eslint-disable-next-line no-plusplus
+    for (let i = 1; i <= Math.ceil(parties.length / partiesPerPage); i++) {
+      pageNumbers.push(i);
+    }
+
+    const renderPageNumbers = pageNumbers.map(number => {
+      return (
+        <Button
+          type="submit"
+          key={number}
+          id={number}
+          value={number}
+          onClick={this.handlePageClick}
+        />
+      );
+    });
+
+    const listOfParties = currentParties.map(party => (
       <div key={party.id} className="card__two">
         <div>
           <img src={party.logourl} alt="party" className="party__image2" />
@@ -129,6 +168,11 @@ class ProfileBottomSectionCard extends Component {
           />
         )}
         <div id="grid__two">{listOfParties}</div>
+        <div className="middle">
+          <div id="page-numbers" className="pagination">
+            {renderPageNumbers}
+          </div>
+        </div>
       </React.Fragment>
     );
   }
