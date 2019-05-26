@@ -71,13 +71,16 @@ class Login extends Component {
         {loading && <Loader />}
         <Notifications />
         <NavBar LiTagOne={<LiTag to="/signup" value="Sign Up" />} />
+        <div className="center">
+          <i className="fa fa-balance-scale fa-5x " aria-hidden="true" />
+          <h3 className="welcome__">Please login</h3>
+        </div>
         <div className="center" />
         <form
           className="signbox2"
           id="login-form"
           onSubmit={this.onButtonSubmit}
         >
-          <span id="spanuser" />
           <Input
             type="text"
             placeholder="Email"

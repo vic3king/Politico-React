@@ -51,11 +51,15 @@ class Signup extends Component {
         <Notifications />
         {loading && <Loader />}
         <NavBar LiTagTwo={<LiTag to="/login" value="Login" />} />
+        <div className="center">
+          <i className="fa fa-balance-scale fa-5x " aria-hidden="true" />
+          <h3 className="welcome__">Please Signup</h3>
+        </div>
         <div className="center" />
         <form
           className="signbox"
           id="signup-form"
-          style={{ marginTop: '56px' }}
+          style={{ marginTop: '200px' }}
           onSubmit={this.onButtonSubmit}
         >
           <div className="wholeform">
