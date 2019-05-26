@@ -7,29 +7,42 @@ import SideBar from '../../shared/SideBar/SideBar';
 import TopCard from '../../shared/Cards/Profile-card-1';
 import Loader from '../../shared/Loader/Loader';
 import Offices from '../../../services/offices';
+import PetitionsModal from '../../Modals/PetitionsModal';
 import '../../../style/admin.scss';
 
 class CitizensPage extends Component {
   state = {
     offices: [],
     loading: true,
+    showPetitionsModal: false,
   };
 
-  componentDidMount = async () => {
+  async componentDidMount() {
     const allOffices = await Offices.getAllOffices();
     this.setState({
       offices: allOffices.data,
       loading: false,
     });
+  }
+
+  showPetitionsModal = () => {
+    this.setState({ showPetitionsModal: true });
+  };
+
+  hidePetitionsModal = () => {
+    this.setState({ showPetitionsModal: false });
   };
 
   render() {
     const user = JSON.parse(localStorage.user);
 
-    const { offices, loading } = this.state;
+    const { offices, loading, showPetitionsModal } = this.state;
     return (
       <React.Fragment>
         {loading && <Loader />}
+        {showPetitionsModal && (
+          <PetitionsModal hide={this.hidePetitionsModal} offices={offices} />
+        )}
         <NavBar
           LiTagOne={<LiTag to="/" value="Home" />}
           LiTagTwo={<LiTag to="/logout" value="Logout" />}
@@ -42,7 +55,7 @@ class CitizensPage extends Component {
                 id="offic"
                 value="Raise Petition"
                 className="profile-btn"
-                onClick={this.showPetitionModal}
+                onClick={this.showPetitionsModal}
               />
             }
             ButtonTwo={
