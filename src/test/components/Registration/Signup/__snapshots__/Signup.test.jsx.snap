@@ -34,6 +34,19 @@ ShallowWrapper {
         />,
         <div
           className="center"
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-balance-scale fa-5x "
+          />
+          <h3
+            className="welcome__"
+          >
+            Please Signup
+          </h3>
+        </div>,
+        <div
+          className="center"
         />,
         <form
           className="signbox"
@@ -41,7 +54,7 @@ ShallowWrapper {
           onSubmit={[Function]}
           style={
             Object {
-              "marginTop": "56px",
+              "marginTop": "200px",
             }
           }
         >
@@ -203,6 +216,53 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": Array [
+            <i
+              aria-hidden="true"
+              className="fa fa-balance-scale fa-5x "
+            />,
+            <h3
+              className="welcome__"
+            >
+              Please Signup
+            </h3>,
+          ],
+          "className": "center",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "aria-hidden": "true",
+              "className": "fa fa-balance-scale fa-5x ",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Please Signup",
+              "className": "welcome__",
+            },
+            "ref": null,
+            "rendered": "Please Signup",
+            "type": "h3",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "className": "center",
         },
         "ref": null,
@@ -340,7 +400,7 @@ ShallowWrapper {
           "id": "signup-form",
           "onSubmit": [Function],
           "style": Object {
-            "marginTop": "56px",
+            "marginTop": "200px",
           },
         },
         "ref": null,
@@ -794,6 +854,19 @@ ShallowWrapper {
           />,
           <div
             className="center"
+          >
+            <i
+              aria-hidden="true"
+              className="fa fa-balance-scale fa-5x "
+            />
+            <h3
+              className="welcome__"
+            >
+              Please Signup
+            </h3>
+          </div>,
+          <div
+            className="center"
           />,
           <form
             className="signbox"
@@ -801,7 +874,7 @@ ShallowWrapper {
             onSubmit={[Function]}
             style={
               Object {
-                "marginTop": "56px",
+                "marginTop": "200px",
               }
             }
           >
@@ -963,6 +1036,53 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": Array [
+              <i
+                aria-hidden="true"
+                className="fa fa-balance-scale fa-5x "
+              />,
+              <h3
+                className="welcome__"
+              >
+                Please Signup
+              </h3>,
+            ],
+            "className": "center",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "aria-hidden": "true",
+                "className": "fa fa-balance-scale fa-5x ",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Please Signup",
+                "className": "welcome__",
+              },
+              "ref": null,
+              "rendered": "Please Signup",
+              "type": "h3",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "className": "center",
           },
           "ref": null,
@@ -1100,7 +1220,7 @@ ShallowWrapper {
             "id": "signup-form",
             "onSubmit": [Function],
             "style": Object {
-              "marginTop": "56px",
+              "marginTop": "200px",
             },
           },
           "ref": null,

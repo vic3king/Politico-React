@@ -34,15 +34,25 @@ ShallowWrapper {
         />,
         <div
           className="center"
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-balance-scale fa-5x "
+          />
+          <h3
+            className="welcome__"
+          >
+            Please login
+          </h3>
+        </div>,
+        <div
+          className="center"
         />,
         <form
           className="signbox2"
           id="login-form"
           onSubmit={[Function]}
         >
-          <span
-            id="spanuser"
-          />
           <Input
             id="email"
             onChange={[Function]}
@@ -133,6 +143,53 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": Array [
+            <i
+              aria-hidden="true"
+              className="fa fa-balance-scale fa-5x "
+            />,
+            <h3
+              className="welcome__"
+            >
+              Please login
+            </h3>,
+          ],
+          "className": "center",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "aria-hidden": "true",
+              "className": "fa fa-balance-scale fa-5x ",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Please login",
+              "className": "welcome__",
+            },
+            "ref": null,
+            "rendered": "Please login",
+            "type": "h3",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "className": "center",
         },
         "ref": null,
@@ -145,9 +202,6 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <span
-              id="spanuser"
-            />,
             <Input
               id="email"
               onChange={[Function]}
@@ -205,17 +259,6 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "id": "spanuser",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "span",
-          },
           Object {
             "instance": null,
             "key": undefined,
@@ -366,15 +409,25 @@ ShallowWrapper {
           />,
           <div
             className="center"
+          >
+            <i
+              aria-hidden="true"
+              className="fa fa-balance-scale fa-5x "
+            />
+            <h3
+              className="welcome__"
+            >
+              Please login
+            </h3>
+          </div>,
+          <div
+            className="center"
           />,
           <form
             className="signbox2"
             id="login-form"
             onSubmit={[Function]}
           >
-            <span
-              id="spanuser"
-            />
             <Input
               id="email"
               onChange={[Function]}
@@ -465,6 +518,53 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": Array [
+              <i
+                aria-hidden="true"
+                className="fa fa-balance-scale fa-5x "
+              />,
+              <h3
+                className="welcome__"
+              >
+                Please login
+              </h3>,
+            ],
+            "className": "center",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "aria-hidden": "true",
+                "className": "fa fa-balance-scale fa-5x ",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "i",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Please login",
+                "className": "welcome__",
+              },
+              "ref": null,
+              "rendered": "Please login",
+              "type": "h3",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "className": "center",
           },
           "ref": null,
@@ -477,9 +577,6 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <span
-                id="spanuser"
-              />,
               <Input
                 id="email"
                 onChange={[Function]}
@@ -537,17 +634,6 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "id": "spanuser",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "span",
-            },
             Object {
               "instance": null,
               "key": undefined,

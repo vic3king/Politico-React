@@ -90,12 +90,14 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
     }
   },
   "lint-staged": {
     "*.{js,jsx,json,css,md}": [
       "pretty-quick --staged",
+      "eslint src/ --fix",
       "git add"
     ]
   }
