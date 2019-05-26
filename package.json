@@ -96,7 +96,6 @@
   "lint-staged": {
     "*.{js,jsx,json,css,md}": [
       "pretty-quick --staged",
-      "eslint src/ --fix",
       "git add"
     ]
   }
