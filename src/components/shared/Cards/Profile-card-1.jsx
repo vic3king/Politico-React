@@ -19,7 +19,7 @@ class ProfileTopSectionCard extends Component {
   };
 
   render() {
-    const { offices, value } = this.props;
+    const { offices, value, showIntrestsModal } = this.props;
     const { currentPage, officesPerPage } = this.state;
 
     // Logic for displaying offices
@@ -56,6 +56,7 @@ class ProfileTopSectionCard extends Component {
           className="admin-office-card"
           value={value}
           id="admin-office-card"
+          onClick={showIntrestsModal}
         />
       </div>
     ));

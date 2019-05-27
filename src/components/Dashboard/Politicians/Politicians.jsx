@@ -7,39 +7,66 @@ import SideBar from '../../shared/SideBar/SideBar';
 import TopCard from '../../shared/Cards/Profile-card-1';
 import Loader from '../../shared/Loader/Loader';
 import Offices from '../../../services/offices';
+import Parties from '../../../services/parties';
 import PetitionsModal from '../../Modals/PetitionsModal';
+import InterestFormModal from '../../Modals/DeclarationForm';
 import '../../../style/admin.scss';
 
 class PoliticiansPage extends Component {
   state = {
     offices: [],
+    parties: [],
     loading: true,
     showPetitionsModal: false,
+    showIntrestsModal: false,
   };
 
   async componentDidMount() {
     const allOffices = await Offices.getAllOffices();
+    const allParties = await Parties.getAllParties();
     this.setState({
       offices: allOffices.data,
+      parties: allParties.data,
       loading: false,
     });
   }
 
   showPetitionsModal = () => {
-    this.setState({ showPetitionsModal: true });
+    this.setState({ showPetitionsModal: true, showIntrestsModal: false });
   };
 
   hidePetitionsModal = () => {
     this.setState({ showPetitionsModal: false });
   };
 
+  showIntrestsModal = () => {
+    this.setState({ showIntrestsModal: true, showPetitionsModal: false });
+  };
+
+  hideIntrestsModal = () => {
+    this.setState({ showIntrestsModal: false });
+  };
+
   render() {
     const user = JSON.parse(localStorage.user);
 
-    const { offices, loading, showPetitionsModal } = this.state;
+    const {
+      offices,
+      loading,
+      showPetitionsModal,
+      parties,
+      showIntrestsModal,
+    } = this.state;
     return (
       <React.Fragment>
         {loading && <Loader />}
+        {showIntrestsModal && (
+          <InterestFormModal
+            hide={this.hideIntrestsModal}
+            offices={offices}
+            parties={parties}
+          />
+        )}
         {showPetitionsModal && (
           <PetitionsModal hide={this.hidePetitionsModal} offices={offices} />
         )}
@@ -73,7 +100,11 @@ class PoliticiansPage extends Component {
                   <hr />
                 </h4>
               </div>
-              <TopCard value="Declare interest" offices={offices} />
+              <TopCard
+                value="Declare interest"
+                offices={offices}
+                showIntrestsModal={this.showIntrestsModal}
+              />
             </section>
           </div>
         </div>

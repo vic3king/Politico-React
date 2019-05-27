@@ -128,8 +128,7 @@ input[type='submit'] {
   cursor: pointer;
   font-weight: bold;
 }
-input[type='submit']:hover,
-select:hover {
+input[type='submit']:hover {
   background-color: #005f6b;
   color: #f5f6fa;
 }
