@@ -103,7 +103,7 @@ class PoliticiansPage extends Component {
               <TopCard
                 value="Declare interest"
                 offices={offices}
-                showIntrestsModal={this.showIntrestsModal}
+                handleEvent={this.showIntrestsModal}
               />
             </section>
           </div>

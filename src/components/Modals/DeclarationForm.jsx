@@ -40,8 +40,8 @@ class InterestFormModal extends Component {
     const interest = await Interest.interestRequest(formDetails, user.id);
 
     if (interest.status >= 400) {
-      this.setState({ loading: false });
-      notify.show(errorHandler(interest.error.map(error => error)), 'error');
+      const errors = interest.error.map(error => error.error);
+      notify.show(errorHandler(errors), 'error');
     }
 
     if (interest.status === 201) {
