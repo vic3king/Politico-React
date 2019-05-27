@@ -190,6 +190,7 @@ button#btn {
   margin: 3% auto auto 20%;
   display: grid;
   grid-template-columns: repeat(4, 0fr);
+  position: relative;
 }
 
 .profile__image__candidates {
@@ -214,4 +215,15 @@ button#btn {
   font-size: 20px;
   text-align: center;
   color: black;
+}
+.vote-btn {
+  border: 2px solid #f5f6fa;
+  padding: 6px 0;
+  color: #f5f6fa;
+  cursor: pointer;
+  background: #005f6b;
+  letter-spacing: 1px;
+  animation: shadow-pulse 1s infinite;
+  width: 40%;
+  margin: 10px auto;
 }

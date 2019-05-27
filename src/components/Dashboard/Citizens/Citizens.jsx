@@ -8,6 +8,7 @@ import TopCard from '../../shared/Cards/Profile-card-1';
 import Loader from '../../shared/Loader/Loader';
 import Offices from '../../../services/offices';
 import PetitionsModal from '../../Modals/PetitionsModal';
+import VotingModal from '../../Modals/VotingModal';
 import '../../../style/admin.scss';
 
 class CitizensPage extends Component {
@@ -15,6 +16,8 @@ class CitizensPage extends Component {
     offices: [],
     loading: true,
     showPetitionsModal: false,
+    showVotingModal: false,
+    officeId: null,
   };
 
   async componentDidMount() {
@@ -33,15 +36,32 @@ class CitizensPage extends Component {
     this.setState({ showPetitionsModal: false });
   };
 
+  showVotingModal = e => {
+    this.setState({ showVotingModal: true, officeId: e.target.id });
+  };
+
+  hideVotingModal = () => {
+    this.setState({ showVotingModal: false });
+  };
+
   render() {
     const user = JSON.parse(localStorage.user);
 
-    const { offices, loading, showPetitionsModal } = this.state;
+    const {
+      offices,
+      loading,
+      showPetitionsModal,
+      officeId,
+      showVotingModal,
+    } = this.state;
     return (
       <React.Fragment>
         {loading && <Loader />}
         {showPetitionsModal && (
           <PetitionsModal hide={this.hidePetitionsModal} offices={offices} />
+        )}
+        {showVotingModal && (
+          <VotingModal hide={this.hideVotingModal} officeId={officeId} />
         )}
         <NavBar
           LiTagOne={<LiTag to="/" value="Home" />}
@@ -73,7 +93,11 @@ class CitizensPage extends Component {
                   <hr />
                 </h4>
               </div>
-              <TopCard value="View" offices={offices} />
+              <TopCard
+                value="View"
+                offices={offices}
+                handleEvent={this.showVotingModal}
+              />
             </section>
           </div>
         </div>
