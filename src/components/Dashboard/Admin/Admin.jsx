@@ -140,6 +140,15 @@ class AdminPage extends Component {
               </Link>
             }
             to="results"
+            ButtonFour={
+              <Link to="/requests">
+                <Button
+                  id="requests"
+                  value="Reveiw Requests"
+                  className="profile-btn"
+                />
+              </Link>
+            }
           />
           <div className="boxed">
             <section className="main-section">
