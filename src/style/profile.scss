@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo|Lato&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Heebo', sans-serif;
+}
 #grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -11,11 +17,12 @@
 }
 
 .card {
-  text-align: center;
   flex: 1;
-  box-shadow: 0 0 12px black;
-  background-color: whitesmoke;
   color: black;
+  padding: 0 16px;
+  border: solid 1px #ffffff;
+  box-shadow: 0 0 12px #0000003d;
+  border-radius: 5px;
 }
 
 .num {

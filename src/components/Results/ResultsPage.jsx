@@ -37,16 +37,30 @@ class ResultsPage extends Component {
 
     const listOfOffices = offices.map(office => (
       <div key={office.id} className="card">
-        <h6>
-          {caputalizeString(office.name)}({caputalizeString(office.type)})
-        </h6>
-        <p className="num">0</p>
-        <Button
-          className="admin-office-card"
-          id={office.id}
-          value="View Result"
-          onClick={this.showOfficeModal}
-        />
+        <p>
+          <b>Name of Office:</b> {caputalizeString(office.name)}
+        </p>
+        <p>
+          <b>Type of Office:</b> {caputalizeString(office.type)}
+        </p>
+        <p>
+          <b>Description: </b> Lorem Ipsum is simply dummy text of the printing
+          and typesetting an unknown printer took a galley of type and scrambled
+          it to make a type specimen book...
+        </p>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <Button
+            className="admin-office-card"
+            id={office.id}
+            value="View Result"
+            onClick={this.showOfficeModal}
+          />
+        </div>
       </div>
     ));
 
