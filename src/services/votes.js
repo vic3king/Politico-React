@@ -31,7 +31,22 @@ const voteCandidate = formData => {
     .then(resp => resp)
     .catch(err => err);
 };
+
+const getCandidatesByStatus = () => {
+  return window
+    .fetch(`${apiUrlHeroku}/candidates?status=pending`, {
+      method: 'GET',
+      mode: 'cors',
+      headers: {
+        'x-access-token': localStorage.token,
+      },
+    })
+    .then(res => res.json())
+    .then(res => res)
+    .catch(err => err);
+};
 export default {
   getCandidatesByOffice,
   voteCandidate,
+  getCandidatesByStatus,
 };

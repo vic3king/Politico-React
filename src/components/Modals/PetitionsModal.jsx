@@ -37,8 +37,7 @@ class PetitionsModal extends Component {
 
     if (petition.status >= 400) {
       this.setState({ loading: false });
-      const errors = petition.message.map(error => error.error);
-      notify.show(errorHandler(errors), 'error');
+      notify.show(errorHandler(petition.error), 'error');
     }
 
     if (petition.status === 201) {

@@ -9,6 +9,7 @@ import PoliticiansPage from './Dashboard/Politicians/Politicians';
 import ResultsPage from './Results/ResultsPage';
 import Logout from './Logout/Logout';
 import CitizensPage from './Dashboard/Citizens/Citizens';
+import CandidateIntrestRequestList from './CandidateIntrestRequests/CandidateIntrestRequestList';
 
 class App extends Component {
   state = {};
@@ -25,6 +26,11 @@ class App extends Component {
             <Route path="/politicians-dashboard" component={PoliticiansPage} />
             <Route path="/citizens-dashboard" component={CitizensPage} />
             <Route path="/results" component={ResultsPage} />
+            <Route
+              path="/requests"
+              exact
+              component={CandidateIntrestRequestList}
+            />
             <Route path="/logout" component={Logout} />
             <Route path="/error" component={ErrorPage} />
             <Route path="*" component={ErrorPage} />

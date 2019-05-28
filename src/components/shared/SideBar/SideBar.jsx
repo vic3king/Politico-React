@@ -5,7 +5,14 @@ import '../../../style/sidebar.scss';
 import ProfileImage from '../Profile/ProfileImage';
 import ProfileDetails from '../Profile/ProfileDetails';
 
-const SideBar = ({ ButtonOne, ButtonTwo, ButtonThree, to, user }) => {
+const SideBar = ({
+  ButtonOne,
+  ButtonTwo,
+  ButtonThree,
+  ButtonFour,
+  to,
+  user,
+}) => {
   return (
     <React.Fragment>
       <div className="profile sidenav">
@@ -21,6 +28,10 @@ const SideBar = ({ ButtonOne, ButtonTwo, ButtonThree, to, user }) => {
         <br />
         <br />
         <br />
+        <Link to={to}>{ButtonFour}</Link>
+        <br />
+        <br />
+        <br />
         <Link to={to}>{ButtonThree}</Link>
       </div>
     </React.Fragment>
@@ -31,6 +42,7 @@ SideBar.defaultProps = {
   ButtonOne: (PropTypes.defaultProps = ''),
   ButtonTwo: (PropTypes.defaultProps = ''),
   ButtonThree: (PropTypes.defaultProps = ''),
+  ButtonFour: (PropTypes.defaultProps = ''),
 };
 
 SideBar.propTypes = {
@@ -38,6 +50,7 @@ SideBar.propTypes = {
   ButtonTwo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   ButtonThree: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   to: PropTypes.string.isRequired,
+  ButtonFour: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
 
 export default SideBar;
