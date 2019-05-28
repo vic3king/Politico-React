@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import Button from '../Buttons/Button';
 import '../../../style/profile.scss';
 import capitalizer from '../../../helpers/capitalizer';
+import '../../../style/intrests-requests.scss';
 
 class ProfileTopSectionCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
       currentPage: 1,
-      officesPerPage: 3,
+      officesPerPage: 6,
     };
   }
 
@@ -48,16 +49,30 @@ class ProfileTopSectionCard extends Component {
 
     const listOfOffices = currentOffices.map(office => (
       <div key={office.id} className="card">
-        <h6>
-          {capitalizer(office.name)}({capitalizer(office.type)})
-        </h6>
-        <p className="num">0</p>
-        <Button
-          className="admin-office-card"
-          value={value}
-          id={office.id}
-          onClick={handleEvent}
-        />
+        <p>
+          <b>Name of Office:</b> {capitalizer(office.name)}
+        </p>
+        <p>
+          <b>Type of Office:</b> {capitalizer(office.type)}
+        </p>
+        <p>
+          <b>Description: </b> Lorem Ipsum is simply dummy text of the printing
+          and typesetting an unknown printer took a galley of type and scrambled
+          it to make a type specimen book...
+        </p>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <Button
+            className="admin-office-card"
+            value={value}
+            id={office.id}
+            onClick={handleEvent}
+          />
+        </div>
       </div>
     ));
 
