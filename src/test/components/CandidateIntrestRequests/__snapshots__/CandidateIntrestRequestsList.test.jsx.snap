@@ -1,0 +1,498 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CandidateIntrestRequestsList component should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CandidateIntrestRequestsList />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <$class
+          options={Object {}}
+        />,
+        false,
+        <NavBar
+          LiTagOne={
+            <LiTag
+              to="/logout"
+              value="Logout"
+            />
+          }
+          LiTagTwo=""
+        />,
+        <h4
+          className="page-title-results"
+        >
+          Review Pending Requests
+        </h4>,
+        <div>
+          <div
+            className="main_page_title"
+          >
+            <div
+              className="main-grid"
+            >
+              <CandidateIntrestRequestsCard
+                adminAcceptRequest={[Function]}
+                adminRejectRequest={[Function]}
+                btnClass="btn-accept"
+                btnClass1="btn-reject"
+                button="Accept"
+                fullname=" undefined"
+              />
+              <CandidateIntrestRequestsCard
+                adminAcceptRequest={[Function]}
+                adminRejectRequest={[Function]}
+                btnClass="btn-accept"
+                btnClass1="btn-reject"
+                button="Accept"
+                fullname=" undefined"
+              />
+            </div>
+          </div>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "options": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [MockFunction],
+      },
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "LiTagOne": <LiTag
+            to="/logout"
+            value="Logout"
+          />,
+          "LiTagTwo": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Review Pending Requests",
+          "className": "page-title-results",
+        },
+        "ref": null,
+        "rendered": "Review Pending Requests",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="main_page_title"
+          >
+            <div
+              className="main-grid"
+            >
+              <CandidateIntrestRequestsCard
+                adminAcceptRequest={[Function]}
+                adminRejectRequest={[Function]}
+                btnClass="btn-accept"
+                btnClass1="btn-reject"
+                button="Accept"
+                fullname=" undefined"
+              />
+              <CandidateIntrestRequestsCard
+                adminAcceptRequest={[Function]}
+                adminRejectRequest={[Function]}
+                btnClass="btn-accept"
+                btnClass1="btn-reject"
+                button="Accept"
+                fullname=" undefined"
+              />
+            </div>
+          </div>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="main-grid"
+            >
+              <CandidateIntrestRequestsCard
+                adminAcceptRequest={[Function]}
+                adminRejectRequest={[Function]}
+                btnClass="btn-accept"
+                btnClass1="btn-reject"
+                button="Accept"
+                fullname=" undefined"
+              />
+              <CandidateIntrestRequestsCard
+                adminAcceptRequest={[Function]}
+                adminRejectRequest={[Function]}
+                btnClass="btn-accept"
+                btnClass1="btn-reject"
+                button="Accept"
+                fullname=" undefined"
+              />
+            </div>,
+            "className": "main_page_title",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <CandidateIntrestRequestsCard
+                  adminAcceptRequest={[Function]}
+                  adminRejectRequest={[Function]}
+                  btnClass="btn-accept"
+                  btnClass1="btn-reject"
+                  button="Accept"
+                  fullname=" undefined"
+                />,
+                <CandidateIntrestRequestsCard
+                  adminAcceptRequest={[Function]}
+                  adminRejectRequest={[Function]}
+                  btnClass="btn-accept"
+                  btnClass1="btn-reject"
+                  button="Accept"
+                  fullname=" undefined"
+                />,
+              ],
+              "className": "main-grid",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "adminAcceptRequest": [Function],
+                  "adminRejectRequest": [Function],
+                  "btnClass": "btn-accept",
+                  "btnClass1": "btn-reject",
+                  "button": "Accept",
+                  "fullname": " undefined",
+                  "id": undefined,
+                  "office": undefined,
+                  "party": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "adminAcceptRequest": [Function],
+                  "adminRejectRequest": [Function],
+                  "btnClass": "btn-accept",
+                  "btnClass1": "btn-reject",
+                  "button": "Accept",
+                  "fullname": " undefined",
+                  "id": undefined,
+                  "office": undefined,
+                  "party": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <$class
+            options={Object {}}
+          />,
+          false,
+          <NavBar
+            LiTagOne={
+              <LiTag
+                to="/logout"
+                value="Logout"
+              />
+            }
+            LiTagTwo=""
+          />,
+          <h4
+            className="page-title-results"
+          >
+            Review Pending Requests
+          </h4>,
+          <div>
+            <div
+              className="main_page_title"
+            >
+              <div
+                className="main-grid"
+              >
+                <CandidateIntrestRequestsCard
+                  adminAcceptRequest={[Function]}
+                  adminRejectRequest={[Function]}
+                  btnClass="btn-accept"
+                  btnClass1="btn-reject"
+                  button="Accept"
+                  fullname=" undefined"
+                />
+                <CandidateIntrestRequestsCard
+                  adminAcceptRequest={[Function]}
+                  adminRejectRequest={[Function]}
+                  btnClass="btn-accept"
+                  btnClass1="btn-reject"
+                  button="Accept"
+                  fullname=" undefined"
+                />
+              </div>
+            </div>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "options": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [MockFunction],
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "LiTagOne": <LiTag
+              to="/logout"
+              value="Logout"
+            />,
+            "LiTagTwo": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Review Pending Requests",
+            "className": "page-title-results",
+          },
+          "ref": null,
+          "rendered": "Review Pending Requests",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="main_page_title"
+            >
+              <div
+                className="main-grid"
+              >
+                <CandidateIntrestRequestsCard
+                  adminAcceptRequest={[Function]}
+                  adminRejectRequest={[Function]}
+                  btnClass="btn-accept"
+                  btnClass1="btn-reject"
+                  button="Accept"
+                  fullname=" undefined"
+                />
+                <CandidateIntrestRequestsCard
+                  adminAcceptRequest={[Function]}
+                  adminRejectRequest={[Function]}
+                  btnClass="btn-accept"
+                  btnClass1="btn-reject"
+                  button="Accept"
+                  fullname=" undefined"
+                />
+              </div>
+            </div>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="main-grid"
+              >
+                <CandidateIntrestRequestsCard
+                  adminAcceptRequest={[Function]}
+                  adminRejectRequest={[Function]}
+                  btnClass="btn-accept"
+                  btnClass1="btn-reject"
+                  button="Accept"
+                  fullname=" undefined"
+                />
+                <CandidateIntrestRequestsCard
+                  adminAcceptRequest={[Function]}
+                  adminRejectRequest={[Function]}
+                  btnClass="btn-accept"
+                  btnClass1="btn-reject"
+                  button="Accept"
+                  fullname=" undefined"
+                />
+              </div>,
+              "className": "main_page_title",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <CandidateIntrestRequestsCard
+                    adminAcceptRequest={[Function]}
+                    adminRejectRequest={[Function]}
+                    btnClass="btn-accept"
+                    btnClass1="btn-reject"
+                    button="Accept"
+                    fullname=" undefined"
+                  />,
+                  <CandidateIntrestRequestsCard
+                    adminAcceptRequest={[Function]}
+                    adminRejectRequest={[Function]}
+                    btnClass="btn-accept"
+                    btnClass1="btn-reject"
+                    button="Accept"
+                    fullname=" undefined"
+                  />,
+                ],
+                "className": "main-grid",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "adminAcceptRequest": [Function],
+                    "adminRejectRequest": [Function],
+                    "btnClass": "btn-accept",
+                    "btnClass1": "btn-reject",
+                    "button": "Accept",
+                    "fullname": " undefined",
+                    "id": undefined,
+                    "office": undefined,
+                    "party": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "adminAcceptRequest": [Function],
+                    "adminRejectRequest": [Function],
+                    "btnClass": "btn-accept",
+                    "btnClass1": "btn-reject",
+                    "button": "Accept",
+                    "fullname": " undefined",
+                    "id": undefined,
+                    "office": undefined,
+                    "party": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

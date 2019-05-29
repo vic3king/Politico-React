@@ -1,0 +1,747 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CandidateIntrestRequests component should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CandidateIntrestRequestsCard />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="main-title"
+      >
+        <div
+          className="image_title_bio"
+        >
+          <div
+            className="profile_image"
+          >
+            <img
+              alt=""
+              className="user_pic"
+              src="https://picsum.photos/200/300/?random"
+            />
+          </div>
+          <div
+            className="title_text_box"
+          >
+            <p
+              className="name"
+            />
+            <p
+              className="user_bio"
+            >
+              Party: 
+            </p>
+            <p
+              className="user_bio"
+            >
+              Office of Intrest: 
+            </p>
+          </div>
+        </div>
+        <div
+          className="admin_decision_on_request"
+        >
+          <div
+            className="main_button"
+          >
+            <button
+              className="btn-accept"
+              type="submit"
+            >
+              Accept
+            </button>
+            <button
+              className="btn-reject"
+              type="submit"
+            >
+              reject
+            </button>
+          </div>
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="image_title_bio"
+          >
+            <div
+              className="profile_image"
+            >
+              <img
+                alt=""
+                className="user_pic"
+                src="https://picsum.photos/200/300/?random"
+              />
+            </div>
+            <div
+              className="title_text_box"
+            >
+              <p
+                className="name"
+              />
+              <p
+                className="user_bio"
+              >
+                Party: 
+              </p>
+              <p
+                className="user_bio"
+              >
+                Office of Intrest: 
+              </p>
+            </div>
+          </div>,
+          <div
+            className="admin_decision_on_request"
+          >
+            <div
+              className="main_button"
+            >
+              <button
+                className="btn-accept"
+                type="submit"
+              >
+                Accept
+              </button>
+              <button
+                className="btn-reject"
+                type="submit"
+              >
+                reject
+              </button>
+            </div>
+          </div>,
+        ],
+        "className": "main-title",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="profile_image"
+              >
+                <img
+                  alt=""
+                  className="user_pic"
+                  src="https://picsum.photos/200/300/?random"
+                />
+              </div>,
+              <div
+                className="title_text_box"
+              >
+                <p
+                  className="name"
+                />
+                <p
+                  className="user_bio"
+                >
+                  Party: 
+                </p>
+                <p
+                  className="user_bio"
+                >
+                  Office of Intrest: 
+                </p>
+              </div>,
+            ],
+            "className": "image_title_bio",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <img
+                  alt=""
+                  className="user_pic"
+                  src="https://picsum.photos/200/300/?random"
+                />,
+                "className": "profile_image",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "",
+                  "className": "user_pic",
+                  "src": "https://picsum.photos/200/300/?random",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <p
+                    className="name"
+                  />,
+                  <p
+                    className="user_bio"
+                  >
+                    Party: 
+                  </p>,
+                  <p
+                    className="user_bio"
+                  >
+                    Office of Intrest: 
+                  </p>,
+                ],
+                "className": "title_text_box",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                    "className": "name",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Party: ",
+                      undefined,
+                    ],
+                    "className": "user_bio",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Party: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Office of Intrest: ",
+                      undefined,
+                    ],
+                    "className": "user_bio",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Office of Intrest: ",
+                    undefined,
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="main_button"
+            >
+              <button
+                className="btn-accept"
+                type="submit"
+              >
+                Accept
+              </button>
+              <button
+                className="btn-reject"
+                type="submit"
+              >
+                reject
+              </button>
+            </div>,
+            "className": "admin_decision_on_request",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <button
+                  className="btn-accept"
+                  type="submit"
+                >
+                  Accept
+                </button>,
+                <button
+                  className="btn-reject"
+                  type="submit"
+                >
+                  reject
+                </button>,
+              ],
+              "className": "main_button",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Accept",
+                  "className": "btn-accept",
+                  "id": undefined,
+                  "onClick": undefined,
+                  "type": "submit",
+                },
+                "ref": null,
+                "rendered": "Accept",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "reject",
+                  "className": "btn-reject",
+                  "id": undefined,
+                  "onClick": undefined,
+                  "type": "submit",
+                },
+                "ref": null,
+                "rendered": "reject",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="main-title"
+        >
+          <div
+            className="image_title_bio"
+          >
+            <div
+              className="profile_image"
+            >
+              <img
+                alt=""
+                className="user_pic"
+                src="https://picsum.photos/200/300/?random"
+              />
+            </div>
+            <div
+              className="title_text_box"
+            >
+              <p
+                className="name"
+              />
+              <p
+                className="user_bio"
+              >
+                Party: 
+              </p>
+              <p
+                className="user_bio"
+              >
+                Office of Intrest: 
+              </p>
+            </div>
+          </div>
+          <div
+            className="admin_decision_on_request"
+          >
+            <div
+              className="main_button"
+            >
+              <button
+                className="btn-accept"
+                type="submit"
+              >
+                Accept
+              </button>
+              <button
+                className="btn-reject"
+                type="submit"
+              >
+                reject
+              </button>
+            </div>
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="image_title_bio"
+            >
+              <div
+                className="profile_image"
+              >
+                <img
+                  alt=""
+                  className="user_pic"
+                  src="https://picsum.photos/200/300/?random"
+                />
+              </div>
+              <div
+                className="title_text_box"
+              >
+                <p
+                  className="name"
+                />
+                <p
+                  className="user_bio"
+                >
+                  Party: 
+                </p>
+                <p
+                  className="user_bio"
+                >
+                  Office of Intrest: 
+                </p>
+              </div>
+            </div>,
+            <div
+              className="admin_decision_on_request"
+            >
+              <div
+                className="main_button"
+              >
+                <button
+                  className="btn-accept"
+                  type="submit"
+                >
+                  Accept
+                </button>
+                <button
+                  className="btn-reject"
+                  type="submit"
+                >
+                  reject
+                </button>
+              </div>
+            </div>,
+          ],
+          "className": "main-title",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="profile_image"
+                >
+                  <img
+                    alt=""
+                    className="user_pic"
+                    src="https://picsum.photos/200/300/?random"
+                  />
+                </div>,
+                <div
+                  className="title_text_box"
+                >
+                  <p
+                    className="name"
+                  />
+                  <p
+                    className="user_bio"
+                  >
+                    Party: 
+                  </p>
+                  <p
+                    className="user_bio"
+                  >
+                    Office of Intrest: 
+                  </p>
+                </div>,
+              ],
+              "className": "image_title_bio",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt=""
+                    className="user_pic"
+                    src="https://picsum.photos/200/300/?random"
+                  />,
+                  "className": "profile_image",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "",
+                    "className": "user_pic",
+                    "src": "https://picsum.photos/200/300/?random",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <p
+                      className="name"
+                    />,
+                    <p
+                      className="user_bio"
+                    >
+                      Party: 
+                    </p>,
+                    <p
+                      className="user_bio"
+                    >
+                      Office of Intrest: 
+                    </p>,
+                  ],
+                  "className": "title_text_box",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "name",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Party: ",
+                        undefined,
+                      ],
+                      "className": "user_bio",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Party: ",
+                      undefined,
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Office of Intrest: ",
+                        undefined,
+                      ],
+                      "className": "user_bio",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Office of Intrest: ",
+                      undefined,
+                    ],
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="main_button"
+              >
+                <button
+                  className="btn-accept"
+                  type="submit"
+                >
+                  Accept
+                </button>
+                <button
+                  className="btn-reject"
+                  type="submit"
+                >
+                  reject
+                </button>
+              </div>,
+              "className": "admin_decision_on_request",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button
+                    className="btn-accept"
+                    type="submit"
+                  >
+                    Accept
+                  </button>,
+                  <button
+                    className="btn-reject"
+                    type="submit"
+                  >
+                    reject
+                  </button>,
+                ],
+                "className": "main_button",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Accept",
+                    "className": "btn-accept",
+                    "id": undefined,
+                    "onClick": undefined,
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "rendered": "Accept",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "reject",
+                    "className": "btn-reject",
+                    "id": undefined,
+                    "onClick": undefined,
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "rendered": "reject",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

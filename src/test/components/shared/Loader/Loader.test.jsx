@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Loader from '../../../../components/shared/Loader/Loader';
 
-describe('HomePage component', () => {
+describe('Loader component', () => {
   it('should match snapshot', () => {
     const wrapper = shallow(<Loader />);
     expect(wrapper).toMatchSnapshot();
