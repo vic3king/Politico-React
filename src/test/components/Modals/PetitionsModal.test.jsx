@@ -1,28 +1,45 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { notify } from 'react-notify-toast';
-import Signup from '../../../../components/Registration/Signup';
-import authServices from '../../../../services/authentication.services';
-import errorHandler from '../../../../helpers/errorHandler';
+import PetitionsModal from '../../../components/Modals/PetitionsModal';
+import Petitions from '../../../services/petitions';
+import errorHandler from '../../../helpers/errorHandler';
 
-jest.mock('../../../../services/authentication.services');
+jest.mock('../../../services/petitions');
 jest.mock('react-notify-toast');
 
+const hide = jest.fn();
+const offices = [
+  {
+    name: '',
+  },
+  {
+    name: '',
+  },
+];
+
 let wrapper;
-describe('SignUp component', () => {
-  global.fetch = jest.fn();
-  global.localStorage.setItem('user', '{}');
+describe('PetitionsModal component', () => {
   beforeEach(() => {
-    wrapper = shallow(<Signup />);
+    wrapper = shallow(<PetitionsModal hide={hide} offices={offices} />);
   });
 
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render a form tag', () => {
-    expect(wrapper.find('form'));
-    expect(wrapper.hasClass('signbox'));
+  describe('hide method', () => {
+    wrapper = shallow(<PetitionsModal hide={hide} offices={offices} />);
+    const instance = wrapper.instance();
+    let event;
+    it('should call preventDefault on event', async () => {
+      event = {
+        preventDefault: jest.fn(),
+      };
+
+      await instance.hide(event);
+      expect(event.preventDefault).toBeCalled();
+    });
   });
 
   describe('onInputChange method', () => {
@@ -53,16 +70,9 @@ describe('SignUp component', () => {
 
     describe('Api call success', () => {
       beforeAll(() => {
-        authServices.auth = jest.fn().mockImplementation(() =>
+        Petitions.postPetition = jest.fn().mockImplementation(() =>
           Promise.resolve({
             status: 201,
-            data: [
-              {
-                user: {
-                  type: 'admin',
-                },
-              },
-            ],
           })
         );
       });
@@ -78,15 +88,23 @@ describe('SignUp component', () => {
 
         expect(event.preventDefault).toBeCalled();
       });
+      it('should call toast the right message on api call success', async () => {
+        await instance.onButtonSubmit(event);
+        expect(notify.show).toBeCalledWith('success');
+      });
       it('should set loading state to false after successfull api call is made', async () => {
         await instance.onButtonSubmit(event);
-        expect(instance.state.loading).toBeTruthy();
+        expect(instance.state.loading).toBeFalsy();
+      });
+      it('should call the offices method with id from api call', async () => {
+        await instance.onButtonSubmit(event);
+        expect(hide).toBeCalled();
       });
     });
 
     describe('Api call 400 errors', () => {
       beforeAll(() => {
-        authServices.auth = jest.fn().mockImplementation(() =>
+        Petitions.postPetition = jest.fn().mockImplementation(() =>
           Promise.resolve({
             status: 400,
             error: 'validation error',

@@ -1,28 +1,54 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { notify } from 'react-notify-toast';
-import Login from '../../../../components/Registration/Login';
-import authServices from '../../../../services/authentication.services';
-import errorHandler from '../../../../helpers/errorHandler';
+import UpdatePartyModal from '../../../components/Modals/UpdatePartyModal';
+import Party from '../../../services/parties';
+import errorHandler from '../../../helpers/errorHandler';
 
-jest.mock('../../../../services/authentication.services');
 jest.mock('react-notify-toast');
+jest.mock('../../../services/parties');
+
+const hide = jest.fn();
+const updatePartiesName = jest.fn();
+const partyId = 1;
 
 let wrapper;
-describe('Login component', () => {
+describe('InterestFormModal component', () => {
   global.fetch = jest.fn();
   global.localStorage.setItem('user', '{}');
+
   beforeEach(() => {
-    wrapper = shallow(<Login />);
+    wrapper = shallow(
+      <UpdatePartyModal
+        updatePartiesName={updatePartiesName}
+        hide={hide}
+        partyId={partyId}
+      />
+    );
   });
 
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should render a form tag', () => {
-    expect(wrapper.find('form'));
-    expect(wrapper.hasClass('signbox2'));
+  describe('hide method', () => {
+    wrapper = shallow(
+      <UpdatePartyModal
+        updatePartiesName={updatePartiesName}
+        hide={hide}
+        partyId={partyId}
+      />
+    );
+    const instance = wrapper.instance();
+    let event;
+    it('should call preventDefault on event', async () => {
+      event = {
+        preventDefault: jest.fn(),
+      };
+
+      await instance.hide(event);
+      expect(event.preventDefault).toBeCalled();
+    });
   });
 
   describe('onInputChange method', () => {
@@ -47,46 +73,42 @@ describe('Login component', () => {
     });
   });
 
-  describe('onButtonSubmit method', () => {
+  describe('handleUpdate method', () => {
     let instance;
-    let event;
 
     describe('Api call success', () => {
       beforeAll(() => {
-        authServices.auth = jest.fn().mockImplementation(() =>
+        Party.updateParty = jest.fn().mockImplementation(() =>
           Promise.resolve({
             status: 200,
-            data: [
-              {
-                user: {
-                  type: 'admin',
-                },
-              },
-            ],
+            message: 'toast message',
+            data: {
+              name: 'test',
+            },
           })
         );
       });
       beforeEach(() => {
         instance = wrapper.instance();
-        event = {
-          preventDefault: jest.fn(),
-        };
       });
 
-      it('should call preventDefault on event', async () => {
-        await instance.onButtonSubmit(event);
-
-        expect(event.preventDefault).toBeCalled();
+      it('should call toast the right message on api call success', async () => {
+        await instance.handleUpdate();
+        expect(notify.show).toBeCalledWith('toast message');
       });
       it('should set loading state to false after successfull api call is made', async () => {
-        await instance.onButtonSubmit(event);
-        expect(instance.state.loading).toBeTruthy();
+        await instance.handleUpdate();
+        expect(instance.state.loading).toBeFalsy();
+      });
+      it('should call the updatePartiesName method with id from api call', async () => {
+        await instance.handleUpdate();
+        expect(updatePartiesName).toBeCalledWith(1, 'test');
       });
     });
 
     describe('Api call 400 errors', () => {
       beforeAll(() => {
-        authServices.auth = jest.fn().mockImplementation(() =>
+        Party.updateParty = jest.fn().mockImplementation(() =>
           Promise.resolve({
             status: 400,
             error: 'validation error',
@@ -95,18 +117,15 @@ describe('Login component', () => {
       });
       beforeEach(() => {
         instance = wrapper.instance();
-        event = {
-          preventDefault: jest.fn(),
-        };
       });
 
       it('should set loading state to false on validation error', async () => {
-        await instance.onButtonSubmit(event);
+        await instance.handleUpdate();
         expect(instance.state.loading).toBeFalsy();
       });
 
       it('should toast the error message', async () => {
-        await instance.onButtonSubmit(event);
+        await instance.handleUpdate();
         expect(notify.show).toBeCalledWith(
           errorHandler('validation error'),
           'error'

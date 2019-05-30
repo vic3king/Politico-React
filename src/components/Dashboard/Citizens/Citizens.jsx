@@ -46,7 +46,6 @@ class CitizensPage extends Component {
 
   render() {
     const user = JSON.parse(localStorage.user);
-
     const {
       offices,
       loading,

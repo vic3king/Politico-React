@@ -46,19 +46,18 @@ class AdminPage extends Component {
 
   updatePartiesName = (partyId, newPartyName) => {
     const { parties } = this.state;
-    let i;
-    parties.filter((partyToUpdate, index) => {
-      if (partyToUpdate.id === Number(partyId)) {
-        i = index;
+    const updatedParties = parties.map(party => {
+      if (party.id === Number(partyId)) {
+        return {
+          ...party,
+          name: newPartyName,
+        };
       }
-      return i;
+      return party;
     });
 
-    const newState = JSON.parse(JSON.stringify(parties));
-    newState[i].name = newPartyName;
-
     this.setState({
-      parties: newState,
+      parties: updatedParties,
     });
   };
 

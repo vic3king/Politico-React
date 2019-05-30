@@ -19,7 +19,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <_class
+        <$class
           options={Object {}}
         />,
         false,
@@ -193,7 +193,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": null,
-        "type": [Function],
+        "type": [MockFunction],
       },
       false,
       Object {
@@ -839,7 +839,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <_class
+          <$class
             options={Object {}}
           />,
           false,
@@ -1013,7 +1013,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": null,
-          "type": [Function],
+          "type": [MockFunction],
         },
         false,
         Object {

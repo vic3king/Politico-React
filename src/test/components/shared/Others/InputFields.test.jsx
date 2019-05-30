@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import Input from '../../../../components/shared/InputFields/Input';
 
-describe('<Header />', () => {
+describe('<Input />', () => {
   it('renders input', () => {
     const wrapper = shallow(
       <Input
