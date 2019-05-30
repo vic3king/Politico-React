@@ -26,20 +26,21 @@ class VotingModal extends Component {
     const { officeId } = this.props;
     const candidates = await Votes.getCandidatesByOffice(officeId);
 
-    if (candidates.data.length < 1) {
-      this.setState({ loading: false });
-      notify.show('No candidates available', 'error');
-    }
-
-    this.setState({ candidates: candidates.data });
-
     if (candidates.status >= 400) {
       this.setState({ loading: false });
       notify.show(errorHandler(candidates.error), 'error');
     }
 
     if (candidates.status === 200) {
-      this.setState({ loading: false });
+      if (candidates.data.length < 1) {
+        this.setState({ loading: false });
+        notify.show('No candidates available', 'error');
+      }
+
+      this.setState({
+        loading: false,
+        candidates: candidates.data,
+      });
     }
   };
 

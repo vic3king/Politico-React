@@ -26,20 +26,17 @@ class ResultsModal extends Component {
     const { officeId } = this.props;
     const results = await Results.getResults(officeId);
 
-    if (results.data.length < 1) {
-      this.setState({ loading: false });
-      notify.show('Result for this election is not yet available', 'error');
-    }
-
-    this.setState({ results: results.data });
-
     if (results.status >= 400) {
       this.setState({ loading: false });
       notify.show(errorHandler(results.error), 'error');
     }
 
     if (results.status === 200) {
-      this.setState({ loading: false });
+      if (results.data.length < 1) {
+        this.setState({ loading: false });
+        notify.show('Result for this election is not yet available', 'error');
+      }
+      this.setState({ loading: false, results: results.data });
       notify.show('success');
     }
   };

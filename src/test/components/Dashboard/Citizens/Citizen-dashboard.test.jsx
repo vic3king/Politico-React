@@ -90,7 +90,7 @@ describe('CitizensPage component', () => {
   });
 
   describe('showVotingModal method', () => {
-    it('should set showPetitionsModal to true and get and ID', () => {
+    it('should set showVotingModal to true and get and ID', () => {
       const instance = wrapper.instance();
       const e = {
         target: { id: 2 },

@@ -1,0 +1,1256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PetitionsModal component should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PetitionsModal
+    hide={[MockFunction]}
+    offices={
+      Array [
+        Object {
+          "name": "",
+        },
+        Object {
+          "name": "",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <$class
+          options={Object {}}
+        />,
+        false,
+        <div>
+          <section
+            className="modal-main"
+          >
+            <form
+              className="modal-form"
+            >
+              <h3
+                className="page-modal-title"
+              >
+                Petition
+              </h3>
+              <div
+                className="fix"
+              >
+                <span>
+                  Select an office to petition
+                </span>
+                <select
+                  id="office"
+                  onChange={[Function]}
+                >
+                  <option
+                    name=""
+                  >
+                    
+                  </option>
+                  <option
+                    name=""
+                  >
+                    
+                  </option>
+                </select>
+              </div>
+              <div
+                className="fix"
+              >
+                <span>
+                  Submit any piece of evidence
+                </span>
+                <input
+                  id="evidence"
+                  onChange={[Function]}
+                  placeholder="Enter link here"
+                  required={true}
+                  type="text"
+                />
+              </div>
+              <div
+                className="fix"
+              >
+                <span>
+                  Comments
+                </span>
+                <textarea
+                  cols="50"
+                  id="comment"
+                  onChange={[Function]}
+                  placeholder="Leave your comments here"
+                  rows="4"
+                />
+              </div>
+              <button
+                className="cte-off"
+                id="office-btn"
+                onClick={[Function]}
+                type="submit"
+              >
+                Submit
+              </button>
+              <button
+                id="btn"
+                onClick={[Function]}
+                type="button"
+              >
+                X
+              </button>
+            </form>
+          </section>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "options": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [MockFunction],
+      },
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <section
+            className="modal-main"
+          >
+            <form
+              className="modal-form"
+            >
+              <h3
+                className="page-modal-title"
+              >
+                Petition
+              </h3>
+              <div
+                className="fix"
+              >
+                <span>
+                  Select an office to petition
+                </span>
+                <select
+                  id="office"
+                  onChange={[Function]}
+                >
+                  <option
+                    name=""
+                  >
+                    
+                  </option>
+                  <option
+                    name=""
+                  >
+                    
+                  </option>
+                </select>
+              </div>
+              <div
+                className="fix"
+              >
+                <span>
+                  Submit any piece of evidence
+                </span>
+                <input
+                  id="evidence"
+                  onChange={[Function]}
+                  placeholder="Enter link here"
+                  required={true}
+                  type="text"
+                />
+              </div>
+              <div
+                className="fix"
+              >
+                <span>
+                  Comments
+                </span>
+                <textarea
+                  cols="50"
+                  id="comment"
+                  onChange={[Function]}
+                  placeholder="Leave your comments here"
+                  rows="4"
+                />
+              </div>
+              <button
+                className="cte-off"
+                id="office-btn"
+                onClick={[Function]}
+                type="submit"
+              >
+                Submit
+              </button>
+              <button
+                id="btn"
+                onClick={[Function]}
+                type="button"
+              >
+                X
+              </button>
+            </form>
+          </section>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <form
+              className="modal-form"
+            >
+              <h3
+                className="page-modal-title"
+              >
+                Petition
+              </h3>
+              <div
+                className="fix"
+              >
+                <span>
+                  Select an office to petition
+                </span>
+                <select
+                  id="office"
+                  onChange={[Function]}
+                >
+                  <option
+                    name=""
+                  >
+                    
+                  </option>
+                  <option
+                    name=""
+                  >
+                    
+                  </option>
+                </select>
+              </div>
+              <div
+                className="fix"
+              >
+                <span>
+                  Submit any piece of evidence
+                </span>
+                <input
+                  id="evidence"
+                  onChange={[Function]}
+                  placeholder="Enter link here"
+                  required={true}
+                  type="text"
+                />
+              </div>
+              <div
+                className="fix"
+              >
+                <span>
+                  Comments
+                </span>
+                <textarea
+                  cols="50"
+                  id="comment"
+                  onChange={[Function]}
+                  placeholder="Leave your comments here"
+                  rows="4"
+                />
+              </div>
+              <button
+                className="cte-off"
+                id="office-btn"
+                onClick={[Function]}
+                type="submit"
+              >
+                Submit
+              </button>
+              <button
+                id="btn"
+                onClick={[Function]}
+                type="button"
+              >
+                X
+              </button>
+            </form>,
+            "className": "modal-main",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3
+                  className="page-modal-title"
+                >
+                  Petition
+                </h3>,
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Select an office to petition
+                  </span>
+                  <select
+                    id="office"
+                    onChange={[Function]}
+                  >
+                    <option
+                      name=""
+                    >
+                      
+                    </option>
+                    <option
+                      name=""
+                    >
+                      
+                    </option>
+                  </select>
+                </div>,
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Submit any piece of evidence
+                  </span>
+                  <input
+                    id="evidence"
+                    onChange={[Function]}
+                    placeholder="Enter link here"
+                    required={true}
+                    type="text"
+                  />
+                </div>,
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Comments
+                  </span>
+                  <textarea
+                    cols="50"
+                    id="comment"
+                    onChange={[Function]}
+                    placeholder="Leave your comments here"
+                    rows="4"
+                  />
+                </div>,
+                <button
+                  className="cte-off"
+                  id="office-btn"
+                  onClick={[Function]}
+                  type="submit"
+                >
+                  Submit
+                </button>,
+                <button
+                  id="btn"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  X
+                </button>,
+              ],
+              "className": "modal-form",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Petition",
+                  "className": "page-modal-title",
+                },
+                "ref": null,
+                "rendered": "Petition",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                      Select an office to petition
+                    </span>,
+                    <select
+                      id="office"
+                      onChange={[Function]}
+                    >
+                      <option
+                        name=""
+                      >
+                        
+                      </option>
+                      <option
+                        name=""
+                      >
+                        
+                      </option>
+                    </select>,
+                  ],
+                  "className": "fix",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Select an office to petition",
+                    },
+                    "ref": null,
+                    "rendered": "Select an office to petition",
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <option
+                          name=""
+                        >
+                          
+                        </option>,
+                        <option
+                          name=""
+                        >
+                          
+                        </option>,
+                      ],
+                      "id": "office",
+                      "onChange": [Function],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "",
+                          "name": "",
+                          "value": undefined,
+                        },
+                        "ref": null,
+                        "rendered": "",
+                        "type": "option",
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "",
+                          "name": "",
+                          "value": undefined,
+                        },
+                        "ref": null,
+                        "rendered": "",
+                        "type": "option",
+                      },
+                    ],
+                    "type": "select",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                      Submit any piece of evidence
+                    </span>,
+                    <input
+                      id="evidence"
+                      onChange={[Function]}
+                      placeholder="Enter link here"
+                      required={true}
+                      type="text"
+                    />,
+                  ],
+                  "className": "fix",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Submit any piece of evidence",
+                    },
+                    "ref": null,
+                    "rendered": "Submit any piece of evidence",
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "id": "evidence",
+                      "onChange": [Function],
+                      "placeholder": "Enter link here",
+                      "required": true,
+                      "type": "text",
+                      "value": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "input",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span>
+                      Comments
+                    </span>,
+                    <textarea
+                      cols="50"
+                      id="comment"
+                      onChange={[Function]}
+                      placeholder="Leave your comments here"
+                      rows="4"
+                    />,
+                  ],
+                  "className": "fix",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Comments",
+                    },
+                    "ref": null,
+                    "rendered": "Comments",
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "cols": "50",
+                      "id": "comment",
+                      "onChange": [Function],
+                      "placeholder": "Leave your comments here",
+                      "rows": "4",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "textarea",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "className": "cte-off",
+                  "id": "office-btn",
+                  "onClick": [Function],
+                  "type": "submit",
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "X",
+                  "id": "btn",
+                  "onClick": [Function],
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "X",
+                "type": "button",
+              },
+            ],
+            "type": "form",
+          },
+          "type": "section",
+        },
+        "type": "div",
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <$class
+            options={Object {}}
+          />,
+          false,
+          <div>
+            <section
+              className="modal-main"
+            >
+              <form
+                className="modal-form"
+              >
+                <h3
+                  className="page-modal-title"
+                >
+                  Petition
+                </h3>
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Select an office to petition
+                  </span>
+                  <select
+                    id="office"
+                    onChange={[Function]}
+                  >
+                    <option
+                      name=""
+                    >
+                      
+                    </option>
+                    <option
+                      name=""
+                    >
+                      
+                    </option>
+                  </select>
+                </div>
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Submit any piece of evidence
+                  </span>
+                  <input
+                    id="evidence"
+                    onChange={[Function]}
+                    placeholder="Enter link here"
+                    required={true}
+                    type="text"
+                  />
+                </div>
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Comments
+                  </span>
+                  <textarea
+                    cols="50"
+                    id="comment"
+                    onChange={[Function]}
+                    placeholder="Leave your comments here"
+                    rows="4"
+                  />
+                </div>
+                <button
+                  className="cte-off"
+                  id="office-btn"
+                  onClick={[Function]}
+                  type="submit"
+                >
+                  Submit
+                </button>
+                <button
+                  id="btn"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  X
+                </button>
+              </form>
+            </section>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "options": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [MockFunction],
+        },
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <section
+              className="modal-main"
+            >
+              <form
+                className="modal-form"
+              >
+                <h3
+                  className="page-modal-title"
+                >
+                  Petition
+                </h3>
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Select an office to petition
+                  </span>
+                  <select
+                    id="office"
+                    onChange={[Function]}
+                  >
+                    <option
+                      name=""
+                    >
+                      
+                    </option>
+                    <option
+                      name=""
+                    >
+                      
+                    </option>
+                  </select>
+                </div>
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Submit any piece of evidence
+                  </span>
+                  <input
+                    id="evidence"
+                    onChange={[Function]}
+                    placeholder="Enter link here"
+                    required={true}
+                    type="text"
+                  />
+                </div>
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Comments
+                  </span>
+                  <textarea
+                    cols="50"
+                    id="comment"
+                    onChange={[Function]}
+                    placeholder="Leave your comments here"
+                    rows="4"
+                  />
+                </div>
+                <button
+                  className="cte-off"
+                  id="office-btn"
+                  onClick={[Function]}
+                  type="submit"
+                >
+                  Submit
+                </button>
+                <button
+                  id="btn"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  X
+                </button>
+              </form>
+            </section>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <form
+                className="modal-form"
+              >
+                <h3
+                  className="page-modal-title"
+                >
+                  Petition
+                </h3>
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Select an office to petition
+                  </span>
+                  <select
+                    id="office"
+                    onChange={[Function]}
+                  >
+                    <option
+                      name=""
+                    >
+                      
+                    </option>
+                    <option
+                      name=""
+                    >
+                      
+                    </option>
+                  </select>
+                </div>
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Submit any piece of evidence
+                  </span>
+                  <input
+                    id="evidence"
+                    onChange={[Function]}
+                    placeholder="Enter link here"
+                    required={true}
+                    type="text"
+                  />
+                </div>
+                <div
+                  className="fix"
+                >
+                  <span>
+                    Comments
+                  </span>
+                  <textarea
+                    cols="50"
+                    id="comment"
+                    onChange={[Function]}
+                    placeholder="Leave your comments here"
+                    rows="4"
+                  />
+                </div>
+                <button
+                  className="cte-off"
+                  id="office-btn"
+                  onClick={[Function]}
+                  type="submit"
+                >
+                  Submit
+                </button>
+                <button
+                  id="btn"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  X
+                </button>
+              </form>,
+              "className": "modal-main",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3
+                    className="page-modal-title"
+                  >
+                    Petition
+                  </h3>,
+                  <div
+                    className="fix"
+                  >
+                    <span>
+                      Select an office to petition
+                    </span>
+                    <select
+                      id="office"
+                      onChange={[Function]}
+                    >
+                      <option
+                        name=""
+                      >
+                        
+                      </option>
+                      <option
+                        name=""
+                      >
+                        
+                      </option>
+                    </select>
+                  </div>,
+                  <div
+                    className="fix"
+                  >
+                    <span>
+                      Submit any piece of evidence
+                    </span>
+                    <input
+                      id="evidence"
+                      onChange={[Function]}
+                      placeholder="Enter link here"
+                      required={true}
+                      type="text"
+                    />
+                  </div>,
+                  <div
+                    className="fix"
+                  >
+                    <span>
+                      Comments
+                    </span>
+                    <textarea
+                      cols="50"
+                      id="comment"
+                      onChange={[Function]}
+                      placeholder="Leave your comments here"
+                      rows="4"
+                    />
+                  </div>,
+                  <button
+                    className="cte-off"
+                    id="office-btn"
+                    onClick={[Function]}
+                    type="submit"
+                  >
+                    Submit
+                  </button>,
+                  <button
+                    id="btn"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    X
+                  </button>,
+                ],
+                "className": "modal-form",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Petition",
+                    "className": "page-modal-title",
+                  },
+                  "ref": null,
+                  "rendered": "Petition",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span>
+                        Select an office to petition
+                      </span>,
+                      <select
+                        id="office"
+                        onChange={[Function]}
+                      >
+                        <option
+                          name=""
+                        >
+                          
+                        </option>
+                        <option
+                          name=""
+                        >
+                          
+                        </option>
+                      </select>,
+                    ],
+                    "className": "fix",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Select an office to petition",
+                      },
+                      "ref": null,
+                      "rendered": "Select an office to petition",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": Array [
+                          <option
+                            name=""
+                          >
+                            
+                          </option>,
+                          <option
+                            name=""
+                          >
+                            
+                          </option>,
+                        ],
+                        "id": "office",
+                        "onChange": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "",
+                            "name": "",
+                            "value": undefined,
+                          },
+                          "ref": null,
+                          "rendered": "",
+                          "type": "option",
+                        },
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "",
+                            "name": "",
+                            "value": undefined,
+                          },
+                          "ref": null,
+                          "rendered": "",
+                          "type": "option",
+                        },
+                      ],
+                      "type": "select",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span>
+                        Submit any piece of evidence
+                      </span>,
+                      <input
+                        id="evidence"
+                        onChange={[Function]}
+                        placeholder="Enter link here"
+                        required={true}
+                        type="text"
+                      />,
+                    ],
+                    "className": "fix",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Submit any piece of evidence",
+                      },
+                      "ref": null,
+                      "rendered": "Submit any piece of evidence",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "id": "evidence",
+                        "onChange": [Function],
+                        "placeholder": "Enter link here",
+                        "required": true,
+                        "type": "text",
+                        "value": undefined,
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "input",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span>
+                        Comments
+                      </span>,
+                      <textarea
+                        cols="50"
+                        id="comment"
+                        onChange={[Function]}
+                        placeholder="Leave your comments here"
+                        rows="4"
+                      />,
+                    ],
+                    "className": "fix",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Comments",
+                      },
+                      "ref": null,
+                      "rendered": "Comments",
+                      "type": "span",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "cols": "50",
+                        "id": "comment",
+                        "onChange": [Function],
+                        "placeholder": "Leave your comments here",
+                        "rows": "4",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "textarea",
+                    },
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Submit",
+                    "className": "cte-off",
+                    "id": "office-btn",
+                    "onClick": [Function],
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "rendered": "Submit",
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "X",
+                    "id": "btn",
+                    "onClick": [Function],
+                    "type": "button",
+                  },
+                  "ref": null,
+                  "rendered": "X",
+                  "type": "button",
+                },
+              ],
+              "type": "form",
+            },
+            "type": "section",
+          },
+          "type": "div",
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

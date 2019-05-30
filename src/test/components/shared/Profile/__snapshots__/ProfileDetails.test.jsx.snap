@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileDetails component should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProfileDetails
+    user={
+      Object {
+        "email": "",
+        "firstname": "",
+        "lastname": "",
+        "othernames": "",
+        "phonenumber": "",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p
+          id="fullname"
+        >
+          Fullname: 
+            
+        </p>,
+        <p
+          id="email"
+        >
+          Email: 
+          
+        </p>,
+        <p
+          id="phonenumber"
+        >
+          Phonenumber: 
+          
+        </p>,
+        <p
+          id="typ"
+        >
+          Status: 
+        </p>,
+      ],
+      "className": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Fullname: ",
+            "  ",
+          ],
+          "id": "fullname",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Fullname: ",
+          "  ",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Email: ",
+            "",
+          ],
+          "id": "email",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Email: ",
+          "",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Phonenumber: ",
+            "",
+          ],
+          "id": "phonenumber",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Phonenumber: ",
+          "",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Status: ",
+            undefined,
+          ],
+          "id": "typ",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Status: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p
+            id="fullname"
+          >
+            Fullname: 
+              
+          </p>,
+          <p
+            id="email"
+          >
+            Email: 
+            
+          </p>,
+          <p
+            id="phonenumber"
+          >
+            Phonenumber: 
+            
+          </p>,
+          <p
+            id="typ"
+          >
+            Status: 
+          </p>,
+        ],
+        "className": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Fullname: ",
+              "  ",
+            ],
+            "id": "fullname",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Fullname: ",
+            "  ",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Email: ",
+              "",
+            ],
+            "id": "email",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Email: ",
+            "",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Phonenumber: ",
+              "",
+            ],
+            "id": "phonenumber",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Phonenumber: ",
+            "",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Status: ",
+              undefined,
+            ],
+            "id": "typ",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Status: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

@@ -20,7 +20,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         false,
-        <_class
+        <$class
           options={Object {}}
         />,
         <NavBar
@@ -121,7 +121,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": null,
-        "type": [Function],
+        "type": [MockFunction],
       },
       Object {
         "instance": null,
@@ -395,7 +395,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           false,
-          <_class
+          <$class
             options={Object {}}
           />,
           <NavBar
@@ -496,7 +496,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": null,
-          "type": [Function],
+          "type": [MockFunction],
         },
         Object {
           "instance": null,
