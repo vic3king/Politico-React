@@ -24,7 +24,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": <div
-        className="profile sidenav"
+        className="profile sidenav toggle"
       >
         <ProfileImage
           className="profile__image"
@@ -42,15 +42,11 @@ ShallowWrapper {
         <br />
         <br />
         <br />
-        <Link>
-          
-        </Link>
+        
         <br />
         <br />
         <br />
-        <Link>
-          
-        </Link>
+        
       </div>,
     },
     "ref": null,
@@ -76,17 +72,13 @@ ShallowWrapper {
           <br />,
           <br />,
           <br />,
-          <Link>
-            
-          </Link>,
+          "",
           <br />,
           <br />,
           <br />,
-          <Link>
-            
-          </Link>,
+          "",
         ],
-        "className": "profile sidenav",
+        "className": "profile sidenav toggle",
       },
       "ref": null,
       "rendered": Array [
@@ -187,18 +179,7 @@ ShallowWrapper {
           "rendered": null,
           "type": "br",
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "",
-            "to": undefined,
-          },
-          "ref": null,
-          "rendered": "",
-          "type": [Function],
-        },
+        "",
         Object {
           "instance": null,
           "key": undefined,
@@ -226,18 +207,7 @@ ShallowWrapper {
           "rendered": null,
           "type": "br",
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": "",
-            "to": undefined,
-          },
-          "ref": null,
-          "rendered": "",
-          "type": [Function],
-        },
+        "",
       ],
       "type": "div",
     },
@@ -250,7 +220,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <div
-          className="profile sidenav"
+          className="profile sidenav toggle"
         >
           <ProfileImage
             className="profile__image"
@@ -268,15 +238,11 @@ ShallowWrapper {
           <br />
           <br />
           <br />
-          <Link>
-            
-          </Link>
+          
           <br />
           <br />
           <br />
-          <Link>
-            
-          </Link>
+          
         </div>,
       },
       "ref": null,
@@ -302,17 +268,13 @@ ShallowWrapper {
             <br />,
             <br />,
             <br />,
-            <Link>
-              
-            </Link>,
+            "",
             <br />,
             <br />,
             <br />,
-            <Link>
-              
-            </Link>,
+            "",
           ],
-          "className": "profile sidenav",
+          "className": "profile sidenav toggle",
         },
         "ref": null,
         "rendered": Array [
@@ -413,18 +375,7 @@ ShallowWrapper {
             "rendered": null,
             "type": "br",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "",
-              "to": undefined,
-            },
-            "ref": null,
-            "rendered": "",
-            "type": [Function],
-          },
+          "",
           Object {
             "instance": null,
             "key": undefined,
@@ -452,18 +403,7 @@ ShallowWrapper {
             "rendered": null,
             "type": "br",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "",
-              "to": undefined,
-            },
-            "ref": null,
-            "rendered": "",
-            "type": [Function],
-          },
+          "",
         ],
         "type": "div",
       },

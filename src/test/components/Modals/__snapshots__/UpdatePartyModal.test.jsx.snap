@@ -23,9 +23,6 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <$class
-          options={Object {}}
-        />,
         false,
         <Modal
           ButtonOne={
@@ -52,6 +49,7 @@ ShallowWrapper {
             />
           }
           InputOne=""
+          InputThree=""
           InputTwo=""
           Select={
             <Input
@@ -63,6 +61,7 @@ ShallowWrapper {
               value=""
             />
           }
+          SpanFour=""
           SpanOne=""
           SpanThree=""
           SpanTwo=""
@@ -71,17 +70,6 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "options": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [MockFunction],
-      },
       false,
       Object {
         "instance": null,
@@ -106,6 +94,7 @@ ShallowWrapper {
             text="Update Party"
           />,
           "InputOne": "",
+          "InputThree": "",
           "InputTwo": "",
           "Select": <Input
             id="name"
@@ -115,6 +104,7 @@ ShallowWrapper {
             type="text"
             value=""
           />,
+          "SpanFour": "",
           "SpanOne": "",
           "SpanThree": "",
           "SpanTwo": "",
@@ -133,9 +123,6 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <$class
-            options={Object {}}
-          />,
           false,
           <Modal
             ButtonOne={
@@ -162,6 +149,7 @@ ShallowWrapper {
               />
             }
             InputOne=""
+            InputThree=""
             InputTwo=""
             Select={
               <Input
@@ -173,6 +161,7 @@ ShallowWrapper {
                 value=""
               />
             }
+            SpanFour=""
             SpanOne=""
             SpanThree=""
             SpanTwo=""
@@ -181,17 +170,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "options": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [MockFunction],
-        },
         false,
         Object {
           "instance": null,
@@ -216,6 +194,7 @@ ShallowWrapper {
               text="Update Party"
             />,
             "InputOne": "",
+            "InputThree": "",
             "InputTwo": "",
             "Select": <Input
               id="name"
@@ -225,6 +204,7 @@ ShallowWrapper {
               type="text"
               value=""
             />,
+            "SpanFour": "",
             "SpanOne": "",
             "SpanThree": "",
             "SpanTwo": "",

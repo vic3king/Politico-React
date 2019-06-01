@@ -19,24 +19,7 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <_class
-          options={Object {}}
-        />,
         <Loader />,
-        <NavBar
-          LiTagOne={
-            <LiTag
-              to="/logout"
-              value="Logout"
-            />
-          }
-          LiTagTwo=""
-        />,
-        <h4
-          className="page-title-results"
-        >
-          Election Results
-        </h4>,
         false,
         <div
           id="grid"
@@ -48,49 +31,11 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "options": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "function",
         "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "LiTagOne": <LiTag
-            to="/logout"
-            value="Logout"
-          />,
-          "LiTagTwo": "",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Election Results",
-          "className": "page-title-results",
-        },
-        "ref": null,
-        "rendered": "Election Results",
-        "type": "h4",
       },
       false,
       Object {
@@ -115,24 +60,7 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <_class
-            options={Object {}}
-          />,
           <Loader />,
-          <NavBar
-            LiTagOne={
-              <LiTag
-                to="/logout"
-                value="Logout"
-              />
-            }
-            LiTagTwo=""
-          />,
-          <h4
-            className="page-title-results"
-          >
-            Election Results
-          </h4>,
           false,
           <div
             id="grid"
@@ -144,49 +72,11 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "options": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "function",
           "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "LiTagOne": <LiTag
-              to="/logout"
-              value="Logout"
-            />,
-            "LiTagTwo": "",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Election Results",
-            "className": "page-title-results",
-          },
-          "ref": null,
-          "rendered": "Election Results",
-          "type": "h4",
         },
         false,
         Object {

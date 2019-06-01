@@ -3,10 +3,7 @@
 exports[`NavBar component should match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <NavBar
-    LiTagOne=""
-    LiTagTwo=""
-  />,
+  Symbol(enzyme.__unrendered__): <NavBar />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -40,10 +37,7 @@ ShallowWrapper {
         >
           <ul
             className="main-nav__items"
-          >
-            
-            
-          </ul>
+          />
         </nav>
       </header>,
     },
@@ -54,6 +48,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          undefined,
           <div>
             <i
               className="fa fa-balance-scale fa-lg"
@@ -70,16 +65,14 @@ ShallowWrapper {
           >
             <ul
               className="main-nav__items"
-            >
-              
-              
-            </ul>
+            />
           </nav>,
         ],
         "className": "main-header",
       },
       "ref": null,
       "rendered": Array [
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
@@ -133,10 +126,7 @@ ShallowWrapper {
           "props": Object {
             "children": <ul
               className="main-nav__items"
-            >
-              
-              
-            </ul>,
+            />,
             "className": "main-nav",
           },
           "ref": null,
@@ -145,17 +135,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                "",
-                "",
-              ],
+              "children": undefined,
               "className": "main-nav__items",
             },
             "ref": null,
-            "rendered": Array [
-              "",
-              "",
-            ],
+            "rendered": null,
             "type": "ul",
           },
           "type": "nav",
@@ -190,10 +174,7 @@ ShallowWrapper {
           >
             <ul
               className="main-nav__items"
-            >
-              
-              
-            </ul>
+            />
           </nav>
         </header>,
       },
@@ -204,6 +185,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            undefined,
             <div>
               <i
                 className="fa fa-balance-scale fa-lg"
@@ -220,16 +202,14 @@ ShallowWrapper {
             >
               <ul
                 className="main-nav__items"
-              >
-                
-                
-              </ul>
+              />
             </nav>,
           ],
           "className": "main-header",
         },
         "ref": null,
         "rendered": Array [
+          undefined,
           Object {
             "instance": null,
             "key": undefined,
@@ -283,10 +263,7 @@ ShallowWrapper {
             "props": Object {
               "children": <ul
                 className="main-nav__items"
-              >
-                
-                
-              </ul>,
+              />,
               "className": "main-nav",
             },
             "ref": null,
@@ -295,17 +272,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  "",
-                  "",
-                ],
+                "children": undefined,
                 "className": "main-nav__items",
               },
               "ref": null,
-              "rendered": Array [
-                "",
-                "",
-              ],
+              "rendered": null,
               "type": "ul",
             },
             "type": "nav",

@@ -98,12 +98,15 @@ describe('PoliticiansPage', () => {
   describe('showIntrestsModal method', () => {
     it('should set showIntrestsModal to true and set showPetitionsModal to false', () => {
       const instance = wrapper.instance();
+      const event = {
+        target: { id: 'office' },
+      };
       instance.setState({
         showIntrestsModal: true,
         showPetitionsModal: false,
       });
 
-      instance.showIntrestsModal();
+      instance.showIntrestsModal(event);
 
       expect(instance.state.showIntrestsModal).toBeTruthy();
       expect(instance.state.showPetitionsModal).toBeFalsy();

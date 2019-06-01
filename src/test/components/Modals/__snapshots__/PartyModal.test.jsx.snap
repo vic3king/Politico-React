@@ -22,9 +22,6 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <$class
-          options={Object {}}
-        />,
         false,
         <Modal
           ButtonOne={
@@ -60,6 +57,7 @@ ShallowWrapper {
               value=""
             />
           }
+          InputThree=""
           InputTwo={
             <Input
               id="logoUrl"
@@ -80,6 +78,7 @@ ShallowWrapper {
               value=""
             />
           }
+          SpanFour=""
           SpanOne={
             <Span
               text="Name: "
@@ -100,17 +99,6 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "options": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [MockFunction],
-      },
       false,
       Object {
         "instance": null,
@@ -142,6 +130,7 @@ ShallowWrapper {
             type="text"
             value=""
           />,
+          "InputThree": "",
           "InputTwo": <Input
             id="logoUrl"
             onChange={[Function]}
@@ -158,6 +147,7 @@ ShallowWrapper {
             type="text"
             value=""
           />,
+          "SpanFour": "",
           "SpanOne": <Span
             text="Name: "
           />,
@@ -182,9 +172,6 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <$class
-            options={Object {}}
-          />,
           false,
           <Modal
             ButtonOne={
@@ -220,6 +207,7 @@ ShallowWrapper {
                 value=""
               />
             }
+            InputThree=""
             InputTwo={
               <Input
                 id="logoUrl"
@@ -240,6 +228,7 @@ ShallowWrapper {
                 value=""
               />
             }
+            SpanFour=""
             SpanOne={
               <Span
                 text="Name: "
@@ -260,17 +249,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "options": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [MockFunction],
-        },
         false,
         Object {
           "instance": null,
@@ -302,6 +280,7 @@ ShallowWrapper {
               type="text"
               value=""
             />,
+            "InputThree": "",
             "InputTwo": <Input
               id="logoUrl"
               onChange={[Function]}
@@ -318,6 +297,7 @@ ShallowWrapper {
               type="text"
               value=""
             />,
+            "SpanFour": "",
             "SpanOne": <Span
               text="Name: "
             />,

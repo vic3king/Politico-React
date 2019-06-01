@@ -23,19 +23,19 @@ ShallowWrapper {
         false,
         false,
         <NavBar
-          LiTagOne={
-            <LiTag
-              to="/"
-              value="Home"
-            />
-          }
-          LiTagTwo={
-            <LiTag
-              to="/logout"
-              value="Logout"
-            />
-          }
-        />,
+          show={true}
+        >
+          <Button
+            className="reset_button"
+            id="Dashboard"
+            onClick={[Function]}
+            value="Dashboard"
+          />
+          <LiTag
+            to="/logout"
+            value="Logout"
+          />
+        </NavBar>,
         <div
           className="main"
         >
@@ -51,18 +51,13 @@ ShallowWrapper {
             }
             ButtonThree=""
             ButtonTwo={
-              <Link
-                to="/results"
-              >
-                <Button
-                  className="profile-btn"
-                  id="results"
-                  onClick={[Function]}
-                  value="Results"
-                />
-              </Link>
+              <Button
+                className="profile-btn"
+                id="results"
+                onClick={[Function]}
+                value="Results"
+              />
             }
-            to="results"
             user={Object {}}
           />
           <div
@@ -91,7 +86,7 @@ ShallowWrapper {
                     },
                   ]
                 }
-                value="View"
+                value="View to Vote"
               />
             </section>
           </div>
@@ -108,17 +103,49 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "LiTagOne": <LiTag
-            to="/"
-            value="Home"
-          />,
-          "LiTagTwo": <LiTag
-            to="/logout"
-            value="Logout"
-          />,
+          "children": Array [
+            <Button
+              className="reset_button"
+              id="Dashboard"
+              onClick={[Function]}
+              value="Dashboard"
+            />,
+            <LiTag
+              to="/logout"
+              value="Logout"
+            />,
+          ],
+          "show": true,
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "className": "reset_button",
+              "id": "Dashboard",
+              "onClick": [Function],
+              "value": "Dashboard",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "to": "/logout",
+              "value": "Logout",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
       Object {
@@ -139,18 +166,13 @@ ShallowWrapper {
               }
               ButtonThree=""
               ButtonTwo={
-                <Link
-                  to="/results"
-                >
-                  <Button
-                    className="profile-btn"
-                    id="results"
-                    onClick={[Function]}
-                    value="Results"
-                  />
-                </Link>
+                <Button
+                  className="profile-btn"
+                  id="results"
+                  onClick={[Function]}
+                  value="Results"
+                />
               }
-              to="results"
               user={Object {}}
             />,
             <div
@@ -179,10 +201,11 @@ ShallowWrapper {
                       },
                     ]
                   }
-                  value="View"
+                  value="View to Vote"
                 />
               </section>
             </div>,
+            null,
           ],
           "className": "main",
         },
@@ -201,17 +224,12 @@ ShallowWrapper {
                 value="Raise Petition"
               />,
               "ButtonThree": "",
-              "ButtonTwo": <Link
-                to="/results"
-              >
-                <Button
-                  className="profile-btn"
-                  id="results"
-                  onClick={[Function]}
-                  value="Results"
-                />
-              </Link>,
-              "to": "results",
+              "ButtonTwo": <Button
+                className="profile-btn"
+                id="results"
+                onClick={[Function]}
+                value="Results"
+              />,
               "user": Object {},
             },
             "ref": null,
@@ -246,7 +264,7 @@ ShallowWrapper {
                       },
                     ]
                   }
-                  value="View"
+                  value="View to Vote"
                 />
               </section>,
               "className": "boxed",
@@ -278,7 +296,7 @@ ShallowWrapper {
                         },
                       ]
                     }
-                    value="View"
+                    value="View to Vote"
                   />,
                 ],
                 "className": "main-section",
@@ -340,7 +358,7 @@ ShallowWrapper {
                         "office": "",
                       },
                     ],
-                    "value": "View",
+                    "value": "View to Vote",
                   },
                   "ref": null,
                   "rendered": null,
@@ -351,6 +369,7 @@ ShallowWrapper {
             },
             "type": "div",
           },
+          null,
         ],
         "type": "div",
       },
@@ -368,19 +387,19 @@ ShallowWrapper {
           false,
           false,
           <NavBar
-            LiTagOne={
-              <LiTag
-                to="/"
-                value="Home"
-              />
-            }
-            LiTagTwo={
-              <LiTag
-                to="/logout"
-                value="Logout"
-              />
-            }
-          />,
+            show={true}
+          >
+            <Button
+              className="reset_button"
+              id="Dashboard"
+              onClick={[Function]}
+              value="Dashboard"
+            />
+            <LiTag
+              to="/logout"
+              value="Logout"
+            />
+          </NavBar>,
           <div
             className="main"
           >
@@ -396,18 +415,13 @@ ShallowWrapper {
               }
               ButtonThree=""
               ButtonTwo={
-                <Link
-                  to="/results"
-                >
-                  <Button
-                    className="profile-btn"
-                    id="results"
-                    onClick={[Function]}
-                    value="Results"
-                  />
-                </Link>
+                <Button
+                  className="profile-btn"
+                  id="results"
+                  onClick={[Function]}
+                  value="Results"
+                />
               }
-              to="results"
               user={Object {}}
             />
             <div
@@ -436,7 +450,7 @@ ShallowWrapper {
                       },
                     ]
                   }
-                  value="View"
+                  value="View to Vote"
                 />
               </section>
             </div>
@@ -453,17 +467,49 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "LiTagOne": <LiTag
-              to="/"
-              value="Home"
-            />,
-            "LiTagTwo": <LiTag
-              to="/logout"
-              value="Logout"
-            />,
+            "children": Array [
+              <Button
+                className="reset_button"
+                id="Dashboard"
+                onClick={[Function]}
+                value="Dashboard"
+              />,
+              <LiTag
+                to="/logout"
+                value="Logout"
+              />,
+            ],
+            "show": true,
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "reset_button",
+                "id": "Dashboard",
+                "onClick": [Function],
+                "value": "Dashboard",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "to": "/logout",
+                "value": "Logout",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
@@ -484,18 +530,13 @@ ShallowWrapper {
                 }
                 ButtonThree=""
                 ButtonTwo={
-                  <Link
-                    to="/results"
-                  >
-                    <Button
-                      className="profile-btn"
-                      id="results"
-                      onClick={[Function]}
-                      value="Results"
-                    />
-                  </Link>
+                  <Button
+                    className="profile-btn"
+                    id="results"
+                    onClick={[Function]}
+                    value="Results"
+                  />
                 }
-                to="results"
                 user={Object {}}
               />,
               <div
@@ -524,10 +565,11 @@ ShallowWrapper {
                         },
                       ]
                     }
-                    value="View"
+                    value="View to Vote"
                   />
                 </section>
               </div>,
+              null,
             ],
             "className": "main",
           },
@@ -546,17 +588,12 @@ ShallowWrapper {
                   value="Raise Petition"
                 />,
                 "ButtonThree": "",
-                "ButtonTwo": <Link
-                  to="/results"
-                >
-                  <Button
-                    className="profile-btn"
-                    id="results"
-                    onClick={[Function]}
-                    value="Results"
-                  />
-                </Link>,
-                "to": "results",
+                "ButtonTwo": <Button
+                  className="profile-btn"
+                  id="results"
+                  onClick={[Function]}
+                  value="Results"
+                />,
                 "user": Object {},
               },
               "ref": null,
@@ -591,7 +628,7 @@ ShallowWrapper {
                         },
                       ]
                     }
-                    value="View"
+                    value="View to Vote"
                   />
                 </section>,
                 "className": "boxed",
@@ -623,7 +660,7 @@ ShallowWrapper {
                           },
                         ]
                       }
-                      value="View"
+                      value="View to Vote"
                     />,
                   ],
                   "className": "main-section",
@@ -685,7 +722,7 @@ ShallowWrapper {
                           "office": "",
                         },
                       ],
-                      "value": "View",
+                      "value": "View to Vote",
                     },
                     "ref": null,
                     "rendered": null,
@@ -696,6 +733,7 @@ ShallowWrapper {
               },
               "type": "div",
             },
+            null,
           ],
           "type": "div",
         },

@@ -20,90 +20,90 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         false,
-        <$class
-          options={Object {}}
-        />,
-        <NavBar
-          LiTagOne={
-            <LiTag
-              to="/signup"
-              value="Sign Up"
-            />
-          }
-          LiTagTwo=""
-        />,
+        <NavBar>
+          <LiTag
+            to="/signup"
+            value="Sign Up"
+          />
+        </NavBar>,
         <div
-          className="center"
+          className="d-flex justify-content-center"
         >
-          <i
-            aria-hidden="true"
-            className="fa fa-balance-scale fa-5x "
-          />
-          <h3
-            className="welcome__"
+          <div
+            className="inner"
           >
-            Please login
-          </h3>
-        </div>,
-        <div
-          className="center"
-        />,
-        <form
-          className="signbox2"
-          id="login-form"
-          onSubmit={[Function]}
-        >
-          <Input
-            id="email"
-            onChange={[Function]}
-            placeholder="Email"
-            required={true}
-            type="text"
-            value=""
-          />
-          <span
-            id="spanemail"
-          />
-          <Input
-            id="password"
-            onChange={[Function]}
-            placeholder="Password"
-            required={true}
-            type="password"
-            value=""
-          />
-          <span
-            id="spanpassword"
-          />
-          <Input
-            id="submit"
-            name=""
-            placeholder=""
-            type="submit"
-            value="Login"
-          />
-          <Link
-            className="link"
-            to="/reset"
-          >
-            Forgotten your password?
-          </Link>
-          <p
-            style={
-              Object {
-                "textAlign": "center",
-              }
-            }
-          >
-            Need an account?
-            <Link
-              className="link"
-              to="/signup"
+            <div
+              className="center"
             >
-              Sign Up
-            </Link>
-          </p>
-        </form>,
+              <i
+                aria-hidden="true"
+                className="fa fa-balance-scale fa-5x "
+              />
+              <h3
+                className="welcome__"
+              >
+                Please login
+              </h3>
+            </div>
+            <form
+              className="signbox login"
+              id="login-form"
+              onSubmit={[Function]}
+            >
+              <Input
+                id="email"
+                onChange={[Function]}
+                placeholder="Email"
+                required={true}
+                type="text"
+                value=""
+              />
+              <span
+                id="spanemail"
+              />
+              <Input
+                id="password"
+                onChange={[Function]}
+                placeholder="Password"
+                required={true}
+                type="password"
+                value=""
+              />
+              <span
+                id="spanpassword"
+              />
+              <Input
+                className="submit"
+                id="submit"
+                name=""
+                placeholder=""
+                type="submit"
+                value="Login"
+              />
+              <Link
+                className="link"
+                to="/reset"
+              >
+                Forgotten your password?
+              </Link>
+              <p
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Need an account?
+                <Link
+                  className="link"
+                  to="/signup"
+                >
+                  Sign Up
+                </Link>
+              </p>
+            </form>
+          </div>
+        </div>,
         false,
         false,
         false,
@@ -115,27 +115,26 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "options": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [MockFunction],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "LiTagOne": <LiTag
+          "children": <LiTag
             to="/signup"
             value="Sign Up"
           />,
-          "LiTagTwo": "",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "to": "/signup",
+            "value": "Sign Up",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         "type": [Function],
       },
       Object {
@@ -143,243 +142,402 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <i
-              aria-hidden="true"
-              className="fa fa-balance-scale fa-5x "
-            />,
-            <h3
-              className="welcome__"
+          "children": <div
+            className="inner"
+          >
+            <div
+              className="center"
             >
-              Please login
-            </h3>,
-          ],
-          "className": "center",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "aria-hidden": "true",
-              "className": "fa fa-balance-scale fa-5x ",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "i",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Please login",
-              "className": "welcome__",
-            },
-            "ref": null,
-            "rendered": "Please login",
-            "type": "h3",
-          },
-        ],
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "className": "center",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <Input
-              id="email"
-              onChange={[Function]}
-              placeholder="Email"
-              required={true}
-              type="text"
-              value=""
-            />,
-            <span
-              id="spanemail"
-            />,
-            <Input
-              id="password"
-              onChange={[Function]}
-              placeholder="Password"
-              required={true}
-              type="password"
-              value=""
-            />,
-            <span
-              id="spanpassword"
-            />,
-            <Input
-              id="submit"
-              name=""
-              placeholder=""
-              type="submit"
-              value="Login"
-            />,
-            <Link
-              className="link"
-              to="/reset"
+              <i
+                aria-hidden="true"
+                className="fa fa-balance-scale fa-5x "
+              />
+              <h3
+                className="welcome__"
+              >
+                Please login
+              </h3>
+            </div>
+            <form
+              className="signbox login"
+              id="login-form"
+              onSubmit={[Function]}
             >
-              Forgotten your password?
-            </Link>,
-            <p
-              style={
-                Object {
-                  "textAlign": "center",
-                }
-              }
-            >
-              Need an account?
+              <Input
+                id="email"
+                onChange={[Function]}
+                placeholder="Email"
+                required={true}
+                type="text"
+                value=""
+              />
+              <span
+                id="spanemail"
+              />
+              <Input
+                id="password"
+                onChange={[Function]}
+                placeholder="Password"
+                required={true}
+                type="password"
+                value=""
+              />
+              <span
+                id="spanpassword"
+              />
+              <Input
+                className="submit"
+                id="submit"
+                name=""
+                placeholder=""
+                type="submit"
+                value="Login"
+              />
               <Link
                 className="link"
-                to="/signup"
+                to="/reset"
               >
-                Sign Up
+                Forgotten your password?
               </Link>
-            </p>,
-          ],
-          "className": "signbox2",
-          "id": "login-form",
-          "onSubmit": [Function],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "id": "email",
-              "onChange": [Function],
-              "placeholder": "Email",
-              "required": true,
-              "type": "text",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "id": "spanemail",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "span",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "id": "password",
-              "onChange": [Function],
-              "placeholder": "Password",
-              "required": true,
-              "type": "password",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "id": "spanpassword",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "span",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "id": "submit",
-              "name": "",
-              "placeholder": "",
-              "type": "submit",
-              "value": "Login",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Forgotten your password?",
-              "className": "link",
-              "to": "/reset",
-            },
-            "ref": null,
-            "rendered": "Forgotten your password?",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                "Need an account?",
+              <p
+                style={
+                  Object {
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Need an account?
                 <Link
                   className="link"
                   to="/signup"
                 >
                   Sign Up
-                </Link>,
-              ],
-              "style": Object {
-                "textAlign": "center",
-              },
-            },
-            "ref": null,
-            "rendered": Array [
-              "Need an account?",
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Sign Up",
-                  "className": "link",
-                  "to": "/signup",
-                },
-                "ref": null,
-                "rendered": "Sign Up",
-                "type": [Function],
-              },
+                </Link>
+              </p>
+            </form>
+          </div>,
+          "className": "d-flex justify-content-center",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="center"
+              >
+                <i
+                  aria-hidden="true"
+                  className="fa fa-balance-scale fa-5x "
+                />
+                <h3
+                  className="welcome__"
+                >
+                  Please login
+                </h3>
+              </div>,
+              <form
+                className="signbox login"
+                id="login-form"
+                onSubmit={[Function]}
+              >
+                <Input
+                  id="email"
+                  onChange={[Function]}
+                  placeholder="Email"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+                <span
+                  id="spanemail"
+                />
+                <Input
+                  id="password"
+                  onChange={[Function]}
+                  placeholder="Password"
+                  required={true}
+                  type="password"
+                  value=""
+                />
+                <span
+                  id="spanpassword"
+                />
+                <Input
+                  className="submit"
+                  id="submit"
+                  name=""
+                  placeholder=""
+                  type="submit"
+                  value="Login"
+                />
+                <Link
+                  className="link"
+                  to="/reset"
+                >
+                  Forgotten your password?
+                </Link>
+                <p
+                  style={
+                    Object {
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Need an account?
+                  <Link
+                    className="link"
+                    to="/signup"
+                  >
+                    Sign Up
+                  </Link>
+                </p>
+              </form>,
             ],
-            "type": "p",
+            "className": "inner",
           },
-        ],
-        "type": "form",
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    aria-hidden="true"
+                    className="fa fa-balance-scale fa-5x "
+                  />,
+                  <h3
+                    className="welcome__"
+                  >
+                    Please login
+                  </h3>,
+                ],
+                "className": "center",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "aria-hidden": "true",
+                    "className": "fa fa-balance-scale fa-5x ",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Please login",
+                    "className": "welcome__",
+                  },
+                  "ref": null,
+                  "rendered": "Please login",
+                  "type": "h3",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Input
+                    id="email"
+                    onChange={[Function]}
+                    placeholder="Email"
+                    required={true}
+                    type="text"
+                    value=""
+                  />,
+                  <span
+                    id="spanemail"
+                  />,
+                  <Input
+                    id="password"
+                    onChange={[Function]}
+                    placeholder="Password"
+                    required={true}
+                    type="password"
+                    value=""
+                  />,
+                  <span
+                    id="spanpassword"
+                  />,
+                  <Input
+                    className="submit"
+                    id="submit"
+                    name=""
+                    placeholder=""
+                    type="submit"
+                    value="Login"
+                  />,
+                  <Link
+                    className="link"
+                    to="/reset"
+                  >
+                    Forgotten your password?
+                  </Link>,
+                  <p
+                    style={
+                      Object {
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Need an account?
+                    <Link
+                      className="link"
+                      to="/signup"
+                    >
+                      Sign Up
+                    </Link>
+                  </p>,
+                ],
+                "className": "signbox login",
+                "id": "login-form",
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "id": "email",
+                    "onChange": [Function],
+                    "placeholder": "Email",
+                    "required": true,
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "id": "spanemail",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "id": "password",
+                    "onChange": [Function],
+                    "placeholder": "Password",
+                    "required": true,
+                    "type": "password",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "id": "spanpassword",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "submit",
+                    "id": "submit",
+                    "name": "",
+                    "placeholder": "",
+                    "type": "submit",
+                    "value": "Login",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Forgotten your password?",
+                    "className": "link",
+                    "to": "/reset",
+                  },
+                  "ref": null,
+                  "rendered": "Forgotten your password?",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Need an account?",
+                      <Link
+                        className="link"
+                        to="/signup"
+                      >
+                        Sign Up
+                      </Link>,
+                    ],
+                    "style": Object {
+                      "textAlign": "center",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Need an account?",
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Sign Up",
+                        "className": "link",
+                        "to": "/signup",
+                      },
+                      "ref": null,
+                      "rendered": "Sign Up",
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "form",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
       },
       false,
       false,
@@ -395,90 +553,90 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           false,
-          <$class
-            options={Object {}}
-          />,
-          <NavBar
-            LiTagOne={
-              <LiTag
-                to="/signup"
-                value="Sign Up"
-              />
-            }
-            LiTagTwo=""
-          />,
+          <NavBar>
+            <LiTag
+              to="/signup"
+              value="Sign Up"
+            />
+          </NavBar>,
           <div
-            className="center"
+            className="d-flex justify-content-center"
           >
-            <i
-              aria-hidden="true"
-              className="fa fa-balance-scale fa-5x "
-            />
-            <h3
-              className="welcome__"
+            <div
+              className="inner"
             >
-              Please login
-            </h3>
-          </div>,
-          <div
-            className="center"
-          />,
-          <form
-            className="signbox2"
-            id="login-form"
-            onSubmit={[Function]}
-          >
-            <Input
-              id="email"
-              onChange={[Function]}
-              placeholder="Email"
-              required={true}
-              type="text"
-              value=""
-            />
-            <span
-              id="spanemail"
-            />
-            <Input
-              id="password"
-              onChange={[Function]}
-              placeholder="Password"
-              required={true}
-              type="password"
-              value=""
-            />
-            <span
-              id="spanpassword"
-            />
-            <Input
-              id="submit"
-              name=""
-              placeholder=""
-              type="submit"
-              value="Login"
-            />
-            <Link
-              className="link"
-              to="/reset"
-            >
-              Forgotten your password?
-            </Link>
-            <p
-              style={
-                Object {
-                  "textAlign": "center",
-                }
-              }
-            >
-              Need an account?
-              <Link
-                className="link"
-                to="/signup"
+              <div
+                className="center"
               >
-                Sign Up
-              </Link>
-            </p>
-          </form>,
+                <i
+                  aria-hidden="true"
+                  className="fa fa-balance-scale fa-5x "
+                />
+                <h3
+                  className="welcome__"
+                >
+                  Please login
+                </h3>
+              </div>
+              <form
+                className="signbox login"
+                id="login-form"
+                onSubmit={[Function]}
+              >
+                <Input
+                  id="email"
+                  onChange={[Function]}
+                  placeholder="Email"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+                <span
+                  id="spanemail"
+                />
+                <Input
+                  id="password"
+                  onChange={[Function]}
+                  placeholder="Password"
+                  required={true}
+                  type="password"
+                  value=""
+                />
+                <span
+                  id="spanpassword"
+                />
+                <Input
+                  className="submit"
+                  id="submit"
+                  name=""
+                  placeholder=""
+                  type="submit"
+                  value="Login"
+                />
+                <Link
+                  className="link"
+                  to="/reset"
+                >
+                  Forgotten your password?
+                </Link>
+                <p
+                  style={
+                    Object {
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Need an account?
+                  <Link
+                    className="link"
+                    to="/signup"
+                  >
+                    Sign Up
+                  </Link>
+                </p>
+              </form>
+            </div>
+          </div>,
           false,
           false,
           false,
@@ -490,27 +648,26 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "options": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [MockFunction],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "LiTagOne": <LiTag
+            "children": <LiTag
               to="/signup"
               value="Sign Up"
             />,
-            "LiTagTwo": "",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "to": "/signup",
+              "value": "Sign Up",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
         Object {
@@ -518,243 +675,402 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <i
-                aria-hidden="true"
-                className="fa fa-balance-scale fa-5x "
-              />,
-              <h3
-                className="welcome__"
+            "children": <div
+              className="inner"
+            >
+              <div
+                className="center"
               >
-                Please login
-              </h3>,
-            ],
-            "className": "center",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "aria-hidden": "true",
-                "className": "fa fa-balance-scale fa-5x ",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "i",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Please login",
-                "className": "welcome__",
-              },
-              "ref": null,
-              "rendered": "Please login",
-              "type": "h3",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "className": "center",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <Input
-                id="email"
-                onChange={[Function]}
-                placeholder="Email"
-                required={true}
-                type="text"
-                value=""
-              />,
-              <span
-                id="spanemail"
-              />,
-              <Input
-                id="password"
-                onChange={[Function]}
-                placeholder="Password"
-                required={true}
-                type="password"
-                value=""
-              />,
-              <span
-                id="spanpassword"
-              />,
-              <Input
-                id="submit"
-                name=""
-                placeholder=""
-                type="submit"
-                value="Login"
-              />,
-              <Link
-                className="link"
-                to="/reset"
+                <i
+                  aria-hidden="true"
+                  className="fa fa-balance-scale fa-5x "
+                />
+                <h3
+                  className="welcome__"
+                >
+                  Please login
+                </h3>
+              </div>
+              <form
+                className="signbox login"
+                id="login-form"
+                onSubmit={[Function]}
               >
-                Forgotten your password?
-              </Link>,
-              <p
-                style={
-                  Object {
-                    "textAlign": "center",
-                  }
-                }
-              >
-                Need an account?
+                <Input
+                  id="email"
+                  onChange={[Function]}
+                  placeholder="Email"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+                <span
+                  id="spanemail"
+                />
+                <Input
+                  id="password"
+                  onChange={[Function]}
+                  placeholder="Password"
+                  required={true}
+                  type="password"
+                  value=""
+                />
+                <span
+                  id="spanpassword"
+                />
+                <Input
+                  className="submit"
+                  id="submit"
+                  name=""
+                  placeholder=""
+                  type="submit"
+                  value="Login"
+                />
                 <Link
                   className="link"
-                  to="/signup"
+                  to="/reset"
                 >
-                  Sign Up
+                  Forgotten your password?
                 </Link>
-              </p>,
-            ],
-            "className": "signbox2",
-            "id": "login-form",
-            "onSubmit": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "id": "email",
-                "onChange": [Function],
-                "placeholder": "Email",
-                "required": true,
-                "type": "text",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "id": "spanemail",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "span",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "id": "password",
-                "onChange": [Function],
-                "placeholder": "Password",
-                "required": true,
-                "type": "password",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "id": "spanpassword",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "span",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "id": "submit",
-                "name": "",
-                "placeholder": "",
-                "type": "submit",
-                "value": "Login",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Forgotten your password?",
-                "className": "link",
-                "to": "/reset",
-              },
-              "ref": null,
-              "rendered": "Forgotten your password?",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  "Need an account?",
+                <p
+                  style={
+                    Object {
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Need an account?
                   <Link
                     className="link"
                     to="/signup"
                   >
                     Sign Up
-                  </Link>,
-                ],
-                "style": Object {
-                  "textAlign": "center",
-                },
-              },
-              "ref": null,
-              "rendered": Array [
-                "Need an account?",
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Sign Up",
-                    "className": "link",
-                    "to": "/signup",
-                  },
-                  "ref": null,
-                  "rendered": "Sign Up",
-                  "type": [Function],
-                },
+                  </Link>
+                </p>
+              </form>
+            </div>,
+            "className": "d-flex justify-content-center",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="center"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="fa fa-balance-scale fa-5x "
+                  />
+                  <h3
+                    className="welcome__"
+                  >
+                    Please login
+                  </h3>
+                </div>,
+                <form
+                  className="signbox login"
+                  id="login-form"
+                  onSubmit={[Function]}
+                >
+                  <Input
+                    id="email"
+                    onChange={[Function]}
+                    placeholder="Email"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    id="spanemail"
+                  />
+                  <Input
+                    id="password"
+                    onChange={[Function]}
+                    placeholder="Password"
+                    required={true}
+                    type="password"
+                    value=""
+                  />
+                  <span
+                    id="spanpassword"
+                  />
+                  <Input
+                    className="submit"
+                    id="submit"
+                    name=""
+                    placeholder=""
+                    type="submit"
+                    value="Login"
+                  />
+                  <Link
+                    className="link"
+                    to="/reset"
+                  >
+                    Forgotten your password?
+                  </Link>
+                  <p
+                    style={
+                      Object {
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Need an account?
+                    <Link
+                      className="link"
+                      to="/signup"
+                    >
+                      Sign Up
+                    </Link>
+                  </p>
+                </form>,
               ],
-              "type": "p",
+              "className": "inner",
             },
-          ],
-          "type": "form",
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <i
+                      aria-hidden="true"
+                      className="fa fa-balance-scale fa-5x "
+                    />,
+                    <h3
+                      className="welcome__"
+                    >
+                      Please login
+                    </h3>,
+                  ],
+                  "className": "center",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "aria-hidden": "true",
+                      "className": "fa fa-balance-scale fa-5x ",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Please login",
+                      "className": "welcome__",
+                    },
+                    "ref": null,
+                    "rendered": "Please login",
+                    "type": "h3",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Input
+                      id="email"
+                      onChange={[Function]}
+                      placeholder="Email"
+                      required={true}
+                      type="text"
+                      value=""
+                    />,
+                    <span
+                      id="spanemail"
+                    />,
+                    <Input
+                      id="password"
+                      onChange={[Function]}
+                      placeholder="Password"
+                      required={true}
+                      type="password"
+                      value=""
+                    />,
+                    <span
+                      id="spanpassword"
+                    />,
+                    <Input
+                      className="submit"
+                      id="submit"
+                      name=""
+                      placeholder=""
+                      type="submit"
+                      value="Login"
+                    />,
+                    <Link
+                      className="link"
+                      to="/reset"
+                    >
+                      Forgotten your password?
+                    </Link>,
+                    <p
+                      style={
+                        Object {
+                          "textAlign": "center",
+                        }
+                      }
+                    >
+                      Need an account?
+                      <Link
+                        className="link"
+                        to="/signup"
+                      >
+                        Sign Up
+                      </Link>
+                    </p>,
+                  ],
+                  "className": "signbox login",
+                  "id": "login-form",
+                  "onSubmit": [Function],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "id": "email",
+                      "onChange": [Function],
+                      "placeholder": "Email",
+                      "required": true,
+                      "type": "text",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "id": "spanemail",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "id": "password",
+                      "onChange": [Function],
+                      "placeholder": "Password",
+                      "required": true,
+                      "type": "password",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "id": "spanpassword",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "submit",
+                      "id": "submit",
+                      "name": "",
+                      "placeholder": "",
+                      "type": "submit",
+                      "value": "Login",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Forgotten your password?",
+                      "className": "link",
+                      "to": "/reset",
+                    },
+                    "ref": null,
+                    "rendered": "Forgotten your password?",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Need an account?",
+                        <Link
+                          className="link"
+                          to="/signup"
+                        >
+                          Sign Up
+                        </Link>,
+                      ],
+                      "style": Object {
+                        "textAlign": "center",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Need an account?",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": "Sign Up",
+                          "className": "link",
+                          "to": "/signup",
+                        },
+                        "ref": null,
+                        "rendered": "Sign Up",
+                        "type": [Function],
+                      },
+                    ],
+                    "type": "p",
+                  },
+                ],
+                "type": "form",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
         },
         false,
         false,
