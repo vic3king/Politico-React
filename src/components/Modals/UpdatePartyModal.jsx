@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Notifications, { notify } from 'react-notify-toast';
+import { notify } from 'react-notify-toast';
 import Modal from '../shared/Modal/Modal';
 import Input from '../shared/InputFields/Input';
 import Button from '../shared/Buttons/Button';
@@ -53,7 +53,6 @@ class UpdatePartyModal extends Component {
     const { formDetails, loading } = this.state;
     return (
       <React.Fragment>
-        <Notifications />
         {loading && <Loader />}
         <Modal
           Header={<Header text="Update Party" />}

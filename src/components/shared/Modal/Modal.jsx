@@ -10,6 +10,8 @@ const Modal = ({
   SpanOne,
   SpanTwo,
   SpanThree,
+  SpanFour,
+  InputThree,
   ButtonOne,
   CloseModal,
 }) => {
@@ -30,6 +32,10 @@ const Modal = ({
             {SpanThree}
             {InputTwo}
           </div>
+          <div className="fix">
+            {SpanFour}
+            {InputThree}
+          </div>
           {ButtonOne}
           {CloseModal}
         </form>
@@ -47,6 +53,8 @@ Modal.defaultProps = {
   SpanTwo: (PropTypes.defaultProps = ''),
   SpanThree: (PropTypes.defaultProps = ''),
   ButtonOne: (PropTypes.defaultProps = ''),
+  SpanFour: (PropTypes.defaultProps = ''),
+  InputThree: (PropTypes.defaultProps = ''),
 };
 Modal.propTypes = {
   InputOne: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -57,5 +65,7 @@ Modal.propTypes = {
   SpanTwo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   SpanThree: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   ButtonOne: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  InputThree: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  SpanFour: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
 export default Modal;

@@ -1,12 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import '../../../style/navbar.scss';
+import toggleSidebar from '../../../helpers/responsive';
 
-const NavBar = ({ LiTagOne, LiTagTwo }) => {
+const NavBar = ({ show, children }) => {
   return (
     <React.Fragment>
       <header className="main-header">
+        {show && (
+          <div className="hide-lg">
+            <button type="button" onClick={() => toggleSidebar()}>
+              <i className="fa fa-bars fa-3x" />
+            </button>
+          </div>
+        )}
         <div>
           <i className="fa fa-balance-scale fa-lg" />
           <Link to="/" className="main-header__brand">
@@ -14,22 +21,10 @@ const NavBar = ({ LiTagOne, LiTagTwo }) => {
           </Link>
         </div>
         <nav className="main-nav">
-          <ul className="main-nav__items">
-            {LiTagOne}
-            {LiTagTwo}
-          </ul>
+          <ul className="main-nav__items">{children && children}</ul>
         </nav>
       </header>
     </React.Fragment>
   );
 };
-NavBar.defaultProps = {
-  LiTagOne: (PropTypes.defaultProps = ''),
-  LiTagTwo: (PropTypes.defaultProps = ''),
-};
-NavBar.propTypes = {
-  LiTagOne: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  LiTagTwo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-};
-
 export default NavBar;

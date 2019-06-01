@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import NavBar from '../../shared/NavBar/Navbar';
 import Button from '../../shared/Buttons/Button';
 import LiTag from '../../shared/Buttons/LI-tag';
 import SideBar from '../../shared/SideBar/SideBar';
 import TopCard from '../../shared/Cards/Profile-card-1';
+import ResultsPage from '../../Results/ResultsPage';
 import Loader from '../../shared/Loader/Loader';
 import Offices from '../../../services/offices';
 import PetitionsModal from '../../Modals/PetitionsModal';
@@ -18,6 +18,7 @@ class CitizensPage extends Component {
     showPetitionsModal: false,
     showVotingModal: false,
     officeId: null,
+    currentView: 'defaultPageView',
   };
 
   async componentDidMount() {
@@ -27,6 +28,10 @@ class CitizensPage extends Component {
       loading: false,
     });
   }
+
+  handleChangeView = resultsPage => {
+    this.setState({ currentView: resultsPage });
+  };
 
   showPetitionsModal = () => {
     this.setState({ showPetitionsModal: true });
@@ -52,6 +57,7 @@ class CitizensPage extends Component {
       showPetitionsModal,
       officeId,
       showVotingModal,
+      currentView,
     } = this.state;
     return (
       <React.Fragment>
@@ -62,10 +68,15 @@ class CitizensPage extends Component {
         {showVotingModal && (
           <VotingModal hide={this.hideVotingModal} officeId={officeId} />
         )}
-        <NavBar
-          LiTagOne={<LiTag to="/" value="Home" />}
-          LiTagTwo={<LiTag to="/logout" value="Logout" />}
-        />
+        <NavBar show>
+          <Button
+            id="Dashboard"
+            value="Dashboard"
+            className="reset_button"
+            onClick={() => this.handleChangeView('defaultPageView')}
+          />
+          <LiTag to="/logout" value="Logout" />
+        </NavBar>
         <div className="main">
           <SideBar
             user={user}
@@ -78,27 +89,44 @@ class CitizensPage extends Component {
               />
             }
             ButtonTwo={
-              <Link to="/results">
-                <Button id="results" value="Results" className="profile-btn" />
-              </Link>
-            }
-            to="results"
-          />
-          <div className="boxed">
-            <section className="main-section">
-              <div>
-                <h4 className="page-title">
-                  Open Positions
-                  <hr />
-                </h4>
-              </div>
-              <TopCard
-                value="View"
-                offices={offices}
-                handleEvent={this.showVotingModal}
+              <Button
+                id="results"
+                value="Results"
+                className="profile-btn"
+                onClick={() => this.handleChangeView('resultsPage')}
               />
-            </section>
-          </div>
+            }
+          />
+          {currentView === 'defaultPageView' ? (
+            <div className="boxed">
+              <section className="main-section">
+                <div>
+                  <h4 className="page-title">
+                    Open Positions
+                    <hr />
+                  </h4>
+                </div>
+                <TopCard
+                  value="View to Vote"
+                  offices={offices}
+                  handleEvent={this.showVotingModal}
+                />
+              </section>
+            </div>
+          ) : null}
+          {currentView === 'resultsPage' ? (
+            <div className="boxed">
+              <section className="main-section">
+                <div>
+                  <h4 className="page-title">
+                    Election Results
+                    <hr />
+                  </h4>
+                </div>
+                <ResultsPage />
+              </section>
+            </div>
+          ) : null}
         </div>
       </React.Fragment>
     );

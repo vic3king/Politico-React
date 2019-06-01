@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Notifications, { notify } from 'react-notify-toast';
+import { notify } from 'react-notify-toast';
 import Modal from '../shared/Modal/Modal';
 import Input from '../shared/InputFields/Input';
 import Button from '../shared/Buttons/Button';
@@ -32,9 +32,14 @@ class OffficeModal extends Component {
     OfficeformDetails.ageLimit = Number(OfficeformDetails.ageLimit);
     const office = await Office.postOffice(OfficeformDetails);
 
+    if (office.status === 409) {
+      this.setState({ loading: false });
+      notify.show(errorHandler(office.error.duplicate), 'error');
+    }
+
     if (office.status >= 400) {
       this.setState({ loading: false });
-      notify.show(errorHandler(office.error), 'error');
+      notify.show(errorHandler(office.error[0].error), 'error');
     }
 
     if (office.status === 201) {
@@ -57,7 +62,6 @@ class OffficeModal extends Component {
 
     return (
       <React.Fragment>
-        <Notifications />
         {loading && <Loader />}
         <Modal
           Header={<Header text="Create a Political Office:" />}
@@ -82,6 +86,16 @@ class OffficeModal extends Component {
               value={OfficeformDetails.ageLimit}
               onChange={this.onInputChange}
               required
+            />
+          }
+          SpanFour={<Span text="Description" />}
+          InputThree={
+            <textarea
+              rows="4"
+              cols="50"
+              placeholder="Add a description for this office"
+              id="description"
+              onChange={this.onInputChange}
             />
           }
           ButtonOne={

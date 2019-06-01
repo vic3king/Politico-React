@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Notifications, { notify } from 'react-notify-toast';
+import { notify } from 'react-notify-toast';
 import { Link, Redirect } from 'react-router-dom';
 import NavBar from '../shared/NavBar/Navbar';
 import Input from '../shared/InputFields/Input';
@@ -33,7 +33,7 @@ class Signup extends Component {
 
     if (user.status >= 400) {
       this.setState({ loading: false });
-      notify.show(errorHandler(user.error), 'error');
+      notify.show(errorHandler(user.error.message[0].error), 'error');
     }
 
     if (user.status === 201) {
@@ -48,99 +48,107 @@ class Signup extends Component {
     const { signUpDetatils, loading, canRedirect } = this.state;
     return (
       <React.Fragment>
-        <Notifications />
         {loading && <Loader />}
-        <NavBar LiTagTwo={<LiTag to="/login" value="Login" />} />
-        <div className="center">
-          <i className="fa fa-balance-scale fa-5x " aria-hidden="true" />
-          <h3 className="welcome__">Please Signup</h3>
-        </div>
-        <div className="center" />
-        <form
-          className="signbox"
-          id="signup-form"
-          style={{ marginTop: '200px' }}
-          onSubmit={this.onButtonSubmit}
-        >
-          <div className="wholeform">
-            <div className="formgroup">
-              <Input
-                id="firstname"
-                type="text"
-                placeholder="First name"
-                value={signUpDetatils.firstname}
-                onChange={this.onInputChange}
-              />
+        <NavBar>
+          <LiTag to="/login" value="Login" />
+        </NavBar>
+        <div className="d-flex justify-content-center">
+          <div className="inner">
+            <div className="center">
+              <i className="fa fa-balance-scale fa-5x " aria-hidden="true" />
+              <h3 className="welcome__">Please Signup</h3>
             </div>
-            <div className="formgroup">
-              <Input
-                id="lastname"
-                type="text"
-                placeholder="Last name"
-                value={signUpDetatils.lastname}
-                onChange={this.onInputChange}
-              />
-            </div>
-          </div>
+            <form
+              className="signbox"
+              id="signup-form"
+              style={{ marginTop: '20px' }}
+              onSubmit={this.onButtonSubmit}
+            >
+              <div className="wholeform">
+                <div className="formgroup">
+                  <Input
+                    id="firstname"
+                    type="text"
+                    placeholder="First name"
+                    value={signUpDetatils.firstname}
+                    onChange={this.onInputChange}
+                  />
+                </div>
+                <div className="formgroup">
+                  <Input
+                    id="lastname"
+                    type="text"
+                    placeholder="Last name"
+                    value={signUpDetatils.lastname}
+                    onChange={this.onInputChange}
+                  />
+                </div>
+              </div>
 
-          <div className="wholeform">
-            <div className="formgroup">
-              <Input
-                id="othernames"
-                type="text"
-                placeholder="Othernames"
-                value={signUpDetatils.othernames}
+              <div className="wholeform">
+                <div className="formgroup">
+                  <Input
+                    id="othernames"
+                    type="text"
+                    placeholder="Othernames"
+                    value={signUpDetatils.othernames}
+                    onChange={this.onInputChange}
+                  />
+                </div>
+                <div className="formgroup">
+                  <Input
+                    id="phonenumber"
+                    type="text"
+                    placeholder="PhoneNumber"
+                    value={signUpDetatils.phonenumber}
+                    onChange={this.onInputChange}
+                  />
+                </div>
+              </div>
+              <div className="wholeform">
+                <div className="formgroup">
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="Please enter email"
+                    value={signUpDetatils.email}
+                    onChange={this.onInputChange}
+                  />
+                </div>
+                <div className="formgroup">
+                  <Input
+                    id="password"
+                    type="password"
+                    placeholder="Password"
+                    value={signUpDetatils.password}
+                    onChange={this.onInputChange}
+                  />
+                </div>
+              </div>
+              <select
+                id="type"
+                className="select-type"
                 onChange={this.onInputChange}
-              />
-            </div>
-            <div className="formgroup">
-              <Input
-                id="phonenumber"
-                type="text"
-                placeholder="PhoneNumber"
-                value={signUpDetatils.phonenumber}
-                onChange={this.onInputChange}
-              />
-            </div>
+              >
+                <option name="type" value="citizen">
+                  Citizen
+                </option>
+                <option name="type" value="politician">
+                  Poitician
+                </option>
+              </select>
+              <div className="formgroup submit">
+                <Input id="submit-btn" type="submit" value="Sign Up" />
+              </div>
+              <p style={{ textAlign: 'center' }}>
+                Already have an account?
+                <Link className="link" to="/login">
+                  Login
+                </Link>
+              </p>
+            </form>
           </div>
-          <div className="wholeform">
-            <div className="formgroup">
-              <Input
-                id="email"
-                type="email"
-                placeholder="Please enter email"
-                value={signUpDetatils.email}
-                onChange={this.onInputChange}
-              />
-            </div>
-            <div className="formgroup">
-              <Input
-                id="password"
-                type="password"
-                placeholder="Password"
-                value={signUpDetatils.password}
-                onChange={this.onInputChange}
-              />
-            </div>
-          </div>
-          <select id="type" onChange={this.onInputChange}>
-            <option name="type" value="citizen">
-              Citizen
-            </option>
-            <option name="type" value="politician">
-              Poitician
-            </option>
-          </select>
-          <div className="formgroup submit">
-            <Input id="submit-btn" type="submit" value="Sign Up" />
-          </div>
-          <p style={{ textAlign: 'center' }}>
-            Already have an account?
-            <Link className="link" to="/login">
-              Login
-            </Link>
-          </p>
-        </form>
+        </div>
         {canRedirect && <Redirect to="/login" />}
       </React.Fragment>
     );

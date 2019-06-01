@@ -1,21 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import '../../../style/sidebar.scss';
 import ProfileImage from '../Profile/ProfileImage';
 import ProfileDetails from '../Profile/ProfileDetails';
 
-const SideBar = ({
-  ButtonOne,
-  ButtonTwo,
-  ButtonThree,
-  ButtonFour,
-  to,
-  user,
-}) => {
+const SideBar = ({ ButtonOne, ButtonTwo, ButtonThree, ButtonFour, user }) => {
   return (
     <React.Fragment>
-      <div className="profile sidenav">
+      <div className="profile sidenav toggle">
         <ProfileImage className="profile__image" />
         <ProfileDetails className="profile__details" user={user} />
         <br />
@@ -28,11 +20,11 @@ const SideBar = ({
         <br />
         <br />
         <br />
-        <Link to={to}>{ButtonFour}</Link>
+        {ButtonFour}
         <br />
         <br />
         <br />
-        <Link to={to}>{ButtonThree}</Link>
+        {ButtonThree}
       </div>
     </React.Fragment>
   );
@@ -49,7 +41,6 @@ SideBar.propTypes = {
   ButtonOne: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   ButtonTwo: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   ButtonThree: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  to: PropTypes.string.isRequired,
   ButtonFour: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
 

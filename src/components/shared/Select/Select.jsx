@@ -6,6 +6,9 @@ const Select = props => {
 
   return (
     <select id="type" onChange={onChange}>
+      <option disabled selected default>
+        -- Select --
+      </option>
       <option name="type" value="federal">
         federal
       </option>

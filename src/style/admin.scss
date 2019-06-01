@@ -90,3 +90,10 @@ input#evidence {
   color: white;
   border: 1px solid #005f6b;
 }
+
+@media screen and (max-width: 1024px) {
+  .boxed {
+    width: 100%;
+    position: static;
+  }
+}

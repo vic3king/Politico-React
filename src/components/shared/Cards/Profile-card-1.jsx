@@ -56,9 +56,7 @@ class ProfileTopSectionCard extends Component {
           <b>Type of Office:</b> {capitalizer(office.type)}
         </p>
         <p>
-          <b>Description: </b> Lorem Ipsum is simply dummy text of the printing
-          and typesetting an unknown printer took a galley of type and scrambled
-          it to make a type specimen book...
+          <b>Description: </b> {office.description}
         </p>
         <div
           style={{

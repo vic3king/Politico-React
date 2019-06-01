@@ -27,11 +27,29 @@
   padding: 3px 0;
 }
 
+// button#party {
+//   color: #f5f6fa;
+//   text-decoration: none;
+//   font-weight: bold;
+//   padding: 3px 0;
+// }
+
+.reset_button {
+  color: #f5f6fa;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px 0;
+  background: transparent;
+  border: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.reset_button:focus {
+  outline: 0;
+}
+
 .main-nav {
-  display: inline-block;
   text-align: right;
-  width: calc(100% - 74px);
-  vertical-align: middle;
 }
 
 .main-nav__items {
@@ -54,7 +72,8 @@
   }
 }
 
-.main-nav__item a:hover {
+.main-nav__item a:hover,
+.reset_button:hover {
   color: #f5f6fa;
   border-bottom: 3px solid #f5f6fa;
 }
@@ -63,5 +82,22 @@
   a:active {
     border-bottom: 5px solid red;
     color: red;
+  }
+}
+
+.main-header div.hide-lg button {
+  background: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.main-header div.hide-lg button:hover {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-header div.hide-lg {
+    display: none;
   }
 }

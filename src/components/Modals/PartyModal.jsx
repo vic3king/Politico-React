@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Notifications, { notify } from 'react-notify-toast';
+import { notify } from 'react-notify-toast';
 import Modal from '../shared/Modal/Modal';
 import Input from '../shared/InputFields/Input';
 import Button from '../shared/Buttons/Button';
@@ -24,15 +24,21 @@ class PartyModal extends Component {
     this.setState({ PartyformDetails });
   };
 
+  // eslint-disable-next-line consistent-return
   onButtonSubmit = async event => {
     event.preventDefault();
     this.setState({ loading: true });
     const { PartyformDetails } = this.state;
     const party = await Party.postParty(PartyformDetails);
 
+    if (party.status === 404) {
+      this.setState({ loading: false });
+      return notify.show(errorHandler(party.error.message), 'error');
+    }
+
     if (party.status >= 400) {
       this.setState({ loading: false });
-      notify.show(errorHandler(party.error), 'error');
+      notify.show(errorHandler(party.error[0].error), 'error');
     }
 
     if (party.status === 201) {
@@ -54,7 +60,6 @@ class PartyModal extends Component {
     const { PartyformDetails, loading } = this.state;
     return (
       <React.Fragment>
-        <Notifications />
         {loading && <Loader />}
         <Modal
           Header={<Header text="Create Party" />}

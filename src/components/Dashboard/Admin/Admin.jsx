@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import NavBar from '../../shared/NavBar/Navbar';
 import Button from '../../shared/Buttons/Button';
 import LiTag from '../../shared/Buttons/LI-tag';
 import SideBar from '../../shared/SideBar/SideBar';
 import TopCard from '../../shared/Cards/Profile-card-1';
 import BottomCard from '../../shared/Cards/Profile-card-2';
+import ResultsPage from '../../Results/ResultsPage';
+import CandidateIntrestRequestList from '../../CandidateIntrestRequests/CandidateIntrestRequestList';
 import OfficeModal from '../../Modals/OfficeModal';
 import PartyModal from '../../Modals/PartyModal';
 import Loader from '../../shared/Loader/Loader';
@@ -20,6 +21,7 @@ class AdminPage extends Component {
     showPartyModal: false,
     showOfficeModal: false,
     loading: true,
+    currentView: 'defaultPageView',
   };
 
   componentDidMount = async () => {
@@ -30,6 +32,10 @@ class AdminPage extends Component {
       parties: allParties.data,
       loading: false,
     });
+  };
+
+  handleChangeView = resultsPage => {
+    this.setState({ currentView: resultsPage });
   };
 
   updateOfficesState = newUpdate => {
@@ -94,6 +100,7 @@ class AdminPage extends Component {
       offices,
       parties,
       loading,
+      currentView,
     } = this.state;
     return (
       <React.Fragment>
@@ -110,10 +117,15 @@ class AdminPage extends Component {
             updatePartiesState={this.updatePartiesState}
           />
         )}
-        <NavBar
-          LiTagOne={<LiTag to="/" value="Home" />}
-          LiTagTwo={<LiTag to="/logout" value="Logout" />}
-        />
+        <NavBar show>
+          <Button
+            id="Dashboard"
+            value="Dashboard"
+            className="reset_button"
+            onClick={() => this.handleChangeView('defaultPageView')}
+          />
+          <LiTag to="/logout" value="Logout" />
+        </NavBar>
         <div className="main">
           <SideBar
             user={user}
@@ -134,47 +146,76 @@ class AdminPage extends Component {
               />
             }
             ButtonThree={
-              <Link to="/results">
-                <Button id="results" value="Results" className="profile-btn" />
-              </Link>
+              <Button
+                id="results"
+                value="Results"
+                className="profile-btn"
+                onClick={() => this.handleChangeView('resultsPage')}
+              />
             }
-            to="results"
             ButtonFour={
-              <Link to="/requests">
-                <Button
-                  id="requests"
-                  value="Reveiw Requests"
-                  className="profile-btn"
-                />
-              </Link>
+              <Button
+                id="requests"
+                value="Reveiw Requests"
+                className="profile-btn"
+                onClick={() => this.handleChangeView('reveiwRequestsPage')}
+              />
             }
           />
-          <div className="boxed">
-            <section className="main-section">
-              <div>
-                <h4 className="page-title">
-                  Open Positions
-                  <hr />
-                </h4>
-              </div>
-              <TopCard value="View Running Candidates" offices={offices} />
-            </section>
-            <section className="maim-section">
-              <div>
-                <h4 className="page-title">
-                  Political Parties
-                  <hr />
-                </h4>
-              </div>
-              <BottomCard
-                parties={parties}
-                hidePartyModal={this.hidePartyModal}
-                hideOfficeModal={this.hideOfficeModal}
-                updateDelete={this.updateDeletePartyState}
-                updatePartiesName={this.updatePartiesName}
-              />
-            </section>
-          </div>
+          {currentView === 'defaultPageView' ? (
+            <div className="boxed">
+              <section className="main-section">
+                <div>
+                  <h4 className="page-title">
+                    Open Positions
+                    <hr />
+                  </h4>
+                </div>
+                <TopCard value="View Running Candidates" offices={offices} />
+              </section>
+              <section className="maim-section">
+                <div>
+                  <h4 className="page-title">
+                    Political Parties
+                    <hr />
+                  </h4>
+                </div>
+                <BottomCard
+                  parties={parties}
+                  hidePartyModal={this.hidePartyModal}
+                  hideOfficeModal={this.hideOfficeModal}
+                  updateDelete={this.updateDeletePartyState}
+                  updatePartiesName={this.updatePartiesName}
+                />
+              </section>
+            </div>
+          ) : null}
+          {currentView === 'resultsPage' ? (
+            <div className="boxed">
+              <section className="main-section">
+                <div>
+                  <h4 className="page-title">
+                    Election Results
+                    <hr />
+                  </h4>
+                </div>
+                <ResultsPage />
+              </section>
+            </div>
+          ) : null}
+          {currentView === 'reveiwRequestsPage' ? (
+            <div className="boxed">
+              <section className="main-section">
+                <div>
+                  <h4 className="page-title">
+                    Review Pending Requests
+                    <hr />
+                  </h4>
+                </div>
+                <CandidateIntrestRequestList />
+              </section>
+            </div>
+          ) : null}
         </div>
       </React.Fragment>
     );

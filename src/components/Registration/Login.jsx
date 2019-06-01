@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Notifications, { notify } from 'react-notify-toast';
+import { notify } from 'react-notify-toast';
 import { Link, Redirect } from 'react-router-dom';
 import NavBar from '../shared/NavBar/Navbar';
 import Input from '../shared/InputFields/Input';
@@ -69,47 +69,57 @@ class Login extends Component {
     return (
       <React.Fragment>
         {loading && <Loader />}
-        <Notifications />
-        <NavBar LiTagOne={<LiTag to="/signup" value="Sign Up" />} />
-        <div className="center">
-          <i className="fa fa-balance-scale fa-5x " aria-hidden="true" />
-          <h3 className="welcome__">Please login</h3>
+        <NavBar>
+          <LiTag to="/signup" value="Sign Up" />
+        </NavBar>
+        <div className="d-flex justify-content-center">
+          <div className="inner">
+            <div className="center">
+              <i className="fa fa-balance-scale fa-5x " aria-hidden="true" />
+              <h3 className="welcome__">Please login</h3>
+            </div>
+            <form
+              className="signbox login"
+              id="login-form"
+              onSubmit={this.onButtonSubmit}
+            >
+              <Input
+                type="text"
+                placeholder="Email"
+                id="email"
+                value={loginDetatils.email}
+                onChange={this.onInputChange}
+                required
+              />
+              <span id="spanemail" />
+              <Input
+                id="password"
+                type="password"
+                placeholder="Password"
+                value={loginDetatils.password}
+                onChange={this.onInputChange}
+                required
+              />
+              <span id="spanpassword" />
+              <Input
+                id="submit"
+                type="submit"
+                name=""
+                value="Login"
+                className="submit"
+              />
+              <Link to="/reset" className="link">
+                Forgotten your password?
+              </Link>
+              <p style={{ textAlign: 'center' }}>
+                Need an account?
+                <Link to="/signup" className="link">
+                  Sign Up
+                </Link>
+              </p>
+            </form>
+          </div>
         </div>
-        <div className="center" />
-        <form
-          className="signbox2"
-          id="login-form"
-          onSubmit={this.onButtonSubmit}
-        >
-          <Input
-            type="text"
-            placeholder="Email"
-            id="email"
-            value={loginDetatils.email}
-            onChange={this.onInputChange}
-            required
-          />
-          <span id="spanemail" />
-          <Input
-            id="password"
-            type="password"
-            placeholder="Password"
-            value={loginDetatils.password}
-            onChange={this.onInputChange}
-            required
-          />
-          <span id="spanpassword" />
-          <Input id="submit" type="submit" name="" value="Login" />
-          <Link to="/reset" className="link">
-            Forgotten your password?
-          </Link>
-          <p style={{ textAlign: 'center' }}>
-            Need an account?
-            <Link to="/signup" className="link">
-              Sign Up
-            </Link>
-          </p>
-        </form>
         {isAdmin && canRedirect && <Redirect to="/admin-dashboard" />}
         {isPolitician && canRedirect && (
           <Redirect to="/politicians-dashboard" />
