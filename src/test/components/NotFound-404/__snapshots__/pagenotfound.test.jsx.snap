@@ -19,20 +19,16 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <NavBar
-          LiTagOne={
-            <LiTag
-              to="/signup"
-              value="Sign Up"
-            />
-          }
-          LiTagTwo={
-            <LiTag
-              to="/login"
-              value="Login"
-            />
-          }
-        />,
+        <NavBar>
+          <LiTag
+            to="/signup"
+            value="Sign Up"
+          />
+          <LiTag
+            to="/login"
+            value="Login"
+          />
+        </NavBar>,
         <section
           id="showcase"
         >
@@ -54,17 +50,44 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "LiTagOne": <LiTag
-            to="/signup"
-            value="Sign Up"
-          />,
-          "LiTagTwo": <LiTag
-            to="/login"
-            value="Login"
-          />,
+          "children": Array [
+            <LiTag
+              to="/signup"
+              value="Sign Up"
+            />,
+            <LiTag
+              to="/login"
+              value="Login"
+            />,
+          ],
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "to": "/signup",
+              "value": "Sign Up",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "to": "/login",
+              "value": "Login",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
       Object {
@@ -130,20 +153,16 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <NavBar
-            LiTagOne={
-              <LiTag
-                to="/signup"
-                value="Sign Up"
-              />
-            }
-            LiTagTwo={
-              <LiTag
-                to="/login"
-                value="Login"
-              />
-            }
-          />,
+          <NavBar>
+            <LiTag
+              to="/signup"
+              value="Sign Up"
+            />
+            <LiTag
+              to="/login"
+              value="Login"
+            />
+          </NavBar>,
           <section
             id="showcase"
           >
@@ -165,17 +184,44 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "LiTagOne": <LiTag
-              to="/signup"
-              value="Sign Up"
-            />,
-            "LiTagTwo": <LiTag
-              to="/login"
-              value="Login"
-            />,
+            "children": Array [
+              <LiTag
+                to="/signup"
+                value="Sign Up"
+              />,
+              <LiTag
+                to="/login"
+                value="Login"
+              />,
+            ],
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "to": "/signup",
+                "value": "Sign Up",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "to": "/login",
+                "value": "Login",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {

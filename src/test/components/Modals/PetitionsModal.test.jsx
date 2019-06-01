@@ -107,7 +107,9 @@ describe('PetitionsModal component', () => {
         Petitions.postPetition = jest.fn().mockImplementation(() =>
           Promise.resolve({
             status: 400,
-            error: 'validation error',
+            error: {
+              message: [{ error: 'validation error' }],
+            },
           })
         );
       });

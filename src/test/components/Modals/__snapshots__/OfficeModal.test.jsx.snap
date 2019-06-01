@@ -22,9 +22,6 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <$class
-          options={Object {}}
-        />,
         false,
         <Modal
           ButtonOne={
@@ -60,6 +57,15 @@ ShallowWrapper {
               value=""
             />
           }
+          InputThree={
+            <textarea
+              cols="50"
+              id="description"
+              onChange={[Function]}
+              placeholder="Add a description for this office"
+              rows="4"
+            />
+          }
           InputTwo={
             <Input
               id="ageLimit"
@@ -73,6 +79,11 @@ ShallowWrapper {
           Select={
             <Select
               onChange={[Function]}
+            />
+          }
+          SpanFour={
+            <Span
+              text="Description"
             />
           }
           SpanOne={
@@ -95,17 +106,6 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "options": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [MockFunction],
-      },
       false,
       Object {
         "instance": null,
@@ -137,6 +137,13 @@ ShallowWrapper {
             type="text"
             value=""
           />,
+          "InputThree": <textarea
+            cols="50"
+            id="description"
+            onChange={[Function]}
+            placeholder="Add a description for this office"
+            rows="4"
+          />,
           "InputTwo": <Input
             id="ageLimit"
             onChange={[Function]}
@@ -147,6 +154,9 @@ ShallowWrapper {
           />,
           "Select": <Select
             onChange={[Function]}
+          />,
+          "SpanFour": <Span
+            text="Description"
           />,
           "SpanOne": <Span
             text="Office Type: "
@@ -172,9 +182,6 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <$class
-            options={Object {}}
-          />,
           false,
           <Modal
             ButtonOne={
@@ -210,6 +217,15 @@ ShallowWrapper {
                 value=""
               />
             }
+            InputThree={
+              <textarea
+                cols="50"
+                id="description"
+                onChange={[Function]}
+                placeholder="Add a description for this office"
+                rows="4"
+              />
+            }
             InputTwo={
               <Input
                 id="ageLimit"
@@ -223,6 +239,11 @@ ShallowWrapper {
             Select={
               <Select
                 onChange={[Function]}
+              />
+            }
+            SpanFour={
+              <Span
+                text="Description"
               />
             }
             SpanOne={
@@ -245,17 +266,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "options": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [MockFunction],
-        },
         false,
         Object {
           "instance": null,
@@ -287,6 +297,13 @@ ShallowWrapper {
               type="text"
               value=""
             />,
+            "InputThree": <textarea
+              cols="50"
+              id="description"
+              onChange={[Function]}
+              placeholder="Add a description for this office"
+              rows="4"
+            />,
             "InputTwo": <Input
               id="ageLimit"
               onChange={[Function]}
@@ -297,6 +314,9 @@ ShallowWrapper {
             />,
             "Select": <Select
               onChange={[Function]}
+            />,
+            "SpanFour": <Span
+              text="Description"
             />,
             "SpanOne": <Span
               text="Office Type: "

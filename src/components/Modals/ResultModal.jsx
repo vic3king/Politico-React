@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Notifications, { notify } from 'react-notify-toast';
+import { notify } from 'react-notify-toast';
 import Loader from '../shared/Loader/Loader';
 import Results from '../../services/results';
 import errorHandler from '../../helpers/errorHandler';
@@ -59,7 +59,6 @@ class ResultsModal extends Component {
     ));
     return (
       <React.Fragment>
-        <Notifications />
         {loading && <Loader />}
         <div className="modal__results">
           <div className="modal-results">

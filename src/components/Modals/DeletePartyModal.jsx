@@ -30,7 +30,7 @@ class DeletePartModal extends Component {
           >
             Yes
           </button>
-          <button type="submit" className="modalno">
+          <button type="submit" className="modalno" onClick={this.hide}>
             No
           </button>
           <button type="button" className="modal-close" onClick={this.hide}>

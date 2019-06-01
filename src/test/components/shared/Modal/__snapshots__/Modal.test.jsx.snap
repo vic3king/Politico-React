@@ -7,8 +7,10 @@ ShallowWrapper {
     ButtonOne=""
     Header=""
     InputOne=""
+    InputThree=""
     InputTwo=""
     Select=""
+    SpanFour=""
     SpanOne=""
     SpanThree=""
     SpanTwo=""
@@ -34,6 +36,12 @@ ShallowWrapper {
           className="modal-form"
         >
           
+          <div
+            className="fix"
+          >
+            
+            
+          </div>
           <div
             className="fix"
           >
@@ -84,6 +92,12 @@ ShallowWrapper {
             
             
           </div>
+          <div
+            className="fix"
+          >
+            
+            
+          </div>
           
         </form>,
         "className": "modal-main",
@@ -114,6 +128,12 @@ ShallowWrapper {
               
               
             </div>,
+            <div
+              className="fix"
+            >
+              
+              
+            </div>,
             "",
             undefined,
           ],
@@ -122,6 +142,24 @@ ShallowWrapper {
         "ref": null,
         "rendered": Array [
           "",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "",
+                "",
+              ],
+              "className": "fix",
+            },
+            "ref": null,
+            "rendered": Array [
+              "",
+              "",
+            ],
+            "type": "div",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -216,6 +254,12 @@ ShallowWrapper {
               
               
             </div>
+            <div
+              className="fix"
+            >
+              
+              
+            </div>
             
           </form>
         </section>,
@@ -230,6 +274,12 @@ ShallowWrapper {
             className="modal-form"
           >
             
+            <div
+              className="fix"
+            >
+              
+              
+            </div>
             <div
               className="fix"
             >
@@ -278,6 +328,12 @@ ShallowWrapper {
                 
                 
               </div>,
+              <div
+                className="fix"
+              >
+                
+                
+              </div>,
               "",
               undefined,
             ],
@@ -286,6 +342,24 @@ ShallowWrapper {
           "ref": null,
           "rendered": Array [
             "",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "",
+                  "",
+                ],
+                "className": "fix",
+              },
+              "ref": null,
+              "rendered": Array [
+                "",
+                "",
+              ],
+              "type": "div",
+            },
             Object {
               "instance": null,
               "key": undefined,

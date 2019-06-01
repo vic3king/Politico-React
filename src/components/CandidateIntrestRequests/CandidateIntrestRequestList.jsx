@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Notifications, { notify } from 'react-notify-toast';
-import NavBar from '../shared/NavBar/Navbar';
-import LiTag from '../shared/Buttons/LI-tag';
+import { notify } from 'react-notify-toast';
 import CandidateIntrestRequestsCard from './CandidateIntrestRequests';
 import Vote from '../../services/votes';
 import Loader from '../shared/Loader/Loader';
@@ -83,10 +81,7 @@ class CandidateIntrestRequestsList extends Component {
 
     return (
       <React.Fragment>
-        <Notifications />
         {loading && <Loader />}
-        <NavBar LiTagOne={<LiTag to="/logout" value="Logout" />} />
-        <h4 className="page-title-results">Review Pending Requests</h4>
         <div>
           <div className="main_page_title">
             <div className="main-grid">

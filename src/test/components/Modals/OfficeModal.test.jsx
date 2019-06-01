@@ -107,7 +107,7 @@ describe('InterestFormModal component', () => {
         Office.postOffice = jest.fn().mockImplementation(() =>
           Promise.resolve({
             status: 400,
-            error: 'validation error',
+            error: [{ error: 'validation error' }],
           })
         );
       });

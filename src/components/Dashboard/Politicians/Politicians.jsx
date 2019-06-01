@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import NavBar from '../../shared/NavBar/Navbar';
 import Button from '../../shared/Buttons/Button';
 import LiTag from '../../shared/Buttons/LI-tag';
 import SideBar from '../../shared/SideBar/SideBar';
 import TopCard from '../../shared/Cards/Profile-card-1';
+import ResultsPage from '../../Results/ResultsPage';
 import Loader from '../../shared/Loader/Loader';
 import Offices from '../../../services/offices';
 import Parties from '../../../services/parties';
@@ -19,6 +19,8 @@ class PoliticiansPage extends Component {
     loading: true,
     showPetitionsModal: false,
     showIntrestsModal: false,
+    officeId: null,
+    currentView: 'defaultPageView',
   };
 
   async componentDidMount() {
@@ -31,6 +33,10 @@ class PoliticiansPage extends Component {
     });
   }
 
+  handleChangeView = resultsPage => {
+    this.setState({ currentView: resultsPage });
+  };
+
   showPetitionsModal = () => {
     this.setState({ showPetitionsModal: true, showIntrestsModal: false });
   };
@@ -39,8 +45,12 @@ class PoliticiansPage extends Component {
     this.setState({ showPetitionsModal: false });
   };
 
-  showIntrestsModal = () => {
-    this.setState({ showIntrestsModal: true, showPetitionsModal: false });
+  showIntrestsModal = e => {
+    this.setState({
+      showIntrestsModal: true,
+      showPetitionsModal: false,
+      officeId: e.target.id,
+    });
   };
 
   hideIntrestsModal = () => {
@@ -49,6 +59,7 @@ class PoliticiansPage extends Component {
 
   render() {
     const user = JSON.parse(localStorage.user);
+    const { officeId } = this.state;
 
     const {
       offices,
@@ -56,6 +67,7 @@ class PoliticiansPage extends Component {
       showPetitionsModal,
       parties,
       showIntrestsModal,
+      currentView,
     } = this.state;
     return (
       <React.Fragment>
@@ -65,15 +77,21 @@ class PoliticiansPage extends Component {
             hide={this.hideIntrestsModal}
             offices={offices}
             parties={parties}
+            officeId={officeId}
           />
         )}
         {showPetitionsModal && (
           <PetitionsModal hide={this.hidePetitionsModal} offices={offices} />
         )}
-        <NavBar
-          LiTagOne={<LiTag to="/" value="Home" />}
-          LiTagTwo={<LiTag to="/logout" value="Logout" />}
-        />
+        <NavBar show>
+          <Button
+            id="Dashboard"
+            value="Dashboard"
+            className="reset_button"
+            onClick={() => this.handleChangeView('defaultPageView')}
+          />
+          <LiTag to="/logout" value="Logout" />
+        </NavBar>
         <div className="main">
           <SideBar
             user={user}
@@ -86,27 +104,44 @@ class PoliticiansPage extends Component {
               />
             }
             ButtonTwo={
-              <Link to="/results">
-                <Button id="results" value="Results" className="profile-btn" />
-              </Link>
-            }
-            to="results"
-          />
-          <div className="boxed">
-            <section className="main-section">
-              <div>
-                <h4 className="page-title">
-                  Open Positions
-                  <hr />
-                </h4>
-              </div>
-              <TopCard
-                value="Declare interest"
-                offices={offices}
-                handleEvent={this.showIntrestsModal}
+              <Button
+                id="results"
+                value="Results"
+                className="profile-btn"
+                onClick={() => this.handleChangeView('resultsPage')}
               />
-            </section>
-          </div>
+            }
+          />
+          {currentView === 'defaultPageView' ? (
+            <div className="boxed">
+              <section className="main-section">
+                <div>
+                  <h4 className="page-title">
+                    Open Positions
+                    <hr />
+                  </h4>
+                </div>
+                <TopCard
+                  value="Declare interest"
+                  offices={offices}
+                  handleEvent={this.showIntrestsModal}
+                />
+              </section>
+            </div>
+          ) : null}
+          {currentView === 'resultsPage' ? (
+            <div className="boxed">
+              <section className="main-section">
+                <div>
+                  <h4 className="page-title">
+                    Election Results
+                    <hr />
+                  </h4>
+                </div>
+                <ResultsPage />
+              </section>
+            </div>
+          ) : null}
         </div>
       </React.Fragment>
     );

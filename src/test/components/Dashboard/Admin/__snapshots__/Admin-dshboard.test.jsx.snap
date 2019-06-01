@@ -23,34 +23,30 @@ ShallowWrapper {
         false,
         false,
         <NavBar
-          LiTagOne={
-            <LiTag
-              to="/"
-              value="Home"
-            />
-          }
-          LiTagTwo={
-            <LiTag
-              to="/logout"
-              value="Logout"
-            />
-          }
-        />,
+          show={true}
+        >
+          <Button
+            className="reset_button"
+            id="Dashboard"
+            onClick={[Function]}
+            value="Dashboard"
+          />
+          <LiTag
+            to="/logout"
+            value="Logout"
+          />
+        </NavBar>,
         <div
           className="main"
         >
           <SideBar
             ButtonFour={
-              <Link
-                to="/requests"
-              >
-                <Button
-                  className="profile-btn"
-                  id="requests"
-                  onClick={[Function]}
-                  value="Reveiw Requests"
-                />
-              </Link>
+              <Button
+                className="profile-btn"
+                id="requests"
+                onClick={[Function]}
+                value="Reveiw Requests"
+              />
             }
             ButtonOne={
               <Button
@@ -61,16 +57,12 @@ ShallowWrapper {
               />
             }
             ButtonThree={
-              <Link
-                to="/results"
-              >
-                <Button
-                  className="profile-btn"
-                  id="results"
-                  onClick={[Function]}
-                  value="Results"
-                />
-              </Link>
+              <Button
+                className="profile-btn"
+                id="results"
+                onClick={[Function]}
+                value="Results"
+              />
             }
             ButtonTwo={
               <Button
@@ -80,7 +72,6 @@ ShallowWrapper {
                 value="Add Party"
               />
             }
-            to="results"
             user={Object {}}
           />
           <div
@@ -155,17 +146,49 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "LiTagOne": <LiTag
-            to="/"
-            value="Home"
-          />,
-          "LiTagTwo": <LiTag
-            to="/logout"
-            value="Logout"
-          />,
+          "children": Array [
+            <Button
+              className="reset_button"
+              id="Dashboard"
+              onClick={[Function]}
+              value="Dashboard"
+            />,
+            <LiTag
+              to="/logout"
+              value="Logout"
+            />,
+          ],
+          "show": true,
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "className": "reset_button",
+              "id": "Dashboard",
+              "onClick": [Function],
+              "value": "Dashboard",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "to": "/logout",
+              "value": "Logout",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
       Object {
@@ -176,16 +199,12 @@ ShallowWrapper {
           "children": Array [
             <SideBar
               ButtonFour={
-                <Link
-                  to="/requests"
-                >
-                  <Button
-                    className="profile-btn"
-                    id="requests"
-                    onClick={[Function]}
-                    value="Reveiw Requests"
-                  />
-                </Link>
+                <Button
+                  className="profile-btn"
+                  id="requests"
+                  onClick={[Function]}
+                  value="Reveiw Requests"
+                />
               }
               ButtonOne={
                 <Button
@@ -196,16 +215,12 @@ ShallowWrapper {
                 />
               }
               ButtonThree={
-                <Link
-                  to="/results"
-                >
-                  <Button
-                    className="profile-btn"
-                    id="results"
-                    onClick={[Function]}
-                    value="Results"
-                  />
-                </Link>
+                <Button
+                  className="profile-btn"
+                  id="results"
+                  onClick={[Function]}
+                  value="Results"
+                />
               }
               ButtonTwo={
                 <Button
@@ -215,7 +230,6 @@ ShallowWrapper {
                   value="Add Party"
                 />
               }
-              to="results"
               user={Object {}}
             />,
             <div
@@ -277,6 +291,8 @@ ShallowWrapper {
                 />
               </section>
             </div>,
+            null,
+            null,
           ],
           "className": "main",
         },
@@ -287,39 +303,30 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "ButtonFour": <Link
-                to="/requests"
-              >
-                <Button
-                  className="profile-btn"
-                  id="requests"
-                  onClick={[Function]}
-                  value="Reveiw Requests"
-                />
-              </Link>,
+              "ButtonFour": <Button
+                className="profile-btn"
+                id="requests"
+                onClick={[Function]}
+                value="Reveiw Requests"
+              />,
               "ButtonOne": <Button
                 className="profile-btn"
                 id="offic"
                 onClick={[Function]}
                 value="Add Office"
               />,
-              "ButtonThree": <Link
-                to="/results"
-              >
-                <Button
-                  className="profile-btn"
-                  id="results"
-                  onClick={[Function]}
-                  value="Results"
-                />
-              </Link>,
+              "ButtonThree": <Button
+                className="profile-btn"
+                id="results"
+                onClick={[Function]}
+                value="Results"
+              />,
               "ButtonTwo": <Button
                 className="profile-btn"
                 id="party"
                 onClick={[Function]}
                 value="Add Party"
               />,
-              "to": "results",
               "user": Object {},
             },
             "ref": null,
@@ -595,6 +602,8 @@ ShallowWrapper {
             ],
             "type": "div",
           },
+          null,
+          null,
         ],
         "type": "div",
       },
@@ -612,34 +621,30 @@ ShallowWrapper {
           false,
           false,
           <NavBar
-            LiTagOne={
-              <LiTag
-                to="/"
-                value="Home"
-              />
-            }
-            LiTagTwo={
-              <LiTag
-                to="/logout"
-                value="Logout"
-              />
-            }
-          />,
+            show={true}
+          >
+            <Button
+              className="reset_button"
+              id="Dashboard"
+              onClick={[Function]}
+              value="Dashboard"
+            />
+            <LiTag
+              to="/logout"
+              value="Logout"
+            />
+          </NavBar>,
           <div
             className="main"
           >
             <SideBar
               ButtonFour={
-                <Link
-                  to="/requests"
-                >
-                  <Button
-                    className="profile-btn"
-                    id="requests"
-                    onClick={[Function]}
-                    value="Reveiw Requests"
-                  />
-                </Link>
+                <Button
+                  className="profile-btn"
+                  id="requests"
+                  onClick={[Function]}
+                  value="Reveiw Requests"
+                />
               }
               ButtonOne={
                 <Button
@@ -650,16 +655,12 @@ ShallowWrapper {
                 />
               }
               ButtonThree={
-                <Link
-                  to="/results"
-                >
-                  <Button
-                    className="profile-btn"
-                    id="results"
-                    onClick={[Function]}
-                    value="Results"
-                  />
-                </Link>
+                <Button
+                  className="profile-btn"
+                  id="results"
+                  onClick={[Function]}
+                  value="Results"
+                />
               }
               ButtonTwo={
                 <Button
@@ -669,7 +670,6 @@ ShallowWrapper {
                   value="Add Party"
                 />
               }
-              to="results"
               user={Object {}}
             />
             <div
@@ -744,17 +744,49 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "LiTagOne": <LiTag
-              to="/"
-              value="Home"
-            />,
-            "LiTagTwo": <LiTag
-              to="/logout"
-              value="Logout"
-            />,
+            "children": Array [
+              <Button
+                className="reset_button"
+                id="Dashboard"
+                onClick={[Function]}
+                value="Dashboard"
+              />,
+              <LiTag
+                to="/logout"
+                value="Logout"
+              />,
+            ],
+            "show": true,
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "reset_button",
+                "id": "Dashboard",
+                "onClick": [Function],
+                "value": "Dashboard",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "to": "/logout",
+                "value": "Logout",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
@@ -765,16 +797,12 @@ ShallowWrapper {
             "children": Array [
               <SideBar
                 ButtonFour={
-                  <Link
-                    to="/requests"
-                  >
-                    <Button
-                      className="profile-btn"
-                      id="requests"
-                      onClick={[Function]}
-                      value="Reveiw Requests"
-                    />
-                  </Link>
+                  <Button
+                    className="profile-btn"
+                    id="requests"
+                    onClick={[Function]}
+                    value="Reveiw Requests"
+                  />
                 }
                 ButtonOne={
                   <Button
@@ -785,16 +813,12 @@ ShallowWrapper {
                   />
                 }
                 ButtonThree={
-                  <Link
-                    to="/results"
-                  >
-                    <Button
-                      className="profile-btn"
-                      id="results"
-                      onClick={[Function]}
-                      value="Results"
-                    />
-                  </Link>
+                  <Button
+                    className="profile-btn"
+                    id="results"
+                    onClick={[Function]}
+                    value="Results"
+                  />
                 }
                 ButtonTwo={
                   <Button
@@ -804,7 +828,6 @@ ShallowWrapper {
                     value="Add Party"
                   />
                 }
-                to="results"
                 user={Object {}}
               />,
               <div
@@ -866,6 +889,8 @@ ShallowWrapper {
                   />
                 </section>
               </div>,
+              null,
+              null,
             ],
             "className": "main",
           },
@@ -876,39 +901,30 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "ButtonFour": <Link
-                  to="/requests"
-                >
-                  <Button
-                    className="profile-btn"
-                    id="requests"
-                    onClick={[Function]}
-                    value="Reveiw Requests"
-                  />
-                </Link>,
+                "ButtonFour": <Button
+                  className="profile-btn"
+                  id="requests"
+                  onClick={[Function]}
+                  value="Reveiw Requests"
+                />,
                 "ButtonOne": <Button
                   className="profile-btn"
                   id="offic"
                   onClick={[Function]}
                   value="Add Office"
                 />,
-                "ButtonThree": <Link
-                  to="/results"
-                >
-                  <Button
-                    className="profile-btn"
-                    id="results"
-                    onClick={[Function]}
-                    value="Results"
-                  />
-                </Link>,
+                "ButtonThree": <Button
+                  className="profile-btn"
+                  id="results"
+                  onClick={[Function]}
+                  value="Results"
+                />,
                 "ButtonTwo": <Button
                   className="profile-btn"
                   id="party"
                   onClick={[Function]}
                   value="Add Party"
                 />,
-                "to": "results",
                 "user": Object {},
               },
               "ref": null,
@@ -1184,6 +1200,8 @@ ShallowWrapper {
               ],
               "type": "div",
             },
+            null,
+            null,
           ],
           "type": "div",
         },

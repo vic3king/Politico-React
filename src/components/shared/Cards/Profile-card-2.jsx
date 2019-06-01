@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Notifications, { notify } from 'react-notify-toast';
+import { notify } from 'react-notify-toast';
 import Button from '../Buttons/Button';
 import UpdatePartyModal from '../../Modals/UpdatePartyModal';
 import DeleteModal from '../../Modals/DeletePartyModal';
@@ -150,7 +150,6 @@ class ProfileBottomSectionCard extends Component {
     ));
     return (
       <React.Fragment>
-        <Notifications />
         {loading && <Loader />}
         {showUpdateModal && (
           <UpdatePartyModal

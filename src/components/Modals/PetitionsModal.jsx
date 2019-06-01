@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Notifications, { notify } from 'react-notify-toast';
+import { notify } from 'react-notify-toast';
 import Loader from '../shared/Loader/Loader';
 import Petitions from '../../services/petitions';
 import errorHandler from '../../helpers/errorHandler';
@@ -37,7 +37,7 @@ class PetitionsModal extends Component {
 
     if (petition.status >= 400) {
       this.setState({ loading: false });
-      notify.show(errorHandler(petition.error), 'error');
+      notify.show(errorHandler(petition.error.message[0].error), 'error');
     }
 
     if (petition.status === 201) {
@@ -53,7 +53,6 @@ class PetitionsModal extends Component {
 
     return (
       <React.Fragment>
-        <Notifications />
         {loading && <Loader />}
         <div>
           <section className="modal-main">
@@ -62,6 +61,9 @@ class PetitionsModal extends Component {
               <div className="fix">
                 <span>Select an office to petition</span>
                 <select id="office" onChange={this.onInputChange}>
+                  <option disabled selected default>
+                    -- Select Office --
+                  </option>
                   {offices.map(obj => (
                     <option key={obj.id} name={obj.name} value={obj.id}>
                       {obj.name}

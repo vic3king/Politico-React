@@ -8,10 +8,10 @@ import errorImage from '../../assets/images/7iJI.gif';
 const ErrorPage = () => {
   return (
     <React.Fragment>
-      <NavBar
-        LiTagOne={<LiTag to="/signup" value="Sign Up" />}
-        LiTagTwo={<LiTag to="/login" value="Login" />}
-      />
+      <NavBar>
+        <LiTag to="/signup" value="Sign Up" />
+        <LiTag to="/login" value="Login" />
+      </NavBar>
       <section id="showcase">
         <img src={errorImage} alt="" />
         <div className="overlay" />

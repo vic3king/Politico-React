@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Notifications, { notify } from 'react-notify-toast';
+import { notify } from 'react-notify-toast';
 import Loader from '../shared/Loader/Loader';
 import Input from '../shared/InputFields/Input';
 import Interest from '../../services/interest';
@@ -31,17 +31,20 @@ class InterestFormModal extends Component {
     const user = JSON.parse(localStorage.user);
     event.preventDefault();
     this.setState({ loading: true });
-    const { hide } = this.props;
+    const { hide, officeId } = this.props;
     const { formDetails } = this.state;
-    formDetails.office = Number(formDetails.office);
+    formDetails.office = Number(officeId);
     formDetails.party = Number(formDetails.party);
     formDetails.ageLimit = Number(formDetails.ageLimit);
 
     const interest = await Interest.interestRequest(formDetails, user.id);
 
     if (interest.status >= 400) {
-      const errors = interest.error.map(error => error.error);
-      notify.show(errorHandler(errors), 'error');
+      if (interest.error.message) {
+        notify.show(errorHandler(interest.error.message), 'error');
+      }
+
+      notify.show(errorHandler(interest.error[0].error), 'error');
     }
 
     if (interest.status === 201) {
@@ -53,26 +56,15 @@ class InterestFormModal extends Component {
 
   render() {
     const { formDetails, loading } = this.state;
-    const { offices, parties } = this.props;
+    const { parties } = this.props;
 
     return (
       <React.Fragment>
-        <Notifications />
         {loading && <Loader />}
         <div>
           <section className="modal-main">
             <form className="modal-form">
-              <h3 className="page-modal-title">Petition</h3>
-              <div className="fix">
-                <span>Select an office</span>
-                <select id="office" onChange={this.onInputChange} required>
-                  {offices.map(obj => (
-                    <option key={obj.id} name={obj.name} value={obj.id}>
-                      {obj.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              <h3 className="page-modal-title">Declare Interest</h3>
               <div className="fix">
                 <span>Select your party</span>
                 <select
@@ -81,6 +73,9 @@ class InterestFormModal extends Component {
                   onChange={this.onInputChange}
                   required
                 >
+                  <option disabled selected default>
+                    -- Select Political Party --
+                  </option>
                   {parties.map(obj => (
                     <option key={obj.id} name={obj.name} value={obj.id}>
                       {obj.name}

@@ -31,9 +31,6 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <$class
-          options={Object {}}
-        />,
         false,
         <div>
           <section
@@ -57,6 +54,13 @@ ShallowWrapper {
                   id="office"
                   onChange={[Function]}
                 >
+                  <option
+                    default={true}
+                    disabled={true}
+                    selected={true}
+                  >
+                    -- Select Office --
+                  </option>
                   <option
                     name=""
                   >
@@ -119,17 +123,6 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "options": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [MockFunction],
-      },
       false,
       Object {
         "instance": null,
@@ -157,6 +150,13 @@ ShallowWrapper {
                   id="office"
                   onChange={[Function]}
                 >
+                  <option
+                    default={true}
+                    disabled={true}
+                    selected={true}
+                  >
+                    -- Select Office --
+                  </option>
                   <option
                     name=""
                   >
@@ -240,6 +240,13 @@ ShallowWrapper {
                   onChange={[Function]}
                 >
                   <option
+                    default={true}
+                    disabled={true}
+                    selected={true}
+                  >
+                    -- Select Office --
+                  </option>
+                  <option
                     name=""
                   >
                     
@@ -319,6 +326,13 @@ ShallowWrapper {
                     id="office"
                     onChange={[Function]}
                   >
+                    <option
+                      default={true}
+                      disabled={true}
+                      selected={true}
+                    >
+                      -- Select Office --
+                    </option>
                     <option
                       name=""
                     >
@@ -405,6 +419,13 @@ ShallowWrapper {
                       onChange={[Function]}
                     >
                       <option
+                        default={true}
+                        disabled={true}
+                        selected={true}
+                      >
+                        -- Select Office --
+                      </option>
+                      <option
                         name=""
                       >
                         
@@ -438,21 +459,44 @@ ShallowWrapper {
                     "props": Object {
                       "children": Array [
                         <option
-                          name=""
+                          default={true}
+                          disabled={true}
+                          selected={true}
                         >
-                          
+                          -- Select Office --
                         </option>,
-                        <option
-                          name=""
-                        >
-                          
-                        </option>,
+                        Array [
+                          <option
+                            name=""
+                          >
+                            
+                          </option>,
+                          <option
+                            name=""
+                          >
+                            
+                          </option>,
+                        ],
                       ],
                       "id": "office",
                       "onChange": [Function],
                     },
                     "ref": null,
                     "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "-- Select Office --",
+                          "default": true,
+                          "disabled": true,
+                          "selected": true,
+                        },
+                        "ref": null,
+                        "rendered": "-- Select Office --",
+                        "type": "option",
+                      },
                       Object {
                         "instance": null,
                         "key": undefined,
@@ -632,9 +676,6 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <$class
-            options={Object {}}
-          />,
           false,
           <div>
             <section
@@ -658,6 +699,13 @@ ShallowWrapper {
                     id="office"
                     onChange={[Function]}
                   >
+                    <option
+                      default={true}
+                      disabled={true}
+                      selected={true}
+                    >
+                      -- Select Office --
+                    </option>
                     <option
                       name=""
                     >
@@ -720,17 +768,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "options": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [MockFunction],
-        },
         false,
         Object {
           "instance": null,
@@ -758,6 +795,13 @@ ShallowWrapper {
                     id="office"
                     onChange={[Function]}
                   >
+                    <option
+                      default={true}
+                      disabled={true}
+                      selected={true}
+                    >
+                      -- Select Office --
+                    </option>
                     <option
                       name=""
                     >
@@ -841,6 +885,13 @@ ShallowWrapper {
                     onChange={[Function]}
                   >
                     <option
+                      default={true}
+                      disabled={true}
+                      selected={true}
+                    >
+                      -- Select Office --
+                    </option>
+                    <option
                       name=""
                     >
                       
@@ -920,6 +971,13 @@ ShallowWrapper {
                       id="office"
                       onChange={[Function]}
                     >
+                      <option
+                        default={true}
+                        disabled={true}
+                        selected={true}
+                      >
+                        -- Select Office --
+                      </option>
                       <option
                         name=""
                       >
@@ -1006,6 +1064,13 @@ ShallowWrapper {
                         onChange={[Function]}
                       >
                         <option
+                          default={true}
+                          disabled={true}
+                          selected={true}
+                        >
+                          -- Select Office --
+                        </option>
+                        <option
                           name=""
                         >
                           
@@ -1039,21 +1104,44 @@ ShallowWrapper {
                       "props": Object {
                         "children": Array [
                           <option
-                            name=""
+                            default={true}
+                            disabled={true}
+                            selected={true}
                           >
-                            
+                            -- Select Office --
                           </option>,
-                          <option
-                            name=""
-                          >
-                            
-                          </option>,
+                          Array [
+                            <option
+                              name=""
+                            >
+                              
+                            </option>,
+                            <option
+                              name=""
+                            >
+                              
+                            </option>,
+                          ],
                         ],
                         "id": "office",
                         "onChange": [Function],
                       },
                       "ref": null,
                       "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "-- Select Office --",
+                            "default": true,
+                            "disabled": true,
+                            "selected": true,
+                          },
+                          "ref": null,
+                          "rendered": "-- Select Office --",
+                          "type": "option",
+                        },
                         Object {
                           "instance": null,
                           "key": undefined,

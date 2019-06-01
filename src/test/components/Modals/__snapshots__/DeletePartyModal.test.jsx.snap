@@ -36,6 +36,7 @@ ShallowWrapper {
         </button>
         <button
           className="modalno"
+          onClick={[Function]}
           type="submit"
         >
           No
@@ -68,6 +69,7 @@ ShallowWrapper {
           </button>,
           <button
             className="modalno"
+            onClick={[Function]}
             type="submit"
           >
             No
@@ -116,6 +118,7 @@ ShallowWrapper {
           "props": Object {
             "children": "No",
             "className": "modalno",
+            "onClick": [Function],
             "type": "submit",
           },
           "ref": null,
@@ -162,6 +165,7 @@ ShallowWrapper {
           </button>
           <button
             className="modalno"
+            onClick={[Function]}
             type="submit"
           >
             No
@@ -194,6 +198,7 @@ ShallowWrapper {
             </button>,
             <button
               className="modalno"
+              onClick={[Function]}
               type="submit"
             >
               No
@@ -242,6 +247,7 @@ ShallowWrapper {
             "props": Object {
               "children": "No",
               "className": "modalno",
+              "onClick": [Function],
               "type": "submit",
             },
             "ref": null,

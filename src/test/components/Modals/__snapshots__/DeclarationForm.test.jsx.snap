@@ -41,9 +41,6 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <$class
-          options={Object {}}
-        />,
         false,
         <div>
           <section
@@ -55,31 +52,8 @@ ShallowWrapper {
               <h3
                 className="page-modal-title"
               >
-                Petition
+                Declare Interest
               </h3>
-              <div
-                className="fix"
-              >
-                <span>
-                  Select an office
-                </span>
-                <select
-                  id="office"
-                  onChange={[Function]}
-                  required={true}
-                >
-                  <option
-                    name=""
-                  >
-                    
-                  </option>
-                  <option
-                    name=""
-                  >
-                    
-                  </option>
-                </select>
-              </div>
               <div
                 className="fix"
               >
@@ -92,6 +66,13 @@ ShallowWrapper {
                   onChange={[Function]}
                   required={true}
                 >
+                  <option
+                    default={true}
+                    disabled={true}
+                    selected={true}
+                  >
+                    -- Select Political Party --
+                  </option>
                   <option
                     name=""
                   >
@@ -141,17 +122,6 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "options": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [MockFunction],
-      },
       false,
       Object {
         "instance": null,
@@ -167,31 +137,8 @@ ShallowWrapper {
               <h3
                 className="page-modal-title"
               >
-                Petition
+                Declare Interest
               </h3>
-              <div
-                className="fix"
-              >
-                <span>
-                  Select an office
-                </span>
-                <select
-                  id="office"
-                  onChange={[Function]}
-                  required={true}
-                >
-                  <option
-                    name=""
-                  >
-                    
-                  </option>
-                  <option
-                    name=""
-                  >
-                    
-                  </option>
-                </select>
-              </div>
               <div
                 className="fix"
               >
@@ -204,6 +151,13 @@ ShallowWrapper {
                   onChange={[Function]}
                   required={true}
                 >
+                  <option
+                    default={true}
+                    disabled={true}
+                    selected={true}
+                  >
+                    -- Select Political Party --
+                  </option>
                   <option
                     name=""
                   >
@@ -261,31 +215,8 @@ ShallowWrapper {
               <h3
                 className="page-modal-title"
               >
-                Petition
+                Declare Interest
               </h3>
-              <div
-                className="fix"
-              >
-                <span>
-                  Select an office
-                </span>
-                <select
-                  id="office"
-                  onChange={[Function]}
-                  required={true}
-                >
-                  <option
-                    name=""
-                  >
-                    
-                  </option>
-                  <option
-                    name=""
-                  >
-                    
-                  </option>
-                </select>
-              </div>
               <div
                 className="fix"
               >
@@ -298,6 +229,13 @@ ShallowWrapper {
                   onChange={[Function]}
                   required={true}
                 >
+                  <option
+                    default={true}
+                    disabled={true}
+                    selected={true}
+                  >
+                    -- Select Political Party --
+                  </option>
                   <option
                     name=""
                   >
@@ -353,31 +291,8 @@ ShallowWrapper {
                 <h3
                   className="page-modal-title"
                 >
-                  Petition
+                  Declare Interest
                 </h3>,
-                <div
-                  className="fix"
-                >
-                  <span>
-                    Select an office
-                  </span>
-                  <select
-                    id="office"
-                    onChange={[Function]}
-                    required={true}
-                  >
-                    <option
-                      name=""
-                    >
-                      
-                    </option>
-                    <option
-                      name=""
-                    >
-                      
-                    </option>
-                  </select>
-                </div>,
                 <div
                   className="fix"
                 >
@@ -390,6 +305,13 @@ ShallowWrapper {
                     onChange={[Function]}
                     required={true}
                   >
+                    <option
+                      default={true}
+                      disabled={true}
+                      selected={true}
+                    >
+                      -- Select Political Party --
+                    </option>
                     <option
                       name=""
                     >
@@ -442,108 +364,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Petition",
+                  "children": "Declare Interest",
                   "className": "page-modal-title",
                 },
                 "ref": null,
-                "rendered": "Petition",
+                "rendered": "Declare Interest",
                 "type": "h3",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <span>
-                      Select an office
-                    </span>,
-                    <select
-                      id="office"
-                      onChange={[Function]}
-                      required={true}
-                    >
-                      <option
-                        name=""
-                      >
-                        
-                      </option>
-                      <option
-                        name=""
-                      >
-                        
-                      </option>
-                    </select>,
-                  ],
-                  "className": "fix",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Select an office",
-                    },
-                    "ref": null,
-                    "rendered": "Select an office",
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        <option
-                          name=""
-                        >
-                          
-                        </option>,
-                        <option
-                          name=""
-                        >
-                          
-                        </option>,
-                      ],
-                      "id": "office",
-                      "onChange": [Function],
-                      "required": true,
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "",
-                          "name": "",
-                          "value": undefined,
-                        },
-                        "ref": null,
-                        "rendered": "",
-                        "type": "option",
-                      },
-                      Object {
-                        "instance": null,
-                        "key": undefined,
-                        "nodeType": "host",
-                        "props": Object {
-                          "children": "",
-                          "name": "",
-                          "value": undefined,
-                        },
-                        "ref": null,
-                        "rendered": "",
-                        "type": "option",
-                      },
-                    ],
-                    "type": "select",
-                  },
-                ],
-                "type": "div",
               },
               Object {
                 "instance": null,
@@ -560,6 +386,13 @@ ShallowWrapper {
                       onChange={[Function]}
                       required={true}
                     >
+                      <option
+                        default={true}
+                        disabled={true}
+                        selected={true}
+                      >
+                        -- Select Political Party --
+                      </option>
                       <option
                         name=""
                       >
@@ -594,15 +427,24 @@ ShallowWrapper {
                     "props": Object {
                       "children": Array [
                         <option
-                          name=""
+                          default={true}
+                          disabled={true}
+                          selected={true}
                         >
-                          
+                          -- Select Political Party --
                         </option>,
-                        <option
-                          name=""
-                        >
-                          
-                        </option>,
+                        Array [
+                          <option
+                            name=""
+                          >
+                            
+                          </option>,
+                          <option
+                            name=""
+                          >
+                            
+                          </option>,
+                        ],
                       ],
                       "className": "interest-select",
                       "id": "party",
@@ -611,6 +453,20 @@ ShallowWrapper {
                     },
                     "ref": null,
                     "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "-- Select Political Party --",
+                          "default": true,
+                          "disabled": true,
+                          "selected": true,
+                        },
+                        "ref": null,
+                        "rendered": "-- Select Political Party --",
+                        "type": "option",
+                      },
                       Object {
                         "instance": null,
                         "key": undefined,
@@ -741,9 +597,6 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <$class
-            options={Object {}}
-          />,
           false,
           <div>
             <section
@@ -755,31 +608,8 @@ ShallowWrapper {
                 <h3
                   className="page-modal-title"
                 >
-                  Petition
+                  Declare Interest
                 </h3>
-                <div
-                  className="fix"
-                >
-                  <span>
-                    Select an office
-                  </span>
-                  <select
-                    id="office"
-                    onChange={[Function]}
-                    required={true}
-                  >
-                    <option
-                      name=""
-                    >
-                      
-                    </option>
-                    <option
-                      name=""
-                    >
-                      
-                    </option>
-                  </select>
-                </div>
                 <div
                   className="fix"
                 >
@@ -792,6 +622,13 @@ ShallowWrapper {
                     onChange={[Function]}
                     required={true}
                   >
+                    <option
+                      default={true}
+                      disabled={true}
+                      selected={true}
+                    >
+                      -- Select Political Party --
+                    </option>
                     <option
                       name=""
                     >
@@ -841,17 +678,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "options": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [MockFunction],
-        },
         false,
         Object {
           "instance": null,
@@ -867,31 +693,8 @@ ShallowWrapper {
                 <h3
                   className="page-modal-title"
                 >
-                  Petition
+                  Declare Interest
                 </h3>
-                <div
-                  className="fix"
-                >
-                  <span>
-                    Select an office
-                  </span>
-                  <select
-                    id="office"
-                    onChange={[Function]}
-                    required={true}
-                  >
-                    <option
-                      name=""
-                    >
-                      
-                    </option>
-                    <option
-                      name=""
-                    >
-                      
-                    </option>
-                  </select>
-                </div>
                 <div
                   className="fix"
                 >
@@ -904,6 +707,13 @@ ShallowWrapper {
                     onChange={[Function]}
                     required={true}
                   >
+                    <option
+                      default={true}
+                      disabled={true}
+                      selected={true}
+                    >
+                      -- Select Political Party --
+                    </option>
                     <option
                       name=""
                     >
@@ -961,31 +771,8 @@ ShallowWrapper {
                 <h3
                   className="page-modal-title"
                 >
-                  Petition
+                  Declare Interest
                 </h3>
-                <div
-                  className="fix"
-                >
-                  <span>
-                    Select an office
-                  </span>
-                  <select
-                    id="office"
-                    onChange={[Function]}
-                    required={true}
-                  >
-                    <option
-                      name=""
-                    >
-                      
-                    </option>
-                    <option
-                      name=""
-                    >
-                      
-                    </option>
-                  </select>
-                </div>
                 <div
                   className="fix"
                 >
@@ -998,6 +785,13 @@ ShallowWrapper {
                     onChange={[Function]}
                     required={true}
                   >
+                    <option
+                      default={true}
+                      disabled={true}
+                      selected={true}
+                    >
+                      -- Select Political Party --
+                    </option>
                     <option
                       name=""
                     >
@@ -1053,31 +847,8 @@ ShallowWrapper {
                   <h3
                     className="page-modal-title"
                   >
-                    Petition
+                    Declare Interest
                   </h3>,
-                  <div
-                    className="fix"
-                  >
-                    <span>
-                      Select an office
-                    </span>
-                    <select
-                      id="office"
-                      onChange={[Function]}
-                      required={true}
-                    >
-                      <option
-                        name=""
-                      >
-                        
-                      </option>
-                      <option
-                        name=""
-                      >
-                        
-                      </option>
-                    </select>
-                  </div>,
                   <div
                     className="fix"
                   >
@@ -1090,6 +861,13 @@ ShallowWrapper {
                       onChange={[Function]}
                       required={true}
                     >
+                      <option
+                        default={true}
+                        disabled={true}
+                        selected={true}
+                      >
+                        -- Select Political Party --
+                      </option>
                       <option
                         name=""
                       >
@@ -1142,108 +920,12 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Petition",
+                    "children": "Declare Interest",
                     "className": "page-modal-title",
                   },
                   "ref": null,
-                  "rendered": "Petition",
+                  "rendered": "Declare Interest",
                   "type": "h3",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <span>
-                        Select an office
-                      </span>,
-                      <select
-                        id="office"
-                        onChange={[Function]}
-                        required={true}
-                      >
-                        <option
-                          name=""
-                        >
-                          
-                        </option>
-                        <option
-                          name=""
-                        >
-                          
-                        </option>
-                      </select>,
-                    ],
-                    "className": "fix",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Select an office",
-                      },
-                      "ref": null,
-                      "rendered": "Select an office",
-                      "type": "span",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": Array [
-                          <option
-                            name=""
-                          >
-                            
-                          </option>,
-                          <option
-                            name=""
-                          >
-                            
-                          </option>,
-                        ],
-                        "id": "office",
-                        "onChange": [Function],
-                        "required": true,
-                      },
-                      "ref": null,
-                      "rendered": Array [
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": "",
-                            "name": "",
-                            "value": undefined,
-                          },
-                          "ref": null,
-                          "rendered": "",
-                          "type": "option",
-                        },
-                        Object {
-                          "instance": null,
-                          "key": undefined,
-                          "nodeType": "host",
-                          "props": Object {
-                            "children": "",
-                            "name": "",
-                            "value": undefined,
-                          },
-                          "ref": null,
-                          "rendered": "",
-                          "type": "option",
-                        },
-                      ],
-                      "type": "select",
-                    },
-                  ],
-                  "type": "div",
                 },
                 Object {
                   "instance": null,
@@ -1260,6 +942,13 @@ ShallowWrapper {
                         onChange={[Function]}
                         required={true}
                       >
+                        <option
+                          default={true}
+                          disabled={true}
+                          selected={true}
+                        >
+                          -- Select Political Party --
+                        </option>
                         <option
                           name=""
                         >
@@ -1294,15 +983,24 @@ ShallowWrapper {
                       "props": Object {
                         "children": Array [
                           <option
-                            name=""
+                            default={true}
+                            disabled={true}
+                            selected={true}
                           >
-                            
+                            -- Select Political Party --
                           </option>,
-                          <option
-                            name=""
-                          >
-                            
-                          </option>,
+                          Array [
+                            <option
+                              name=""
+                            >
+                              
+                            </option>,
+                            <option
+                              name=""
+                            >
+                              
+                            </option>,
+                          ],
                         ],
                         "className": "interest-select",
                         "id": "party",
@@ -1311,6 +1009,20 @@ ShallowWrapper {
                       },
                       "ref": null,
                       "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "children": "-- Select Political Party --",
+                            "default": true,
+                            "disabled": true,
+                            "selected": true,
+                          },
+                          "ref": null,
+                          "rendered": "-- Select Political Party --",
+                          "type": "option",
+                        },
                         Object {
                           "instance": null,
                           "key": undefined,

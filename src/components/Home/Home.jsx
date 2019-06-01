@@ -10,10 +10,10 @@ import electionVoteBallot from '../../assets/images/election-vote-ballot.jpg';
 const HomePage = () => {
   return (
     <React.Fragment>
-      <NavBar
-        LiTagOne={<LiTag to="/signup" value="Sign Up" />}
-        LiTagTwo={<LiTag to="/login" value="Login" />}
-      />
+      <NavBar>
+        <LiTag to="/signup" value="Sign Up" />
+        <LiTag to="/login" value="Login" />
+      </NavBar>
       <section id="showcase">
         <img src={electionVoteBallot} alt="" />
         <div className="overlay" />

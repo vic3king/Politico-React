@@ -25,9 +25,6 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
-        <$class
-          options={Object {}}
-        />,
         false,
         false,
         false,
@@ -46,17 +43,6 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "options": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [MockFunction],
-      },
       false,
       false,
       false,
@@ -109,9 +95,6 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <$class
-            options={Object {}}
-          />,
           false,
           false,
           false,
@@ -130,17 +113,6 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "options": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [MockFunction],
-        },
         false,
         false,
         false,

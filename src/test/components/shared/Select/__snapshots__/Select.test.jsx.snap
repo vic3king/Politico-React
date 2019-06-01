@@ -20,6 +20,13 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <option
+          default={true}
+          disabled={true}
+          selected={true}
+        >
+          -- Select --
+        </option>,
+        <option
           name="type"
           value="federal"
         >
@@ -49,6 +56,20 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "-- Select --",
+          "default": true,
+          "disabled": true,
+          "selected": true,
+        },
+        "ref": null,
+        "rendered": "-- Select --",
+        "type": "option",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -112,6 +133,13 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <option
+            default={true}
+            disabled={true}
+            selected={true}
+          >
+            -- Select --
+          </option>,
+          <option
             name="type"
             value="federal"
           >
@@ -141,6 +169,20 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "-- Select --",
+            "default": true,
+            "disabled": true,
+            "selected": true,
+          },
+          "ref": null,
+          "rendered": "-- Select --",
+          "type": "option",
+        },
         Object {
           "instance": null,
           "key": undefined,

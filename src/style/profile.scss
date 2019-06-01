@@ -40,14 +40,14 @@ body {
   box-shadow: 0 0 12px black;
   background-color: whitesmoke;
   color: black;
-  width: 250px;
+  width: 100%;
 }
 
 .party__image2 {
   background-image: url(https://res.cloudinary.com/dnch08bzc/image/upload/v1549601270/downloadx.png);
   background-size: cover;
   height: 153px;
-  width: 250px;
+  width: 100%;
   background-repeat: no-repeat;
 }
 
@@ -79,4 +79,97 @@ body {
   color: #f5f6fa;
   cursor: pointer;
   margin: 5px 5px;
+}
+@media screen and (max-width: 500px) {
+  #grid {
+    padding: 0 8% !important;
+  }
+
+  #grid__two {
+    padding: 0 8% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding: 0 15%;
+  }
+
+  #grid__two {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding: 0 15%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 825px) {
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 0 15%;
+  }
+
+  #grid__two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 0 15%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 5%;
+  }
+
+  #grid__two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1270px) {
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 0 3%;
+  }
+
+  #grid__two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 0 3%;
+  }
+
+  .boxed {
+    left: 23% !important;
+  }
+}
+
+@media only screen and (min-width: 1270px) {
+  .boxed {
+    left: 20%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    padding: 0 3%;
+  }
+
+  #grid__two {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    padding: 0 3%;
+  }
+
+  .boxed {
+    left: 15% !important;
+  }
 }
