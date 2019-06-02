@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 import NavBar from '../../shared/NavBar/Navbar';
 import Button from '../../shared/Buttons/Button';
 import LiTag from '../../shared/Buttons/LI-tag';
@@ -61,6 +62,7 @@ class CitizensPage extends Component {
     } = this.state;
     return (
       <React.Fragment>
+        {user.type !== 'citizen' ? <Redirect to="/login" /> : null}
         {loading && <Loader />}
         {showPetitionsModal && (
           <PetitionsModal hide={this.hidePetitionsModal} offices={offices} />

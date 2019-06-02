@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
-import App from '../components/App';
+import App from '../App';
 import HomePage from '../components/Home/Home';
 
 describe('Home component', () => {

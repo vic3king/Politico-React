@@ -48,6 +48,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          false,
           undefined,
           <div>
             <i
@@ -72,6 +73,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        false,
         undefined,
         Object {
           "instance": null,
@@ -185,6 +187,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            false,
             undefined,
             <div>
               <i
@@ -209,6 +212,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          false,
           undefined,
           Object {
             "instance": null,
@@ -311,5 +315,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;
