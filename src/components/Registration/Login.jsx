@@ -1,70 +1,37 @@
 import React, { Component } from 'react';
-import { notify } from 'react-notify-toast';
 import { Link, Redirect } from 'react-router-dom';
 import NavBar from '../shared/NavBar/Navbar';
 import Input from '../shared/InputFields/Input';
 import '../../style/registration.scss';
 import LiTag from '../shared/Buttons/LI-tag';
 import Loader from '../shared/Loader/Loader';
-import authServices from '../../services/authentication.services';
-import errorHandler from '../../helpers/errorHandler';
 
 class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      loginDetatils: {},
-      loading: false,
-      canRedirect: false,
-      isAdmin: false,
-      isPolitician: false,
-      isCitizen: false,
+      loginDetails: {},
     };
   }
 
   onInputChange = event => {
-    const { loginDetatils } = this.state;
-    loginDetatils[event.target.id] = event.target.value;
-    this.setState({ loginDetatils });
+    const { loginDetails } = this.state;
+    loginDetails[event.target.id] = event.target.value;
+    this.setState({ loginDetails });
   };
 
   onButtonSubmit = async event => {
     event.preventDefault();
-    this.setState({ loading: true });
-    const { loginDetatils } = this.state;
-    const user = await authServices.auth('login', loginDetatils);
-
-    if (user.status >= 400) {
-      this.setState({ loading: false });
-      notify.show(errorHandler(user.error), 'error');
-    }
-
-    if (user.status === 200) {
-      this.setState({ loading: true });
-      if (user.data[0].user.type === 'admin') {
-        this.setState({ isAdmin: true });
-      }
-      if (user.data[0].user.type === 'politician') {
-        this.setState({ isPolitician: true });
-      }
-      if (user.data[0].user.type === 'citizen') {
-        this.setState({ isCitizen: true });
-      }
-      localStorage.setItem('token', user.data[0].token);
-      localStorage.setItem('user', JSON.stringify(user.data[0].user));
-      this.setState({ canRedirect: true });
-    }
+    const { loginDetails } = this.state;
+    const { login } = this.props;
+    login(loginDetails);
   };
 
   render() {
-    const {
-      loginDetatils,
-      loading,
-      canRedirect,
-      isAdmin,
-      isCitizen,
-      isPolitician,
-    } = this.state;
+    const { loginDetails } = this.state;
+    const { auth } = this.props;
+
+    const { loading, redirect, isAdmin, isCitizen, isPolitician } = auth;
 
     return (
       <React.Fragment>
@@ -87,7 +54,7 @@ class Login extends Component {
                 type="text"
                 placeholder="Email"
                 id="email"
-                value={loginDetatils.email}
+                value={loginDetails.email}
                 onChange={this.onInputChange}
                 required
               />
@@ -96,7 +63,7 @@ class Login extends Component {
                 id="password"
                 type="password"
                 placeholder="Password"
-                value={loginDetatils.password}
+                value={loginDetails.password}
                 onChange={this.onInputChange}
                 required
               />
@@ -120,11 +87,9 @@ class Login extends Component {
             </form>
           </div>
         </div>
-        {isAdmin && canRedirect && <Redirect to="/admin-dashboard" />}
-        {isPolitician && canRedirect && (
-          <Redirect to="/politicians-dashboard" />
-        )}
-        {isCitizen && canRedirect && <Redirect to="/citizens-dashboard" />}
+        {isAdmin && redirect && <Redirect to="/admin-dashboard" />}
+        {isPolitician && redirect && <Redirect to="/politicians-dashboard" />}
+        {isCitizen && redirect && <Redirect to="/citizens-dashboard" />}
       </React.Fragment>
     );
   }

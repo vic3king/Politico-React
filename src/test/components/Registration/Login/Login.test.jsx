@@ -1,117 +1,105 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import { notify } from 'react-notify-toast';
-import Login from '../../../../components/Registration/Login';
-import authServices from '../../../../services/authentication.services';
-import errorHandler from '../../../../helpers/errorHandler';
+import configureMockStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
+import fetchMock from 'fetch-mock';
+import actions from '../../../../actions/auth.actions';
+import types from '../../../../constants/actionTypes';
 
-jest.mock('../../../../services/authentication.services');
-jest.mock('react-notify-toast');
+const middlewares = [thunk];
+const mockStore = configureMockStore(middlewares);
 
-let wrapper;
-describe('Login component', () => {
+describe('auth actions', () => {
   global.fetch = jest.fn();
-  global.localStorage.setItem('user', '{}');
-  beforeEach(() => {
-    wrapper = shallow(<Login />);
+  afterEach(() => {
+    fetchMock.restore();
+    fetchMock.config.fallbackToNetwork = false;
   });
 
-  it('should match snapshot', () => {
-    expect(wrapper).toMatchSnapshot();
+  // it('should create an action to login', async () => {
+  //   fetchMock.mock(
+  //     '/api/v1/auth/login',
+  //     {
+  //       status: 200,
+  //       body: [{ token: 'faketoken', user: {} }],
+  //     },
+  //     {
+  //       method: 'POST',
+  //       name: 'login',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //     }
+  //   );
+
+  //   const userData = {
+  //     email: 'pete@gmail.com',
+  //     password: 'dummy',
+  //   };
+
+  //   await fetch('/api/v1/auth/login', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(userData),
+  //   });
+
+  //   const expectedAction = [
+  //     {
+  //       type: types.BEGIN_LOADING,
+  //     },
+  //   ];
+
+  //   const store = mockStore({});
+
+  //   store.dispatch(actions.login()).then(() => {
+  //     expect(store.getActions()).toEqual(expectedAction);
+  //   });
+  // });
+
+  it('should create an action for login failure', async () => {
+    const expectedAction = [
+      {
+        type: types.LOGIN_FAILURE,
+      },
+    ];
+    const store = mockStore({});
+
+    store.dispatch(actions.loginFailure());
+    expect(store.getActions()).toEqual(expectedAction);
   });
 
-  it('should render a form tag', () => {
-    expect(wrapper.find('form'));
-    expect(wrapper.hasClass('signbox2'));
+  it('should create an action for login admin success', async () => {
+    const expectedAction = [
+      {
+        type: types.LOGIN_SUCCESS_ADMIN,
+      },
+    ];
+    const store = mockStore({});
+
+    store.dispatch(actions.loginSuccessAdmin());
+    expect(store.getActions()).toEqual(expectedAction);
   });
 
-  describe('onInputChange method', () => {
-    it('should update formData state ', () => {
-      const instance = wrapper.instance();
-      const event = {
-        preventDefault: jest.fn(),
-        target: { id: 'office' },
-      };
-      const formDetails = {
-        name: 'test',
-      };
-      instance.setState({
-        formDetails,
-      });
+  it('should create an action for login politician success', async () => {
+    const expectedAction = [
+      {
+        type: types.LOGIN_SUCCESS_POLITICIAN,
+      },
+    ];
+    const store = mockStore({});
 
-      instance.onInputChange(event);
-
-      expect(instance.state.formDetails).toEqual({
-        name: 'test',
-      });
-    });
+    store.dispatch(actions.loginSuccessPolitician());
+    expect(store.getActions()).toEqual(expectedAction);
   });
+  it('should create an action for login citizen success', async () => {
+    const expectedAction = [
+      {
+        type: types.LOGIN_SUCCESS_CITIZEN,
+      },
+    ];
+    const store = mockStore({});
 
-  describe('onButtonSubmit method', () => {
-    let instance;
-    let event;
-
-    describe('Api call success', () => {
-      beforeAll(() => {
-        authServices.auth = jest.fn().mockImplementation(() =>
-          Promise.resolve({
-            status: 200,
-            data: [
-              {
-                user: {
-                  type: 'admin',
-                },
-              },
-            ],
-          })
-        );
-      });
-      beforeEach(() => {
-        instance = wrapper.instance();
-        event = {
-          preventDefault: jest.fn(),
-        };
-      });
-
-      it('should call preventDefault on event', async () => {
-        await instance.onButtonSubmit(event);
-
-        expect(event.preventDefault).toBeCalled();
-      });
-      it('should set loading state to false after successfull api call is made', async () => {
-        await instance.onButtonSubmit(event);
-        expect(instance.state.loading).toBeTruthy();
-      });
-    });
-
-    describe('Api call 400 errors', () => {
-      beforeAll(() => {
-        authServices.auth = jest.fn().mockImplementation(() =>
-          Promise.resolve({
-            status: 400,
-            error: 'validation error',
-          })
-        );
-      });
-      beforeEach(() => {
-        instance = wrapper.instance();
-        event = {
-          preventDefault: jest.fn(),
-        };
-      });
-
-      it('should set loading state to false on validation error', async () => {
-        await instance.onButtonSubmit(event);
-        expect(instance.state.loading).toBeFalsy();
-      });
-
-      it('should toast the error message', async () => {
-        await instance.onButtonSubmit(event);
-        expect(notify.show).toBeCalledWith(
-          errorHandler('validation error'),
-          'error'
-        );
-      });
-    });
+    store.dispatch(actions.loginSuccessCitizen());
+    expect(store.getActions()).toEqual(expectedAction);
   });
 });
