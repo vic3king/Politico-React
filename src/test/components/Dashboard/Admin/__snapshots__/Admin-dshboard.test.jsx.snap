@@ -19,6 +19,9 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": Array [
+        <Redirect
+          to="/login"
+        />,
         false,
         false,
         false,
@@ -138,13 +141,24 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "to": "/login",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       false,
       false,
       false,
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "children": Array [
             <Button
@@ -617,6 +631,9 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
+          <Redirect
+            to="/login"
+          />,
           false,
           false,
           false,
@@ -736,13 +753,24 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "to": "/login",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         false,
         false,
         false,
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "children": Array [
               <Button
