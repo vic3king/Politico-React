@@ -40,14 +40,6 @@ const auth = (state = initialState, action) => {
         token: action.token,
       };
 
-    // case actionTypes.LOGOUT:
-    //   return {
-    //     ...state,
-    //     redirect: false,
-    //     isAdmin: false,
-    //     token: null,
-    //     loading: false,
-    //   };
     default:
       return state;
   }

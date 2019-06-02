@@ -10,7 +10,7 @@ import Login from './container/login.container';
 import AdminPage from './components/Dashboard/Admin/Admin';
 import PoliticiansPage from './components/Dashboard/Politicians/Politicians';
 import Logout from './components/Logout/Logout';
-import CitizensPage from './components/Dashboard/Citizens/Citizens';
+import CitizensPage from './container/offices.container';
 
 class App extends Component {
   state = {};
