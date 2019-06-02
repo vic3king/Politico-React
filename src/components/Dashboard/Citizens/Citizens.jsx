@@ -7,15 +7,12 @@ import SideBar from '../../shared/SideBar/SideBar';
 import TopCard from '../../shared/Cards/Profile-card-1';
 import ResultsPage from '../../Results/ResultsPage';
 import Loader from '../../shared/Loader/Loader';
-import Offices from '../../../services/offices';
 import PetitionsModal from '../../Modals/PetitionsModal';
 import VotingModal from '../../Modals/VotingModal';
 import '../../../style/admin.scss';
 
 class CitizensPage extends Component {
   state = {
-    offices: [],
-    loading: true,
     showPetitionsModal: false,
     showVotingModal: false,
     officeId: null,
@@ -23,11 +20,8 @@ class CitizensPage extends Component {
   };
 
   async componentDidMount() {
-    const allOffices = await Offices.getAllOffices();
-    this.setState({
-      offices: allOffices.data,
-      loading: false,
-    });
+    const { getAllOffices } = this.props;
+    getAllOffices();
   }
 
   handleChangeView = resultsPage => {
@@ -52,9 +46,10 @@ class CitizensPage extends Component {
 
   render() {
     const user = JSON.parse(localStorage.user);
+    const { offices } = this.props;
+    const { officeList, loading } = offices;
+
     const {
-      offices,
-      loading,
       showPetitionsModal,
       officeId,
       showVotingModal,
@@ -65,7 +60,7 @@ class CitizensPage extends Component {
         {user.type !== 'citizen' ? <Redirect to="/login" /> : null}
         {loading && <Loader />}
         {showPetitionsModal && (
-          <PetitionsModal hide={this.hidePetitionsModal} offices={offices} />
+          <PetitionsModal hide={this.hidePetitionsModal} offices={officeList} />
         )}
         {showVotingModal && (
           <VotingModal hide={this.hideVotingModal} officeId={officeId} />
@@ -110,7 +105,7 @@ class CitizensPage extends Component {
                 </div>
                 <TopCard
                   value="View to Vote"
-                  offices={offices}
+                  offices={officeList}
                   handleEvent={this.showVotingModal}
                 />
               </section>
