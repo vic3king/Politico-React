@@ -11,27 +11,23 @@ import CandidateIntrestRequestList from '../../CandidateIntrestRequests/Candidat
 import OfficeModal from '../../Modals/OfficeModal';
 import PartyModal from '../../Modals/PartyModal';
 import Loader from '../../shared/Loader/Loader';
-import Offices from '../../../services/offices';
 import Parties from '../../../services/parties';
 import '../../../style/admin.scss';
 
 class AdminPage extends Component {
   state = {
-    offices: [],
     parties: [],
     showPartyModal: false,
     showOfficeModal: false,
-    loading: true,
     currentView: 'defaultPageView',
   };
 
   componentDidMount = async () => {
-    const allOffices = await Offices.getAllOffices();
+    const { getAllOffices } = this.props;
     const allParties = await Parties.getAllParties();
+    await getAllOffices();
     this.setState({
-      offices: allOffices.data,
       parties: allParties.data,
-      loading: false,
     });
   };
 
@@ -95,12 +91,13 @@ class AdminPage extends Component {
   render() {
     const user = JSON.parse(localStorage.user);
 
+    const { offices } = this.props;
+    const { officeList, loading } = offices;
+
     const {
       showOfficeModal,
       showPartyModal,
-      offices,
       parties,
-      loading,
       currentView,
     } = this.state;
     return (
@@ -173,7 +170,7 @@ class AdminPage extends Component {
                     <hr />
                   </h4>
                 </div>
-                <TopCard value="View Running Candidates" offices={offices} />
+                <TopCard value="View Running Candidates" offices={officeList} />
               </section>
               <section className="maim-section">
                 <div>

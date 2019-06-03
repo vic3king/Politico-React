@@ -7,10 +7,10 @@ import ErrorPage from './components/NotFound-404/Pagenotfound';
 import HomePage from './components/Home/Home';
 import Signup from './components/Registration/Signup';
 import Login from './container/login.container';
-import AdminPage from './components/Dashboard/Admin/Admin';
-import PoliticiansPage from './components/Dashboard/Politicians/Politicians';
 import Logout from './components/Logout/Logout';
-import CitizensPage from './container/offices.container';
+import CitizensPage from './container/citizens-page.container';
+import AdminPage from './container/admin-page.container';
+import PoliticiansPage from './container/politicians-page.container';
 
 class App extends Component {
   state = {};
