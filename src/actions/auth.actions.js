@@ -2,12 +2,7 @@ import { notify } from 'react-notify-toast';
 import actions from '../constants/actionTypes';
 import authServices from '../services/authentication.services';
 import errorHandler from '../helpers/errorHandler';
-
-const contentLoading = () => {
-  return {
-    type: actions.BEGIN_LOADING,
-  };
-};
+import contentLoading from './loading.action';
 
 const loginSuccessAdmin = token => {
   return {

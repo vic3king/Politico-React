@@ -4,7 +4,10 @@ import Login from '../components/Registration/Login';
 
 const { login } = authAction;
 
-const mapStateToProps = ({ auth }) => ({ auth });
+const mapStateToProps = ({ auth, isLoadingReducer }) => ({
+  auth,
+  isLoadingReducer,
+});
 
 export default connect(
   mapStateToProps,

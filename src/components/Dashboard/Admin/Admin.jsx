@@ -11,7 +11,6 @@ import CandidateIntrestRequestList from '../../CandidateIntrestRequests/Candidat
 import OfficeModal from '../../Modals/OfficeModal';
 import PartyModal from '../../Modals/PartyModal';
 import Loader from '../../shared/Loader/Loader';
-import Parties from '../../../services/parties';
 import '../../../style/admin.scss';
 
 class AdminPage extends Component {
@@ -23,12 +22,9 @@ class AdminPage extends Component {
   };
 
   componentDidMount = async () => {
-    const { getAllOffices } = this.props;
-    const allParties = await Parties.getAllParties();
+    const { getAllOffices, getAllParties } = this.props;
     await getAllOffices();
-    this.setState({
-      parties: allParties.data,
-    });
+    getAllParties();
   };
 
   handleChangeView = resultsPage => {
@@ -91,19 +87,16 @@ class AdminPage extends Component {
   render() {
     const user = JSON.parse(localStorage.user);
 
-    const { offices } = this.props;
-    const { officeList, loading } = offices;
+    const { offices, parties, isLoadingReducer } = this.props;
+    const { officeList } = offices;
+    const { partiesList } = parties;
+    const { loader } = isLoadingReducer;
 
-    const {
-      showOfficeModal,
-      showPartyModal,
-      parties,
-      currentView,
-    } = this.state;
+    const { showOfficeModal, showPartyModal, currentView } = this.state;
     return (
       <React.Fragment>
         {user.type !== 'admin' ? <Redirect to="/login" /> : null}
-        {loading && <Loader />}
+        {loader && <Loader />}
         {showOfficeModal && (
           <OfficeModal
             hide={this.hideOfficeModal}
@@ -180,7 +173,7 @@ class AdminPage extends Component {
                   </h4>
                 </div>
                 <BottomCard
-                  parties={parties}
+                  parties={partiesList}
                   hidePartyModal={this.hidePartyModal}
                   hideOfficeModal={this.hideOfficeModal}
                   updateDelete={this.updateDeletePartyState}
