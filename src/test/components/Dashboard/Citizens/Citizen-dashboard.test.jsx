@@ -1,13 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
-import configureMockStore from 'redux-mock-store';
 import CitizensPage from '../../../../components/Dashboard/Citizens/Citizens';
-
-const middlewares = [thunk];
-const mockStore = configureMockStore(middlewares);
-const store = mockStore({});
 
 const props = {
   offices: {
@@ -15,15 +8,28 @@ const props = {
   },
 };
 
-const CitizensPageComponent = (
-  <Provider store={store}>
-    <CitizensPage {...props} />
-  </Provider>
-);
+const CitizensPageComponent = <CitizensPage {...props} />;
 
 describe('<CitizensPage />', () => {
   it('renders citizens page', () => {
+    localStorage.setItem('user', '{ "id": 2 }');
     const wrapper = shallow(CitizensPageComponent);
     expect(wrapper.find('div'));
+  });
+});
+
+describe('<CitizensPage />', () => {
+  it('renders Citizens page', () => {
+    const event = {
+      target: {
+        id: 2,
+      },
+    };
+    const wrapper = shallow(CitizensPageComponent);
+    expect(wrapper.find('div'));
+    wrapper.instance().showPetitionsModal();
+    wrapper.instance().hidePetitionsModal();
+    wrapper.instance().showVotingModal(event);
+    wrapper.instance().hideVotingModal();
   });
 });
