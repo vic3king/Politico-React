@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux';
-import { loadingBarReducer } from 'react-redux-loading-bar';
+import isLoadingReducer from './loading.reducer';
 import auth from './auth.reducer';
 import offices from './offices.reducers';
+import parties from './parties.reducers';
 
 const reducers = combineReducers({
   auth,
   offices,
-  loadingBar: loadingBarReducer,
+  parties,
+  isLoadingReducer,
 });
 
 export default reducers;

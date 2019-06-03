@@ -1,105 +1,49 @@
-import configureMockStore from 'redux-mock-store';
+import React from 'react';
+import { shallow } from 'enzyme';
+import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-import fetchMock from 'fetch-mock';
-import actions from '../../../../actions/auth.actions';
-import types from '../../../../constants/actionTypes';
+import configureMockStore from 'redux-mock-store';
+import LoginPage from '../../../../components/Registration/Login';
+
+const initialState = {
+  auth: {
+    isAdmin: false,
+    isCitizen: false,
+    isPolitician: false,
+    redirect: false,
+    token: null,
+  },
+};
+
+const props = {
+  login: jest.fn(),
+  isLoadingReducer: { loader: true },
+  auth: { isAdmin: '', isCitizen: '', isPolitician: '' },
+};
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
+const store = mockStore(initialState);
 
-describe('auth actions', () => {
-  global.fetch = jest.fn();
-  afterEach(() => {
-    fetchMock.restore();
-    fetchMock.config.fallbackToNetwork = false;
+const LoginPageComponent = (
+  <Provider store={store}>
+    <LoginPage auth={{ fake: 'test' }} {...props} />
+  </Provider>
+);
+
+describe('<LoginPage />', () => {
+  it('renders login page', () => {
+    const wrapper = shallow(LoginPageComponent);
+    expect(wrapper.find('div'));
   });
+});
 
-  // it('should create an action to login', async () => {
-  //   fetchMock.mock(
-  //     '/api/v1/auth/login',
-  //     {
-  //       status: 200,
-  //       body: [{ token: 'faketoken', user: {} }],
-  //     },
-  //     {
-  //       method: 'POST',
-  //       name: 'login',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //     }
-  //   );
-
-  //   const userData = {
-  //     email: 'pete@gmail.com',
-  //     password: 'dummy',
-  //   };
-
-  //   await fetch('/api/v1/auth/login', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify(userData),
-  //   });
-
-  //   const expectedAction = [
-  //     {
-  //       type: types.BEGIN_LOADING,
-  //     },
-  //   ];
-
-  //   const store = mockStore({});
-
-  //   store.dispatch(actions.login()).then(() => {
-  //     expect(store.getActions()).toEqual(expectedAction);
-  //   });
-  // });
-
-  it('should create an action for login failure', async () => {
-    const expectedAction = [
-      {
-        type: types.LOGIN_FAILURE,
-      },
-    ];
-    const store = mockStore({});
-
-    store.dispatch(actions.loginFailure());
-    expect(store.getActions()).toEqual(expectedAction);
-  });
-
-  it('should create an action for login admin success', async () => {
-    const expectedAction = [
-      {
-        type: types.LOGIN_SUCCESS_ADMIN,
-      },
-    ];
-    const store = mockStore({});
-
-    store.dispatch(actions.loginSuccessAdmin());
-    expect(store.getActions()).toEqual(expectedAction);
-  });
-
-  it('should create an action for login politician success', async () => {
-    const expectedAction = [
-      {
-        type: types.LOGIN_SUCCESS_POLITICIAN,
-      },
-    ];
-    const store = mockStore({});
-
-    store.dispatch(actions.loginSuccessPolitician());
-    expect(store.getActions()).toEqual(expectedAction);
-  });
-  it('should create an action for login citizen success', async () => {
-    const expectedAction = [
-      {
-        type: types.LOGIN_SUCCESS_CITIZEN,
-      },
-    ];
-    const store = mockStore({});
-
-    store.dispatch(actions.loginSuccessCitizen());
-    expect(store.getActions()).toEqual(expectedAction);
+describe('<LoginPage />', () => {
+  it('renders login page', () => {
+    const inputEvent = { target: { id: 'name', value: 'pcp' } };
+    const wrapper = shallow(<LoginPage auth={{ fake: 'yup' }} {...props} />);
+    expect(wrapper.find('div'));
+    wrapper.instance().onInputChange(inputEvent);
+    wrapper.instance().onButtonSubmit();
   });
 });

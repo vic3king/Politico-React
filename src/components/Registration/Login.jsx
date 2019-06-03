@@ -29,13 +29,13 @@ class Login extends Component {
 
   render() {
     const { loginDetails } = this.state;
-    const { auth } = this.props;
-
-    const { loading, redirect, isAdmin, isCitizen, isPolitician } = auth;
+    const { auth, isLoadingReducer } = this.props;
+    const { redirect, isAdmin, isCitizen, isPolitician } = auth;
+    const { loader } = isLoadingReducer;
 
     return (
       <React.Fragment>
-        {loading && <Loader />}
+        {loader && <Loader />}
         <NavBar>
           <LiTag to="/signup" value="Sign Up" />
         </NavBar>

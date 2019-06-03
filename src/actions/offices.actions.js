@@ -1,14 +1,8 @@
 import { notify } from 'react-notify-toast';
-// import { showLoading, hideLoading } from 'react-redux-loading-bar';
 import actions from '../constants/actionTypes';
 import officeServices from '../services/offices';
 import handleErrorMessage from '../helpers/errorHandler';
-
-const contentLoading = () => {
-  return {
-    type: actions.BEGIN_LOADING,
-  };
-};
+import contentLoading from './loading.action';
 
 const getOfficeSuccess = offices => {
   return {

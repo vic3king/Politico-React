@@ -1,7 +1,6 @@
 import actionTypes from '../constants/actionTypes';
 
 const initialState = {
-  loading: false,
   isAdmin: false,
   isCitizen: false,
   isPolitician: false,
@@ -11,14 +10,11 @@ const initialState = {
 
 const auth = (state = initialState, action) => {
   switch (action.type) {
-    case actionTypes.BEGIN_LOADING:
-      return { ...state, loading: true };
     case actionTypes.LOGIN_FAILURE:
-      return { ...state, loading: false };
+      return { ...state };
     case actionTypes.LOGIN_SUCCESS_ADMIN:
       return {
         ...state,
-        loading: false,
         isAdmin: true,
         redirect: true,
         token: action.token,
@@ -26,7 +22,6 @@ const auth = (state = initialState, action) => {
     case actionTypes.LOGIN_SUCCESS_POLITICIAN:
       return {
         ...state,
-        loading: false,
         isPolitician: true,
         redirect: true,
         token: action.token,
@@ -34,7 +29,6 @@ const auth = (state = initialState, action) => {
     case actionTypes.LOGIN_SUCCESS_CITIZEN:
       return {
         ...state,
-        loading: false,
         isCitizen: true,
         redirect: true,
         token: action.token,
