@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 import NavBar from '../../shared/NavBar/Navbar';
 import Button from '../../shared/Buttons/Button';
 import LiTag from '../../shared/Buttons/LI-tag';
@@ -71,6 +72,7 @@ class PoliticiansPage extends Component {
     } = this.state;
     return (
       <React.Fragment>
+        {user.type !== 'politician' ? <Redirect to="/login" /> : null}
         {loading && <Loader />}
         {showIntrestsModal && (
           <InterestFormModal
