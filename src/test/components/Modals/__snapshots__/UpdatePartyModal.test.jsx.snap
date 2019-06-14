@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InterestFormModal component should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UpdatePartyModal
+    hide={[MockFunction]}
+    partyId={1}
+    updatePartiesName={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        false,
+        <Modal
+          ButtonOne={
+            <Button
+              className="cte-off"
+              id="party-btn"
+              onClick={[Function]}
+              type="submit"
+              value="Update"
+            />
+          }
+          CloseModal={
+            <button
+              id="btn"
+              onClick={[Function]}
+              type="button"
+            >
+              X
+            </button>
+          }
+          Header={
+            <Header
+              text="Update Party"
+            />
+          }
+          InputOne=""
+          InputThree=""
+          InputTwo=""
+          Select={
+            <Input
+              id="name"
+              onChange={[Function]}
+              placeholder="update party name"
+              required={true}
+              type="text"
+              value=""
+            />
+          }
+          SpanFour=""
+          SpanOne=""
+          SpanThree=""
+          SpanTwo=""
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      false,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "ButtonOne": <Button
+            className="cte-off"
+            id="party-btn"
+            onClick={[Function]}
+            type="submit"
+            value="Update"
+          />,
+          "CloseModal": <button
+            id="btn"
+            onClick={[Function]}
+            type="button"
+          >
+            X
+          </button>,
+          "Header": <Header
+            text="Update Party"
+          />,
+          "InputOne": "",
+          "InputThree": "",
+          "InputTwo": "",
+          "Select": <Input
+            id="name"
+            onChange={[Function]}
+            placeholder="update party name"
+            required={true}
+            type="text"
+            value=""
+          />,
+          "SpanFour": "",
+          "SpanOne": "",
+          "SpanThree": "",
+          "SpanTwo": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          false,
+          <Modal
+            ButtonOne={
+              <Button
+                className="cte-off"
+                id="party-btn"
+                onClick={[Function]}
+                type="submit"
+                value="Update"
+              />
+            }
+            CloseModal={
+              <button
+                id="btn"
+                onClick={[Function]}
+                type="button"
+              >
+                X
+              </button>
+            }
+            Header={
+              <Header
+                text="Update Party"
+              />
+            }
+            InputOne=""
+            InputThree=""
+            InputTwo=""
+            Select={
+              <Input
+                id="name"
+                onChange={[Function]}
+                placeholder="update party name"
+                required={true}
+                type="text"
+                value=""
+              />
+            }
+            SpanFour=""
+            SpanOne=""
+            SpanThree=""
+            SpanTwo=""
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "ButtonOne": <Button
+              className="cte-off"
+              id="party-btn"
+              onClick={[Function]}
+              type="submit"
+              value="Update"
+            />,
+            "CloseModal": <button
+              id="btn"
+              onClick={[Function]}
+              type="button"
+            >
+              X
+            </button>,
+            "Header": <Header
+              text="Update Party"
+            />,
+            "InputOne": "",
+            "InputThree": "",
+            "InputTwo": "",
+            "Select": <Input
+              id="name"
+              onChange={[Function]}
+              placeholder="update party name"
+              required={true}
+              type="text"
+              value=""
+            />,
+            "SpanFour": "",
+            "SpanOne": "",
+            "SpanThree": "",
+            "SpanTwo": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

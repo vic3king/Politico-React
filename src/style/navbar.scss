@@ -1,0 +1,103 @@
+.main-header {
+  background: #343838;
+  width: 100%;
+  padding: 8px 16px;
+  height: 62px;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  z-index: 1;
+}
+
+.main-header {
+  div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.main-header__brand {
+  color: #f5f6fa;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 3px 0;
+}
+
+// button#party {
+//   color: #f5f6fa;
+//   text-decoration: none;
+//   font-weight: bold;
+//   padding: 3px 0;
+// }
+
+.reset_button {
+  color: #f5f6fa;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px 0;
+  background: transparent;
+  border: 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.reset_button:focus {
+  outline: 0;
+}
+
+.main-nav {
+  text-align: right;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.main-nav__item {
+  a {
+    color: #f5f6fa;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 0;
+  }
+}
+
+.main-nav__item a:hover,
+.reset_button:hover {
+  color: #f5f6fa;
+  border-bottom: 3px solid #f5f6fa;
+}
+
+.main-nav__item {
+  a:active {
+    border-bottom: 5px solid red;
+    color: red;
+  }
+}
+
+.main-header div.hide-lg button {
+  background: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.main-header div.hide-lg button:hover {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-header div.hide-lg {
+    display: none;
+  }
+}

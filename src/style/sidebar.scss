@@ -1,0 +1,61 @@
+.sidenav {
+  position: fixed;
+  top: 7%;
+  background-color: #343838;
+  height: 100%;
+  padding: 20px;
+}
+.profile__image {
+  background-image: url('../assets/images/download.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 200px;
+  border-radius: 26px;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+}
+.profile__details {
+  color: white;
+  font-size: 15px;
+}
+
+.profile-btn {
+  border: 2px solid #f5f6fa;
+  padding: 4px 1px;
+  color: #f5f6fa;
+  cursor: pointer;
+  margin-left: 30px;
+  background: #005f6b;
+  letter-spacing: 1px;
+  width: 140px;
+  animation: shadow-pulse 1s infinite;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shadow-pulse-big {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .toggle {
+    display: none;
+  }
+
+  .boxed {
+    width: 100%;
+  }
+}

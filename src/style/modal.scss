@@ -1,0 +1,229 @@
+.modal-main {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: fit-content;
+  z-index: 9999;
+  background: #e6e6e6;
+}
+
+.select-box {
+  border: 0.08rem solid #00000033;
+  block-size: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  color: black;
+}
+
+.input {
+  border: 0.08rem solid #00000033;
+  block-size: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.office-btn {
+  border: 2px solid #f5f6fa;
+  padding: 7px 38px;
+  color: #f5f6fa;
+  margin-left: 39%;
+  cursor: pointer;
+  background: #005f6b;
+  letter-spacing: 1px;
+  animation: shadow-pulse 1s infinite;
+}
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.page-modal-title {
+  margin: 0;
+  text-align: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#type,
+#office,
+select#party {
+  margin: 0;
+  border: 0.08rem solid #00000033;
+  block-size: 5px;
+  background-color: #fff;
+  font-size: 12px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  color: #000;
+}
+
+input#officeName,
+input#ageLimit,
+input#name,
+input#hqAddress,
+input#logoUrl {
+  border: 0.08rem solid #00000033;
+  block-size: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.cte-off {
+  border: 2px solid #f5f6fa;
+  padding: 10px 0;
+  color: #f5f6fa;
+  cursor: pointer;
+  background: #005f6b;
+  letter-spacing: 1px;
+  animation: shadow-pulse 1s infinite;
+  width: 25%;
+  margin: 10px auto;
+}
+
+button#btn {
+  top: 0;
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+}
+
+.fix {
+  margin: 10px 0;
+}
+.modalDelete {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: fit-content;
+  background-color: #005f6b;
+  padding: 20px;
+  width: 50%;
+  color: white;
+  text-align: center;
+}
+.modalyes {
+  font-size: 15px;
+  color: #f5f6fa;
+  background-color: rgb(184, 32, 32);
+  outline: none;
+  border: 2px solid #f5f6fa;
+  padding: 2px 30px;
+  cursor: pointer;
+}
+
+.modalno {
+  font-size: 15px;
+  color: #f5f6fa;
+  background-color: rgb(26, 60, 26);
+  outline: none;
+  border: 2px solid #f5f6fa;
+  padding: 2px 30px;
+  cursor: pointer;
+}
+
+.modalno:hover,
+.edit-btn:hover {
+  background-color: rgb(62, 245, 62);
+  color: #f5f6fa;
+}
+
+.modalyes:hover,
+.delete-record:hover {
+  background-color: rgb(236, 67, 67);
+  color: #f5f6fa;
+}
+
+.modal-close {
+  background-color: #005f6b;
+  color: white;
+  margin-right: 2px;
+  outline: none;
+  border: 0;
+  top: 0;
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+}
+
+// results modal
+.modal__results {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-results {
+  background-color: #005f6b;
+  margin: 10% auto auto 30%;
+  width: 62%;
+  margin: 3% auto auto 20%;
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
+  position: relative;
+}
+
+.profile__image__candidates {
+  background-image: url('../assets/images/download.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 200px;
+  border-radius: 26px;
+  width: 200px;
+  margin: auto;
+  margin: 10px 10px;
+}
+
+.result-details {
+  margin: 10px 10px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+.page-title-results {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+.vote-btn {
+  border: 2px solid #f5f6fa;
+  padding: 6px 0;
+  color: #f5f6fa;
+  cursor: pointer;
+  background: #005f6b;
+  letter-spacing: 1px;
+  animation: shadow-pulse 1s infinite;
+  width: 40%;
+  margin: 10px auto;
+}

@@ -1,0 +1,303 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InterestFormModal component should match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DeletePartModal
+    handleDelete={[MockFunction]}
+    hide={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": <div
+        className="modalDelete"
+      >
+        <p>
+          Are you sure you want to delete?
+        </p>
+        <button
+          className="modalyes"
+          onClick={[Function]}
+          type="submit"
+        >
+          Yes
+        </button>
+        <button
+          className="modalno"
+          onClick={[Function]}
+          type="submit"
+        >
+          No
+        </button>
+        <button
+          className="modal-close"
+          onClick={[Function]}
+          type="button"
+        >
+          X
+        </button>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            Are you sure you want to delete?
+          </p>,
+          <button
+            className="modalyes"
+            onClick={[Function]}
+            type="submit"
+          >
+            Yes
+          </button>,
+          <button
+            className="modalno"
+            onClick={[Function]}
+            type="submit"
+          >
+            No
+          </button>,
+          <button
+            className="modal-close"
+            onClick={[Function]}
+            type="button"
+          >
+            X
+          </button>,
+        ],
+        "className": "modalDelete",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Are you sure you want to delete?",
+          },
+          "ref": null,
+          "rendered": "Are you sure you want to delete?",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Yes",
+            "className": "modalyes",
+            "onClick": [Function],
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "Yes",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "No",
+            "className": "modalno",
+            "onClick": [Function],
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "No",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "X",
+            "className": "modal-close",
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "X",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": <div
+          className="modalDelete"
+        >
+          <p>
+            Are you sure you want to delete?
+          </p>
+          <button
+            className="modalyes"
+            onClick={[Function]}
+            type="submit"
+          >
+            Yes
+          </button>
+          <button
+            className="modalno"
+            onClick={[Function]}
+            type="submit"
+          >
+            No
+          </button>
+          <button
+            className="modal-close"
+            onClick={[Function]}
+            type="button"
+          >
+            X
+          </button>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              Are you sure you want to delete?
+            </p>,
+            <button
+              className="modalyes"
+              onClick={[Function]}
+              type="submit"
+            >
+              Yes
+            </button>,
+            <button
+              className="modalno"
+              onClick={[Function]}
+              type="submit"
+            >
+              No
+            </button>,
+            <button
+              className="modal-close"
+              onClick={[Function]}
+              type="button"
+            >
+              X
+            </button>,
+          ],
+          "className": "modalDelete",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Are you sure you want to delete?",
+            },
+            "ref": null,
+            "rendered": "Are you sure you want to delete?",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Yes",
+              "className": "modalyes",
+              "onClick": [Function],
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": "Yes",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "No",
+              "className": "modalno",
+              "onClick": [Function],
+              "type": "submit",
+            },
+            "ref": null,
+            "rendered": "No",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "X",
+              "className": "modal-close",
+              "onClick": [Function],
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": "X",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
