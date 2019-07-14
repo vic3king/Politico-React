@@ -1,8 +1,5 @@
-[![Build Status](https://travis-ci.com/vic3king/Politico-React.svg?branch=develop)](https://travis-ci.com/vic3king/Politico-React)
-
-[![Coverage Status](https://coveralls.io/repos/github/vic3king/Politico-React/badge.svg?branch=develop)](https://coveralls.io/github/vic3king/Politico-React?branch=develop)
-
-[![CircleCI](https://circleci.com/gh/vic3king/Politico-React.svg?style=svg)](https://circleci.com/gh/vic3king/Politico-React)
+[![Build Status](https://travis-ci.com/vic3king/Politico-React.svg?branch=master)](https://travis-ci.com/vic3king/Politico-React)
+[![Coverage Status](https://coveralls.io/repos/github/vic3king/Politico-React/badge.svg?branch=master)](https://coveralls.io/github/vic3king/Politico-React?branch=master)
 
 Politico enables citizens give their mandate to politicians running for different government offices while building trust in the process through transparency
 
